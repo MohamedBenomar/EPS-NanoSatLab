@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name EPS_v3_Library)(type KiCad)(uri ${KIPRJMOD}/EPS_v3_Library)(options "")(descr ""))
+)

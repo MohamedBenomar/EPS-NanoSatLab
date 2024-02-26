@@ -1,0 +1,3379 @@
+EESchema Schematic File Version 4
+LIBS:EPS_v3_NanoSatLab-cache
+EELAYER 26 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 6 6
+Title "MPPT Converters and PV Cells"
+Date ""
+Rev "v3.0"
+Comp "NanoSat Lab"
+Comment1 "Mohamed Benomar"
+Comment2 "Introduction to Research (IR)"
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 1000 1600 0    236  ~ 47
+MPPT Converters and PV Cells
+$Comp
+L EPS_v3_Library:SPV1040T U?
+U 1 1 616FC028
+P 3950 4700
+AR Path="/6097FD06/616FC028" Ref="U?"  Part="1" 
+AR Path="/609BF883/616FC028" Ref="U601"  Part="1" 
+F 0 "U601" H 3950 5587 60  0000 C CNN
+F 1 "SPV1040T" H 3950 5481 60  0000 C CNN
+F 2 "EPS_v3_Library:SPV1040T" H 3950 5440 60  0001 C CNN
+F 3 "" H 3000 5150 60  0000 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "SPV1040T" H 0   0   50  0001 C CNN "Order Code"
+F 6 "TSSOP-8" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 3950 4700 50  0001 C CNN "LCSC Part #"
+	1    3950 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 616FC02F
+P 2450 5200
+AR Path="/6097FD06/616FC02F" Ref="C?"  Part="1" 
+AR Path="/609BF883/616FC02F" Ref="C601"  Part="1" 
+F 0 "C601" H 2565 5246 50  0000 L CNN
+F 1 "100 uF" H 2565 5155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 2488 5050 50  0001 C CNN
+F 3 "~" H 2450 5200 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "JMK325ABJ107MM-P" H 0   0   50  0001 C CNN "Order Code"
+F 6 "1210" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 2450 5200 50  0001 C CNN "LCSC Part #"
+	1    2450 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 616FC036
+P 2700 4250
+AR Path="/6097FD06/616FC036" Ref="L?"  Part="1" 
+AR Path="/609BF883/616FC036" Ref="L601"  Part="1" 
+F 0 "L601" V 2890 4250 50  0000 C CNN
+F 1 "47 uH" V 2799 4250 50  0000 C CNN
+F 2 "EPS_v3_Library:NRS5020T4R7MMGJ" H 2700 4250 50  0001 C CNN
+F 3 "~" H 2700 4250 50  0001 C CNN
+F 4 "NRS5020T470MMGJV" V 2700 4250 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "5020" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 2700 4250 50  0001 C CNN "LCSC Part #"
+	1    2700 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 616FC03D
+P 3950 3650
+AR Path="/6097FD06/616FC03D" Ref="D?"  Part="1" 
+AR Path="/609BF883/616FC03D" Ref="D601"  Part="1" 
+F 0 "D601" H 3950 3434 50  0000 C CNN
+F 1 "Vf=0.3V and If=3A" H 3950 3525 50  0000 C CNN
+F 2 "EPS_v3_Library:DO-214AB-2" H 3950 3650 50  0001 C CNN
+F 3 "~" H 3950 3650 50  0001 C CNN
+F 4 "VS-30BQ015-M3/9AT" H 3950 3650 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "DO-214AB-2" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 3950 3650 50  0001 C CNN "LCSC Part #"
+	1    3950 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3000 5150 3000 5550
+Connection ~ 3000 5550
+Wire Wire Line
+	3000 5550 2450 5550
+Wire Wire Line
+	2850 4250 2950 4250
+Wire Wire Line
+	2950 4250 2950 3650
+Wire Wire Line
+	2950 3650 3800 3650
+Connection ~ 2950 4250
+Wire Wire Line
+	2950 4250 3000 4250
+Wire Wire Line
+	4100 3650 4900 3650
+Wire Wire Line
+	4900 3650 4900 4250
+Wire Wire Line
+	3000 4850 2450 4850
+Connection ~ 2450 4850
+Wire Wire Line
+	3000 4550 2450 4550
+Wire Wire Line
+	2450 4550 2450 4850
+Wire Wire Line
+	2450 4550 2450 4250
+Connection ~ 2450 4550
+Wire Wire Line
+	2450 4250 2550 4250
+Wire Wire Line
+	2450 4850 2450 5050
+Wire Wire Line
+	2450 5350 2450 5550
+$Comp
+L Device:R_US R?
+U 1 1 616FC05E
+P 5550 4250
+AR Path="/6097FD06/616FC05E" Ref="R?"  Part="1" 
+AR Path="/609BF883/616FC05E" Ref="R610"  Part="1" 
+F 0 "R610" V 5345 4250 50  0000 C CNN
+F 1 "33.2 mΩ" V 5436 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5590 4240 50  0001 C CNN
+F 3 "~" H 5550 4250 50  0001 C CNN
+F 4 "RCWH080533L2FNEA" V 5550 4250 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "0805" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 5550 4250 50  0001 C CNN "LCSC Part #"
+	1    5550 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 616FC065
+P 5950 5000
+AR Path="/6097FD06/616FC065" Ref="R?"  Part="1" 
+AR Path="/609BF883/616FC065" Ref="R613"  Part="1" 
+F 0 "R613" H 6018 5046 50  0000 L CNN
+F 1 "2 MΩ" H 6018 4955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5990 4990 50  0001 C CNN
+F 3 "~" H 5950 5000 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0603" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C22976" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C22976" H 5950 5000 50  0001 C CNN "LCSC Part #"
+	1    5950 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 616FC06C
+P 5950 5300
+AR Path="/6097FD06/616FC06C" Ref="R?"  Part="1" 
+AR Path="/609BF883/616FC06C" Ref="R614"  Part="1" 
+F 0 "R614" H 6018 5346 50  0000 L CNN
+F 1 "680 kΩ" H 6018 5255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5990 5290 50  0001 C CNN
+F 3 "~" H 5950 5300 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C4131" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C4131" H 5950 5300 50  0001 C CNN "LCSC Part #"
+	1    5950 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 5150 4900 5150
+Connection ~ 5950 5150
+Wire Wire Line
+	5950 4850 5950 4250
+Wire Wire Line
+	5950 4250 5700 4250
+Wire Wire Line
+	4900 4250 5150 4250
+Connection ~ 4900 4250
+Wire Wire Line
+	5950 5450 5950 5550
+$Comp
+L Device:C C?
+U 1 1 616FC07C
+P 5000 4700
+AR Path="/6097FD06/616FC07C" Ref="C?"  Part="1" 
+AR Path="/609BF883/616FC07C" Ref="C604"  Part="1" 
+F 0 "C604" H 5115 4746 50  0000 L CNN
+F 1 "1 uF" H 5115 4655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5038 4550 50  0001 C CNN
+F 3 "~" H 5000 4700 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C52923" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C52923" H 5000 4700 50  0001 C CNN "LCSC Part #"
+	1    5000 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 616FC083
+P 5150 4550
+AR Path="/6097FD06/616FC083" Ref="R?"  Part="1" 
+AR Path="/609BF883/616FC083" Ref="R604"  Part="1" 
+F 0 "R604" V 4945 4550 50  0000 C CNN
+F 1 "1 kΩ" V 5036 4550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5190 4540 50  0001 C CNN
+F 3 "~" H 5150 4550 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C11702" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C11702" H 5150 4550 50  0001 C CNN "LCSC Part #"
+	1    5150 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 616FC08A
+P 5150 4850
+AR Path="/6097FD06/616FC08A" Ref="R?"  Part="1" 
+AR Path="/609BF883/616FC08A" Ref="R605"  Part="1" 
+F 0 "R605" V 5263 4850 50  0000 C CNN
+F 1 "1 kΩ" V 5354 4850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5190 4840 50  0001 C CNN
+F 3 "~" H 5150 4850 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C11702" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C11702" H 5150 4850 50  0001 C CNN "LCSC Part #"
+	1    5150 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 4850 5000 4850
+Connection ~ 5000 4850
+Wire Wire Line
+	4900 4550 5000 4550
+Connection ~ 5000 4550
+Wire Wire Line
+	5300 4550 5400 4550
+Wire Wire Line
+	5400 4550 5400 4250
+Connection ~ 5400 4250
+Wire Wire Line
+	5300 4850 5700 4850
+Wire Wire Line
+	5700 4850 5700 4250
+Connection ~ 5700 4250
+$Comp
+L Device:C C?
+U 1 1 616FC09B
+P 6600 4850
+AR Path="/6097FD06/616FC09B" Ref="C?"  Part="1" 
+AR Path="/609BF883/616FC09B" Ref="C607"  Part="1" 
+F 0 "C607" H 6715 4896 50  0000 L CNN
+F 1 "150 uF" H 6715 4805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 6638 4700 50  0001 C CNN
+F 3 "~" H 6600 4850 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "CL32A157MQVNNNE" H 0   0   50  0001 C CNN "Order Code"
+F 6 "1210" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 6600 4850 50  0001 C CNN "LCSC Part #"
+	1    6600 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 4250 5150 3900
+Wire Wire Line
+	5150 3900 6600 3900
+Wire Wire Line
+	6600 3900 6600 4700
+Connection ~ 5150 4250
+Wire Wire Line
+	5150 4250 5400 4250
+Wire Wire Line
+	6600 5000 6600 5550
+Wire Wire Line
+	6600 5550 5950 5550
+Connection ~ 5950 5550
+Connection ~ 5950 4250
+Wire Wire Line
+	7350 4250 7800 4250
+Text Notes 6350 3800 0    50   ~ 0
+Protect from ±X/±Y/±Z formation
+Wire Notes Line
+	6950 4100 7450 4100
+Wire Notes Line
+	7450 4100 7450 4400
+Wire Notes Line
+	7450 4400 6950 4400
+Wire Notes Line
+	6950 4400 6950 4100
+Text Notes 1200 4200 0    50   ~ 0
+1st ±X modul (1.5A – 5.2V)
+Text Notes 1200 9500 0    50   ~ 0
+1st ±Z modul (1.5A – 5.2V)
+Text Notes 8050 4200 0    50   ~ 0
+2nd ±X modul (1.5A – 5.2V)
+Text Notes 8100 6900 0    50   ~ 0
+2nd ±Y modul (1.5A – 5.2V)
+Text Notes 8050 9500 0    50   ~ 0
+2nd ±Z modul (1.5A – 5.2V)
+Text Notes 14950 4200 0    50   ~ 0
+3rd ±X modul (1.5A – 5.2V)
+Text Notes 14950 6900 0    50   ~ 0
+3rd ±Y modul (1.5A – 5.2V)
+Text Notes 14950 9500 0    50   ~ 0
+3rd ±Z modul (1.5A – 5.2V)
+Wire Wire Line
+	2250 4250 2450 4250
+Connection ~ 14700 3200
+Wire Wire Line
+	14700 3200 21550 3200
+Wire Wire Line
+	7800 3200 14700 3200
+Connection ~ 2450 4250
+Text HLabel 1950 4250 0    50   Input ~ 0
+PV_Array_X_1
+Text Notes 1200 6900 0    50   ~ 0
+1st ±Y modul (1.5A – 5.2V)
+Text HLabel 1950 6950 0    50   Input ~ 0
+PV_Array_Y_1
+Text HLabel 1950 9550 0    50   Input ~ 0
+PV_Array_Z_1
+Text HLabel 8850 4250 0    50   Input ~ 0
+PV_Array_X_2
+Text HLabel 8850 6950 0    50   Input ~ 0
+PV_Array_Y_2
+Text HLabel 8850 9550 0    50   Input ~ 0
+PV_Array_Z_2
+Text HLabel 15700 9550 0    50   Input ~ 0
+PV_Array_Z_3
+Text HLabel 15700 6950 0    50   Input ~ 0
+PV_Array_Y_3
+Text HLabel 15700 4250 0    50   Input ~ 0
+PV_Array_X_3
+Text HLabel 22100 3200 2    50   Output ~ 0
+PV_BLOCKS
+Connection ~ 7800 4250
+Wire Wire Line
+	7800 3200 7800 4250
+Wire Wire Line
+	5950 4250 7050 4250
+$Comp
+L Device:D_Schottky D?
+U 1 1 6445C7A1
+P 7200 4250
+AR Path="/6097FD06/6445C7A1" Ref="D?"  Part="1" 
+AR Path="/609BF883/6445C7A1" Ref="D604"  Part="1" 
+F 0 "D604" H 7200 4150 50  0000 C CNN
+F 1 "Vf=0.3V and If=3A" H 7200 4125 50  0001 C CNN
+F 2 "EPS_v3_Library:DO-214AB-2" H 7200 4250 50  0001 C CNN
+F 3 "~" H 7200 4250 50  0001 C CNN
+F 4 "VS-30BQ015-M3/9AT" H 7200 4250 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "DO-214AB-2" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 7200 4250 50  0001 C CNN "LCSC Part #"
+	1    7200 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7800 4250 7800 6950
+$Comp
+L EPS_v3_Library:SPV1040T U?
+U 1 1 644ACCC7
+P 3950 7400
+AR Path="/6097FD06/644ACCC7" Ref="U?"  Part="1" 
+AR Path="/609BF883/644ACCC7" Ref="U602"  Part="1" 
+F 0 "U602" H 3950 8287 60  0000 C CNN
+F 1 "SPV1040T" H 3950 8181 60  0000 C CNN
+F 2 "EPS_v3_Library:SPV1040T" H 3950 8140 60  0001 C CNN
+F 3 "" H 3000 7850 60  0000 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "SPV1040T" H 0   0   50  0001 C CNN "Order Code"
+F 6 "TSSOP-8" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 3950 7400 50  0001 C CNN "LCSC Part #"
+	1    3950 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 644ACCD6
+P 2700 6950
+AR Path="/6097FD06/644ACCD6" Ref="L?"  Part="1" 
+AR Path="/609BF883/644ACCD6" Ref="L602"  Part="1" 
+F 0 "L602" V 2890 6950 50  0000 C CNN
+F 1 "47 uH" V 2799 6950 50  0000 C CNN
+F 2 "EPS_v3_Library:NRS5020T4R7MMGJ" H 2700 6950 50  0001 C CNN
+F 3 "~" H 2700 6950 50  0001 C CNN
+F 4 "NRS5020T470MMGJV" V 2700 6950 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "5020" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 2700 6950 50  0001 C CNN "LCSC Part #"
+	1    2700 6950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 644ACCDE
+P 3950 6350
+AR Path="/6097FD06/644ACCDE" Ref="D?"  Part="1" 
+AR Path="/609BF883/644ACCDE" Ref="D602"  Part="1" 
+F 0 "D602" H 3950 6134 50  0000 C CNN
+F 1 "Vf=0.3V and If=3A" H 3950 6225 50  0000 C CNN
+F 2 "EPS_v3_Library:DO-214AB-2" H 3950 6350 50  0001 C CNN
+F 3 "~" H 3950 6350 50  0001 C CNN
+F 4 "VS-30BQ015-M3/9AT" H 3950 6350 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "DO-214AB-2" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 3950 6350 50  0001 C CNN "LCSC Part #"
+	1    3950 6350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3000 7850 3000 8250
+Connection ~ 3000 8250
+Wire Wire Line
+	3000 8250 2450 8250
+Wire Wire Line
+	2850 6950 2950 6950
+Wire Wire Line
+	2950 6950 2950 6350
+Wire Wire Line
+	2950 6350 3800 6350
+Connection ~ 2950 6950
+Wire Wire Line
+	2950 6950 3000 6950
+Wire Wire Line
+	4100 6350 4900 6350
+Wire Wire Line
+	4900 6350 4900 6950
+Wire Wire Line
+	3000 7550 2450 7550
+Connection ~ 2450 7550
+Wire Wire Line
+	3000 7250 2450 7250
+Wire Wire Line
+	2450 7250 2450 7550
+Wire Wire Line
+	2450 7250 2450 6950
+Connection ~ 2450 7250
+Wire Wire Line
+	2450 6950 2550 6950
+Wire Wire Line
+	2450 7550 2450 7750
+Wire Wire Line
+	2450 8050 2450 8250
+$Comp
+L Device:R_US R?
+U 1 1 644ACD00
+P 5550 6950
+AR Path="/6097FD06/644ACD00" Ref="R?"  Part="1" 
+AR Path="/609BF883/644ACD00" Ref="R611"  Part="1" 
+F 0 "R611" V 5345 6950 50  0000 C CNN
+F 1 "33.2 mΩ" V 5436 6950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5590 6940 50  0001 C CNN
+F 3 "~" H 5550 6950 50  0001 C CNN
+F 4 "RCWH080533L2FNEA" V 5550 6950 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "0805" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 5550 6950 50  0001 C CNN "LCSC Part #"
+	1    5550 6950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 644ACD07
+P 5950 7700
+AR Path="/6097FD06/644ACD07" Ref="R?"  Part="1" 
+AR Path="/609BF883/644ACD07" Ref="R615"  Part="1" 
+F 0 "R615" H 6018 7746 50  0000 L CNN
+F 1 "2 MΩ" H 6018 7655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5990 7690 50  0001 C CNN
+F 3 "~" H 5950 7700 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0603" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C22976" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C22976" H 5950 7700 50  0001 C CNN "LCSC Part #"
+	1    5950 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 644ACD0E
+P 5950 8000
+AR Path="/6097FD06/644ACD0E" Ref="R?"  Part="1" 
+AR Path="/609BF883/644ACD0E" Ref="R616"  Part="1" 
+F 0 "R616" H 6018 8046 50  0000 L CNN
+F 1 "680 kΩ" H 6018 7955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5990 7990 50  0001 C CNN
+F 3 "~" H 5950 8000 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C4131" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C4131" H 5950 8000 50  0001 C CNN "LCSC Part #"
+	1    5950 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 7850 4900 7850
+Connection ~ 5950 7850
+Wire Wire Line
+	5950 7550 5950 6950
+Wire Wire Line
+	5950 6950 5700 6950
+Wire Wire Line
+	4900 6950 5150 6950
+Connection ~ 4900 6950
+Wire Wire Line
+	5950 8150 5950 8250
+$Comp
+L Device:C C?
+U 1 1 644ACD1E
+P 5000 7400
+AR Path="/6097FD06/644ACD1E" Ref="C?"  Part="1" 
+AR Path="/609BF883/644ACD1E" Ref="C605"  Part="1" 
+F 0 "C605" H 5115 7446 50  0000 L CNN
+F 1 "1 uF" H 5115 7355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5038 7250 50  0001 C CNN
+F 3 "~" H 5000 7400 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C52923" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C52923" H 5000 7400 50  0001 C CNN "LCSC Part #"
+	1    5000 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 644ACD25
+P 5150 7250
+AR Path="/6097FD06/644ACD25" Ref="R?"  Part="1" 
+AR Path="/609BF883/644ACD25" Ref="R606"  Part="1" 
+F 0 "R606" V 4945 7250 50  0000 C CNN
+F 1 "1 kΩ" V 5036 7250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5190 7240 50  0001 C CNN
+F 3 "~" H 5150 7250 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C11702" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C11702" H 5150 7250 50  0001 C CNN "LCSC Part #"
+	1    5150 7250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 644ACD2C
+P 5150 7550
+AR Path="/6097FD06/644ACD2C" Ref="R?"  Part="1" 
+AR Path="/609BF883/644ACD2C" Ref="R607"  Part="1" 
+F 0 "R607" V 5263 7550 50  0000 C CNN
+F 1 "1 kΩ" V 5354 7550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5190 7540 50  0001 C CNN
+F 3 "~" H 5150 7550 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C11702" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C11702" H 5150 7550 50  0001 C CNN "LCSC Part #"
+	1    5150 7550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 7550 5000 7550
+Connection ~ 5000 7550
+Wire Wire Line
+	4900 7250 5000 7250
+Connection ~ 5000 7250
+Wire Wire Line
+	5300 7250 5400 7250
+Wire Wire Line
+	5400 7250 5400 6950
+Connection ~ 5400 6950
+Wire Wire Line
+	5300 7550 5700 7550
+Wire Wire Line
+	5700 7550 5700 6950
+Connection ~ 5700 6950
+$Comp
+L Device:C C?
+U 1 1 644ACD3D
+P 6600 7550
+AR Path="/6097FD06/644ACD3D" Ref="C?"  Part="1" 
+AR Path="/609BF883/644ACD3D" Ref="C608"  Part="1" 
+F 0 "C608" H 6715 7596 50  0000 L CNN
+F 1 "150 uF" H 6715 7505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 6638 7400 50  0001 C CNN
+F 3 "~" H 6600 7550 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "CL32A157MQVNNNE" H 0   0   50  0001 C CNN "Order Code"
+F 6 "1210" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 6600 7550 50  0001 C CNN "LCSC Part #"
+	1    6600 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 6950 5150 6600
+Wire Wire Line
+	5150 6600 6600 6600
+Wire Wire Line
+	6600 6600 6600 7400
+Connection ~ 5150 6950
+Wire Wire Line
+	5150 6950 5400 6950
+Wire Wire Line
+	6600 7700 6600 8250
+Wire Wire Line
+	6600 8250 5950 8250
+Connection ~ 5950 8250
+Connection ~ 5950 6950
+Wire Wire Line
+	7350 6950 7800 6950
+Wire Wire Line
+	2250 6950 2450 6950
+Connection ~ 2450 6950
+Wire Wire Line
+	5950 6950 7050 6950
+$Comp
+L Device:D_Schottky D?
+U 1 1 644ACD57
+P 7200 6950
+AR Path="/6097FD06/644ACD57" Ref="D?"  Part="1" 
+AR Path="/609BF883/644ACD57" Ref="D605"  Part="1" 
+F 0 "D605" H 7200 6850 50  0000 C CNN
+F 1 "Vf=0.3V and If=3A" H 7200 6825 50  0001 C CNN
+F 2 "EPS_v3_Library:DO-214AB-2" H 7200 6950 50  0001 C CNN
+F 3 "~" H 7200 6950 50  0001 C CNN
+F 4 "VS-30BQ015-M3/9AT" H 7200 6950 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "DO-214AB-2" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 7200 6950 50  0001 C CNN "LCSC Part #"
+	1    7200 6950
+	-1   0    0    1   
+$EndComp
+$Comp
+L EPS_v3_Library:SPV1040T U?
+U 1 1 645D7326
+P 3950 10000
+AR Path="/6097FD06/645D7326" Ref="U?"  Part="1" 
+AR Path="/609BF883/645D7326" Ref="U603"  Part="1" 
+F 0 "U603" H 3950 10887 60  0000 C CNN
+F 1 "SPV1040T" H 3950 10781 60  0000 C CNN
+F 2 "EPS_v3_Library:SPV1040T" H 3950 10740 60  0001 C CNN
+F 3 "" H 3000 10450 60  0000 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "SPV1040T" H 0   0   50  0001 C CNN "Order Code"
+F 6 "TSSOP-8" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 3950 10000 50  0001 C CNN "LCSC Part #"
+	1    3950 10000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 645D7335
+P 2700 9550
+AR Path="/6097FD06/645D7335" Ref="L?"  Part="1" 
+AR Path="/609BF883/645D7335" Ref="L603"  Part="1" 
+F 0 "L603" V 2890 9550 50  0000 C CNN
+F 1 "47 uH" V 2799 9550 50  0000 C CNN
+F 2 "EPS_v3_Library:NRS5020T4R7MMGJ" H 2700 9550 50  0001 C CNN
+F 3 "~" H 2700 9550 50  0001 C CNN
+F 4 "NRS5020T470MMGJV" V 2700 9550 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "5020" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 2700 9550 50  0001 C CNN "LCSC Part #"
+	1    2700 9550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 645D733D
+P 3950 8950
+AR Path="/6097FD06/645D733D" Ref="D?"  Part="1" 
+AR Path="/609BF883/645D733D" Ref="D603"  Part="1" 
+F 0 "D603" H 3950 8734 50  0000 C CNN
+F 1 "Vf=0.3V and If=3A" H 3950 8825 50  0000 C CNN
+F 2 "EPS_v3_Library:DO-214AB-2" H 3950 8950 50  0001 C CNN
+F 3 "~" H 3950 8950 50  0001 C CNN
+F 4 "VS-30BQ015-M3/9AT" H 3950 8950 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "DO-214AB-2" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 3950 8950 50  0001 C CNN "LCSC Part #"
+	1    3950 8950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3000 10450 3000 10850
+Connection ~ 3000 10850
+Wire Wire Line
+	3000 10850 2450 10850
+Wire Wire Line
+	2850 9550 2950 9550
+Wire Wire Line
+	2950 9550 2950 8950
+Wire Wire Line
+	2950 8950 3800 8950
+Connection ~ 2950 9550
+Wire Wire Line
+	2950 9550 3000 9550
+Wire Wire Line
+	4100 8950 4900 8950
+Wire Wire Line
+	4900 8950 4900 9550
+Wire Wire Line
+	3000 10150 2450 10150
+Connection ~ 2450 10150
+Wire Wire Line
+	3000 9850 2450 9850
+Wire Wire Line
+	2450 9850 2450 10150
+Wire Wire Line
+	2450 9850 2450 9550
+Connection ~ 2450 9850
+Wire Wire Line
+	2450 9550 2550 9550
+Wire Wire Line
+	2450 10150 2450 10350
+Wire Wire Line
+	2450 10650 2450 10850
+$Comp
+L Device:R_US R?
+U 1 1 645D735F
+P 5550 9550
+AR Path="/6097FD06/645D735F" Ref="R?"  Part="1" 
+AR Path="/609BF883/645D735F" Ref="R612"  Part="1" 
+F 0 "R612" V 5345 9550 50  0000 C CNN
+F 1 "33.2 mΩ" V 5436 9550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5590 9540 50  0001 C CNN
+F 3 "~" H 5550 9550 50  0001 C CNN
+F 4 "RCWH080533L2FNEA" V 5550 9550 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "0805" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 5550 9550 50  0001 C CNN "LCSC Part #"
+	1    5550 9550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 645D7366
+P 5950 10300
+AR Path="/6097FD06/645D7366" Ref="R?"  Part="1" 
+AR Path="/609BF883/645D7366" Ref="R617"  Part="1" 
+F 0 "R617" H 6018 10346 50  0000 L CNN
+F 1 "2 MΩ" H 6018 10255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5990 10290 50  0001 C CNN
+F 3 "~" H 5950 10300 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0603" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C22976" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C22976" H 5950 10300 50  0001 C CNN "LCSC Part #"
+	1    5950 10300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 645D736D
+P 5950 10600
+AR Path="/6097FD06/645D736D" Ref="R?"  Part="1" 
+AR Path="/609BF883/645D736D" Ref="R618"  Part="1" 
+F 0 "R618" H 6018 10646 50  0000 L CNN
+F 1 "680 kΩ" H 6018 10555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5990 10590 50  0001 C CNN
+F 3 "~" H 5950 10600 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C4131" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C4131" H 5950 10600 50  0001 C CNN "LCSC Part #"
+	1    5950 10600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 10450 4900 10450
+Connection ~ 5950 10450
+Wire Wire Line
+	5950 10150 5950 9550
+Wire Wire Line
+	5950 9550 5700 9550
+Wire Wire Line
+	4900 9550 5150 9550
+Connection ~ 4900 9550
+Wire Wire Line
+	5950 10750 5950 10850
+$Comp
+L Device:C C?
+U 1 1 645D737D
+P 5000 10000
+AR Path="/6097FD06/645D737D" Ref="C?"  Part="1" 
+AR Path="/609BF883/645D737D" Ref="C606"  Part="1" 
+F 0 "C606" H 5115 10046 50  0000 L CNN
+F 1 "1 uF" H 5115 9955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5038 9850 50  0001 C CNN
+F 3 "~" H 5000 10000 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C52923" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C52923" H 5000 10000 50  0001 C CNN "LCSC Part #"
+	1    5000 10000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 645D7384
+P 5150 9850
+AR Path="/6097FD06/645D7384" Ref="R?"  Part="1" 
+AR Path="/609BF883/645D7384" Ref="R608"  Part="1" 
+F 0 "R608" V 4945 9850 50  0000 C CNN
+F 1 "1 kΩ" V 5036 9850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5190 9840 50  0001 C CNN
+F 3 "~" H 5150 9850 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C11702" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C11702" H 5150 9850 50  0001 C CNN "LCSC Part #"
+	1    5150 9850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 645D738B
+P 5150 10150
+AR Path="/6097FD06/645D738B" Ref="R?"  Part="1" 
+AR Path="/609BF883/645D738B" Ref="R609"  Part="1" 
+F 0 "R609" V 5263 10150 50  0000 C CNN
+F 1 "1 kΩ" V 5354 10150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5190 10140 50  0001 C CNN
+F 3 "~" H 5150 10150 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C11702" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C11702" H 5150 10150 50  0001 C CNN "LCSC Part #"
+	1    5150 10150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 10150 5000 10150
+Connection ~ 5000 10150
+Wire Wire Line
+	4900 9850 5000 9850
+Connection ~ 5000 9850
+Wire Wire Line
+	5300 9850 5400 9850
+Wire Wire Line
+	5400 9850 5400 9550
+Connection ~ 5400 9550
+Wire Wire Line
+	5300 10150 5700 10150
+Wire Wire Line
+	5700 10150 5700 9550
+Connection ~ 5700 9550
+$Comp
+L Device:C C?
+U 1 1 645D739C
+P 6600 10150
+AR Path="/6097FD06/645D739C" Ref="C?"  Part="1" 
+AR Path="/609BF883/645D739C" Ref="C609"  Part="1" 
+F 0 "C609" H 6715 10196 50  0000 L CNN
+F 1 "150 uF" H 6715 10105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 6638 10000 50  0001 C CNN
+F 3 "~" H 6600 10150 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "CL32A157MQVNNNE" H 0   0   50  0001 C CNN "Order Code"
+F 6 "1210" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 6600 10150 50  0001 C CNN "LCSC Part #"
+	1    6600 10150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 9550 5150 9200
+Wire Wire Line
+	5150 9200 6600 9200
+Wire Wire Line
+	6600 9200 6600 10000
+Connection ~ 5150 9550
+Wire Wire Line
+	5150 9550 5400 9550
+Wire Wire Line
+	6600 10300 6600 10850
+Wire Wire Line
+	6600 10850 5950 10850
+Connection ~ 5950 10850
+Connection ~ 5950 9550
+Wire Wire Line
+	7350 9550 7800 9550
+Wire Wire Line
+	2250 9550 2450 9550
+Connection ~ 2450 9550
+Wire Wire Line
+	5950 9550 7050 9550
+$Comp
+L Device:D_Schottky D?
+U 1 1 645D73B1
+P 7200 9550
+AR Path="/6097FD06/645D73B1" Ref="D?"  Part="1" 
+AR Path="/609BF883/645D73B1" Ref="D606"  Part="1" 
+F 0 "D606" H 7200 9450 50  0000 C CNN
+F 1 "Vf=0.3V and If=3A" H 7200 9425 50  0001 C CNN
+F 2 "EPS_v3_Library:DO-214AB-2" H 7200 9550 50  0001 C CNN
+F 3 "~" H 7200 9550 50  0001 C CNN
+F 4 "VS-30BQ015-M3/9AT" H 7200 9550 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "DO-214AB-2" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 7200 9550 50  0001 C CNN "LCSC Part #"
+	1    7200 9550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	14700 3200 14700 4250
+$Comp
+L EPS_v3_Library:SPV1040T U?
+U 1 1 64620420
+P 10850 4700
+AR Path="/6097FD06/64620420" Ref="U?"  Part="1" 
+AR Path="/609BF883/64620420" Ref="U604"  Part="1" 
+F 0 "U604" H 10850 5587 60  0000 C CNN
+F 1 "SPV1040T" H 10850 5481 60  0000 C CNN
+F 2 "EPS_v3_Library:SPV1040T" H 10850 5440 60  0001 C CNN
+F 3 "" H 9900 5150 60  0000 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "SPV1040T" H 0   0   50  0001 C CNN "Order Code"
+F 6 "TSSOP-8" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 10850 4700 50  0001 C CNN "LCSC Part #"
+	1    10850 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 6462042F
+P 9600 4250
+AR Path="/6097FD06/6462042F" Ref="L?"  Part="1" 
+AR Path="/609BF883/6462042F" Ref="L604"  Part="1" 
+F 0 "L604" V 9790 4250 50  0000 C CNN
+F 1 "47 uH" V 9699 4250 50  0000 C CNN
+F 2 "EPS_v3_Library:NRS5020T4R7MMGJ" H 9600 4250 50  0001 C CNN
+F 3 "~" H 9600 4250 50  0001 C CNN
+F 4 "NRS5020T470MMGJV" V 9600 4250 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "5020" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 9600 4250 50  0001 C CNN "LCSC Part #"
+	1    9600 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 64620437
+P 10850 3650
+AR Path="/6097FD06/64620437" Ref="D?"  Part="1" 
+AR Path="/609BF883/64620437" Ref="D607"  Part="1" 
+F 0 "D607" H 10850 3434 50  0000 C CNN
+F 1 "Vf=0.3V and If=3A" H 10850 3525 50  0000 C CNN
+F 2 "EPS_v3_Library:DO-214AB-2" H 10850 3650 50  0001 C CNN
+F 3 "~" H 10850 3650 50  0001 C CNN
+F 4 "VS-30BQ015-M3/9AT" H 10850 3650 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "DO-214AB-2" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 10850 3650 50  0001 C CNN "LCSC Part #"
+	1    10850 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9900 5150 9900 5550
+Connection ~ 9900 5550
+Wire Wire Line
+	9900 5550 9350 5550
+Wire Wire Line
+	9750 4250 9850 4250
+Wire Wire Line
+	9850 4250 9850 3650
+Wire Wire Line
+	9850 3650 10700 3650
+Connection ~ 9850 4250
+Wire Wire Line
+	9850 4250 9900 4250
+Wire Wire Line
+	11000 3650 11800 3650
+Wire Wire Line
+	11800 3650 11800 4250
+Wire Wire Line
+	9900 4850 9350 4850
+Connection ~ 9350 4850
+Wire Wire Line
+	9900 4550 9350 4550
+Wire Wire Line
+	9350 4550 9350 4850
+Wire Wire Line
+	9350 4550 9350 4250
+Connection ~ 9350 4550
+Wire Wire Line
+	9350 4250 9450 4250
+Wire Wire Line
+	9350 4850 9350 5050
+Wire Wire Line
+	9350 5350 9350 5550
+$Comp
+L Device:R_US R?
+U 1 1 64620459
+P 12450 4250
+AR Path="/6097FD06/64620459" Ref="R?"  Part="1" 
+AR Path="/609BF883/64620459" Ref="R628"  Part="1" 
+F 0 "R628" V 12245 4250 50  0000 C CNN
+F 1 "33.2 mΩ" V 12336 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 12490 4240 50  0001 C CNN
+F 3 "~" H 12450 4250 50  0001 C CNN
+F 4 "RCWH080533L2FNEA" V 12450 4250 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "0805" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 12450 4250 50  0001 C CNN "LCSC Part #"
+	1    12450 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 64620460
+P 12850 5000
+AR Path="/6097FD06/64620460" Ref="R?"  Part="1" 
+AR Path="/609BF883/64620460" Ref="R631"  Part="1" 
+F 0 "R631" H 12918 5046 50  0000 L CNN
+F 1 "2 MΩ" H 12918 4955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 12890 4990 50  0001 C CNN
+F 3 "~" H 12850 5000 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0603" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C22976" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C22976" H 12850 5000 50  0001 C CNN "LCSC Part #"
+	1    12850 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 64620467
+P 12850 5300
+AR Path="/6097FD06/64620467" Ref="R?"  Part="1" 
+AR Path="/609BF883/64620467" Ref="R632"  Part="1" 
+F 0 "R632" H 12918 5346 50  0000 L CNN
+F 1 "680 kΩ" H 12918 5255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 12890 5290 50  0001 C CNN
+F 3 "~" H 12850 5300 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C4131" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C4131" H 12850 5300 50  0001 C CNN "LCSC Part #"
+	1    12850 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12850 5150 11800 5150
+Connection ~ 12850 5150
+Wire Wire Line
+	12850 4850 12850 4250
+Wire Wire Line
+	12850 4250 12600 4250
+Wire Wire Line
+	11800 4250 12050 4250
+Connection ~ 11800 4250
+Wire Wire Line
+	12850 5450 12850 5550
+$Comp
+L Device:C C?
+U 1 1 64620477
+P 11900 4700
+AR Path="/6097FD06/64620477" Ref="C?"  Part="1" 
+AR Path="/609BF883/64620477" Ref="C613"  Part="1" 
+F 0 "C613" H 12015 4746 50  0000 L CNN
+F 1 "1 uF" H 12015 4655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 11938 4550 50  0001 C CNN
+F 3 "~" H 11900 4700 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C52923" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C52923" H 11900 4700 50  0001 C CNN "LCSC Part #"
+	1    11900 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 6462047E
+P 12050 4550
+AR Path="/6097FD06/6462047E" Ref="R?"  Part="1" 
+AR Path="/609BF883/6462047E" Ref="R622"  Part="1" 
+F 0 "R622" V 11845 4550 50  0000 C CNN
+F 1 "1 kΩ" V 11936 4550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 12090 4540 50  0001 C CNN
+F 3 "~" H 12050 4550 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C11702" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C11702" H 12050 4550 50  0001 C CNN "LCSC Part #"
+	1    12050 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 64620485
+P 12050 4850
+AR Path="/6097FD06/64620485" Ref="R?"  Part="1" 
+AR Path="/609BF883/64620485" Ref="R623"  Part="1" 
+F 0 "R623" V 12163 4850 50  0000 C CNN
+F 1 "1 kΩ" V 12254 4850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 12090 4840 50  0001 C CNN
+F 3 "~" H 12050 4850 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C11702" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C11702" H 12050 4850 50  0001 C CNN "LCSC Part #"
+	1    12050 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11800 4850 11900 4850
+Connection ~ 11900 4850
+Wire Wire Line
+	11800 4550 11900 4550
+Connection ~ 11900 4550
+Wire Wire Line
+	12200 4550 12300 4550
+Wire Wire Line
+	12300 4550 12300 4250
+Connection ~ 12300 4250
+Wire Wire Line
+	12200 4850 12600 4850
+Wire Wire Line
+	12600 4850 12600 4250
+Connection ~ 12600 4250
+$Comp
+L Device:C C?
+U 1 1 64620496
+P 13500 4850
+AR Path="/6097FD06/64620496" Ref="C?"  Part="1" 
+AR Path="/609BF883/64620496" Ref="C616"  Part="1" 
+F 0 "C616" H 13615 4896 50  0000 L CNN
+F 1 "150 uF" H 13615 4805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 13538 4700 50  0001 C CNN
+F 3 "~" H 13500 4850 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "CL32A157MQVNNNE" H 0   0   50  0001 C CNN "Order Code"
+F 6 "1210" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 13500 4850 50  0001 C CNN "LCSC Part #"
+	1    13500 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12050 4250 12050 3900
+Wire Wire Line
+	12050 3900 13500 3900
+Wire Wire Line
+	13500 3900 13500 4700
+Connection ~ 12050 4250
+Wire Wire Line
+	12050 4250 12300 4250
+Wire Wire Line
+	13500 5000 13500 5550
+Wire Wire Line
+	13500 5550 12850 5550
+Connection ~ 12850 5550
+Connection ~ 12850 4250
+Wire Wire Line
+	9150 4250 9350 4250
+Connection ~ 9350 4250
+Wire Wire Line
+	12850 4250 13950 4250
+$Comp
+L Device:D_Schottky D?
+U 1 1 646204AE
+P 14100 4250
+AR Path="/6097FD06/646204AE" Ref="D?"  Part="1" 
+AR Path="/609BF883/646204AE" Ref="D610"  Part="1" 
+F 0 "D610" H 14100 4150 50  0000 C CNN
+F 1 "Vf=0.3V and If=3A" H 14100 4125 50  0001 C CNN
+F 2 "EPS_v3_Library:DO-214AB-2" H 14100 4250 50  0001 C CNN
+F 3 "~" H 14100 4250 50  0001 C CNN
+F 4 "VS-30BQ015-M3/9AT" H 14100 4250 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "DO-214AB-2" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 14100 4250 50  0001 C CNN "LCSC Part #"
+	1    14100 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L EPS_v3_Library:SPV1040T U?
+U 1 1 646204B5
+P 10850 7400
+AR Path="/6097FD06/646204B5" Ref="U?"  Part="1" 
+AR Path="/609BF883/646204B5" Ref="U605"  Part="1" 
+F 0 "U605" H 10850 8287 60  0000 C CNN
+F 1 "SPV1040T" H 10850 8181 60  0000 C CNN
+F 2 "EPS_v3_Library:SPV1040T" H 10850 8140 60  0001 C CNN
+F 3 "" H 9900 7850 60  0000 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "SPV1040T" H 0   0   50  0001 C CNN "Order Code"
+F 6 "TSSOP-8" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 10850 7400 50  0001 C CNN "LCSC Part #"
+	1    10850 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 646204C4
+P 9600 6950
+AR Path="/6097FD06/646204C4" Ref="L?"  Part="1" 
+AR Path="/609BF883/646204C4" Ref="L605"  Part="1" 
+F 0 "L605" V 9790 6950 50  0000 C CNN
+F 1 "47 uH" V 9699 6950 50  0000 C CNN
+F 2 "EPS_v3_Library:NRS5020T4R7MMGJ" H 9600 6950 50  0001 C CNN
+F 3 "~" H 9600 6950 50  0001 C CNN
+F 4 "NRS5020T470MMGJV" V 9600 6950 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "5020" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 9600 6950 50  0001 C CNN "LCSC Part #"
+	1    9600 6950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 646204CC
+P 10850 6350
+AR Path="/6097FD06/646204CC" Ref="D?"  Part="1" 
+AR Path="/609BF883/646204CC" Ref="D608"  Part="1" 
+F 0 "D608" H 10850 6134 50  0000 C CNN
+F 1 "Vf=0.3V and If=3A" H 10850 6225 50  0000 C CNN
+F 2 "EPS_v3_Library:DO-214AB-2" H 10850 6350 50  0001 C CNN
+F 3 "~" H 10850 6350 50  0001 C CNN
+F 4 "VS-30BQ015-M3/9AT" H 10850 6350 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "DO-214AB-2" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 10850 6350 50  0001 C CNN "LCSC Part #"
+	1    10850 6350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9900 7850 9900 8250
+Connection ~ 9900 8250
+Wire Wire Line
+	9900 8250 9350 8250
+Wire Wire Line
+	9750 6950 9850 6950
+Wire Wire Line
+	9850 6950 9850 6350
+Wire Wire Line
+	9850 6350 10700 6350
+Connection ~ 9850 6950
+Wire Wire Line
+	9850 6950 9900 6950
+Wire Wire Line
+	11000 6350 11800 6350
+Wire Wire Line
+	11800 6350 11800 6950
+Wire Wire Line
+	9900 7550 9350 7550
+Connection ~ 9350 7550
+Wire Wire Line
+	9900 7250 9350 7250
+Wire Wire Line
+	9350 7250 9350 7550
+Wire Wire Line
+	9350 7250 9350 6950
+Connection ~ 9350 7250
+Wire Wire Line
+	9350 6950 9450 6950
+Wire Wire Line
+	9350 7550 9350 7750
+Wire Wire Line
+	9350 8050 9350 8250
+$Comp
+L Device:R_US R?
+U 1 1 646204EE
+P 12450 6950
+AR Path="/6097FD06/646204EE" Ref="R?"  Part="1" 
+AR Path="/609BF883/646204EE" Ref="R629"  Part="1" 
+F 0 "R629" V 12245 6950 50  0000 C CNN
+F 1 "33.2 mΩ" V 12336 6950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 12490 6940 50  0001 C CNN
+F 3 "~" H 12450 6950 50  0001 C CNN
+F 4 "RCWH080533L2FNEA" V 12450 6950 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "0805" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 12450 6950 50  0001 C CNN "LCSC Part #"
+	1    12450 6950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 646204F5
+P 12850 7700
+AR Path="/6097FD06/646204F5" Ref="R?"  Part="1" 
+AR Path="/609BF883/646204F5" Ref="R633"  Part="1" 
+F 0 "R633" H 12918 7746 50  0000 L CNN
+F 1 "2 MΩ" H 12918 7655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 12890 7690 50  0001 C CNN
+F 3 "~" H 12850 7700 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0603" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C22976" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C22976" H 12850 7700 50  0001 C CNN "LCSC Part #"
+	1    12850 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 646204FC
+P 12850 8000
+AR Path="/6097FD06/646204FC" Ref="R?"  Part="1" 
+AR Path="/609BF883/646204FC" Ref="R634"  Part="1" 
+F 0 "R634" H 12918 8046 50  0000 L CNN
+F 1 "680 kΩ" H 12918 7955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 12890 7990 50  0001 C CNN
+F 3 "~" H 12850 8000 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C4131" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C4131" H 12850 8000 50  0001 C CNN "LCSC Part #"
+	1    12850 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12850 7850 11800 7850
+Connection ~ 12850 7850
+Wire Wire Line
+	12850 7550 12850 6950
+Wire Wire Line
+	12850 6950 12600 6950
+Wire Wire Line
+	11800 6950 12050 6950
+Connection ~ 11800 6950
+Wire Wire Line
+	12850 8150 12850 8250
+$Comp
+L Device:C C?
+U 1 1 6462050C
+P 11900 7400
+AR Path="/6097FD06/6462050C" Ref="C?"  Part="1" 
+AR Path="/609BF883/6462050C" Ref="C614"  Part="1" 
+F 0 "C614" H 12015 7446 50  0000 L CNN
+F 1 "1 uF" H 12015 7355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 11938 7250 50  0001 C CNN
+F 3 "~" H 11900 7400 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C52923" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C52923" H 11900 7400 50  0001 C CNN "LCSC Part #"
+	1    11900 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 64620513
+P 12050 7250
+AR Path="/6097FD06/64620513" Ref="R?"  Part="1" 
+AR Path="/609BF883/64620513" Ref="R624"  Part="1" 
+F 0 "R624" V 11845 7250 50  0000 C CNN
+F 1 "1 kΩ" V 11936 7250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 12090 7240 50  0001 C CNN
+F 3 "~" H 12050 7250 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C11702" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C11702" H 12050 7250 50  0001 C CNN "LCSC Part #"
+	1    12050 7250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 6462051A
+P 12050 7550
+AR Path="/6097FD06/6462051A" Ref="R?"  Part="1" 
+AR Path="/609BF883/6462051A" Ref="R625"  Part="1" 
+F 0 "R625" V 12163 7550 50  0000 C CNN
+F 1 "1 kΩ" V 12254 7550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 12090 7540 50  0001 C CNN
+F 3 "~" H 12050 7550 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C11702" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C11702" H 12050 7550 50  0001 C CNN "LCSC Part #"
+	1    12050 7550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11800 7550 11900 7550
+Connection ~ 11900 7550
+Wire Wire Line
+	11800 7250 11900 7250
+Connection ~ 11900 7250
+Wire Wire Line
+	12200 7250 12300 7250
+Wire Wire Line
+	12300 7250 12300 6950
+Connection ~ 12300 6950
+Wire Wire Line
+	12200 7550 12600 7550
+Wire Wire Line
+	12600 7550 12600 6950
+Connection ~ 12600 6950
+$Comp
+L Device:C C?
+U 1 1 6462052B
+P 13500 7550
+AR Path="/6097FD06/6462052B" Ref="C?"  Part="1" 
+AR Path="/609BF883/6462052B" Ref="C617"  Part="1" 
+F 0 "C617" H 13615 7596 50  0000 L CNN
+F 1 "150 uF" H 13615 7505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 13538 7400 50  0001 C CNN
+F 3 "~" H 13500 7550 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "CL32A157MQVNNNE" H 0   0   50  0001 C CNN "Order Code"
+F 6 "1210" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 13500 7550 50  0001 C CNN "LCSC Part #"
+	1    13500 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12050 6950 12050 6600
+Wire Wire Line
+	12050 6600 13500 6600
+Wire Wire Line
+	13500 6600 13500 7400
+Connection ~ 12050 6950
+Wire Wire Line
+	12050 6950 12300 6950
+Wire Wire Line
+	13500 7700 13500 8250
+Wire Wire Line
+	13500 8250 12850 8250
+Connection ~ 12850 8250
+Connection ~ 12850 6950
+Wire Wire Line
+	9150 6950 9350 6950
+Connection ~ 9350 6950
+Wire Wire Line
+	12850 6950 13950 6950
+$Comp
+L Device:D_Schottky D?
+U 1 1 6462053F
+P 14100 6950
+AR Path="/6097FD06/6462053F" Ref="D?"  Part="1" 
+AR Path="/609BF883/6462053F" Ref="D611"  Part="1" 
+F 0 "D611" H 14100 6850 50  0000 C CNN
+F 1 "Vf=0.3V and If=3A" H 14100 6825 50  0001 C CNN
+F 2 "EPS_v3_Library:DO-214AB-2" H 14100 6950 50  0001 C CNN
+F 3 "~" H 14100 6950 50  0001 C CNN
+F 4 "VS-30BQ015-M3/9AT" H 14100 6950 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "DO-214AB-2" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 14100 6950 50  0001 C CNN "LCSC Part #"
+	1    14100 6950
+	-1   0    0    1   
+$EndComp
+$Comp
+L EPS_v3_Library:SPV1040T U?
+U 1 1 64620546
+P 10850 10000
+AR Path="/6097FD06/64620546" Ref="U?"  Part="1" 
+AR Path="/609BF883/64620546" Ref="U606"  Part="1" 
+F 0 "U606" H 10850 10887 60  0000 C CNN
+F 1 "SPV1040T" H 10850 10781 60  0000 C CNN
+F 2 "EPS_v3_Library:SPV1040T" H 10850 10740 60  0001 C CNN
+F 3 "" H 9900 10450 60  0000 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "SPV1040T" H 0   0   50  0001 C CNN "Order Code"
+F 6 "TSSOP-8" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 10850 10000 50  0001 C CNN "LCSC Part #"
+	1    10850 10000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 64620555
+P 9600 9550
+AR Path="/6097FD06/64620555" Ref="L?"  Part="1" 
+AR Path="/609BF883/64620555" Ref="L606"  Part="1" 
+F 0 "L606" V 9790 9550 50  0000 C CNN
+F 1 "47 uH" V 9699 9550 50  0000 C CNN
+F 2 "EPS_v3_Library:NRS5020T4R7MMGJ" H 9600 9550 50  0001 C CNN
+F 3 "~" H 9600 9550 50  0001 C CNN
+F 4 "NRS5020T470MMGJV" V 9600 9550 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "5020" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 9600 9550 50  0001 C CNN "LCSC Part #"
+	1    9600 9550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 6462055D
+P 10850 8950
+AR Path="/6097FD06/6462055D" Ref="D?"  Part="1" 
+AR Path="/609BF883/6462055D" Ref="D609"  Part="1" 
+F 0 "D609" H 10850 8734 50  0000 C CNN
+F 1 "Vf=0.3V and If=3A" H 10850 8825 50  0000 C CNN
+F 2 "EPS_v3_Library:DO-214AB-2" H 10850 8950 50  0001 C CNN
+F 3 "~" H 10850 8950 50  0001 C CNN
+F 4 "VS-30BQ015-M3/9AT" H 10850 8950 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "DO-214AB-2" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 10850 8950 50  0001 C CNN "LCSC Part #"
+	1    10850 8950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9900 10450 9900 10850
+Connection ~ 9900 10850
+Wire Wire Line
+	9900 10850 9350 10850
+Wire Wire Line
+	9750 9550 9850 9550
+Wire Wire Line
+	9850 9550 9850 8950
+Wire Wire Line
+	9850 8950 10700 8950
+Connection ~ 9850 9550
+Wire Wire Line
+	9850 9550 9900 9550
+Wire Wire Line
+	11000 8950 11800 8950
+Wire Wire Line
+	11800 8950 11800 9550
+Wire Wire Line
+	9900 10150 9350 10150
+Connection ~ 9350 10150
+Wire Wire Line
+	9900 9850 9350 9850
+Wire Wire Line
+	9350 9850 9350 10150
+Wire Wire Line
+	9350 9850 9350 9550
+Connection ~ 9350 9850
+Wire Wire Line
+	9350 9550 9450 9550
+Wire Wire Line
+	9350 10150 9350 10350
+Wire Wire Line
+	9350 10650 9350 10850
+$Comp
+L Device:R_US R?
+U 1 1 6462057F
+P 12450 9550
+AR Path="/6097FD06/6462057F" Ref="R?"  Part="1" 
+AR Path="/609BF883/6462057F" Ref="R630"  Part="1" 
+F 0 "R630" V 12245 9550 50  0000 C CNN
+F 1 "33.2 mΩ" V 12336 9550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 12490 9540 50  0001 C CNN
+F 3 "~" H 12450 9550 50  0001 C CNN
+F 4 "RCWH080533L2FNEA" V 12450 9550 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "0805" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 12450 9550 50  0001 C CNN "LCSC Part #"
+	1    12450 9550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 64620586
+P 12850 10300
+AR Path="/6097FD06/64620586" Ref="R?"  Part="1" 
+AR Path="/609BF883/64620586" Ref="R635"  Part="1" 
+F 0 "R635" H 12918 10346 50  0000 L CNN
+F 1 "2 MΩ" H 12918 10255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 12890 10290 50  0001 C CNN
+F 3 "~" H 12850 10300 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0603" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C22976" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C22976" H 12850 10300 50  0001 C CNN "LCSC Part #"
+	1    12850 10300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 6462058D
+P 12850 10600
+AR Path="/6097FD06/6462058D" Ref="R?"  Part="1" 
+AR Path="/609BF883/6462058D" Ref="R636"  Part="1" 
+F 0 "R636" H 12918 10646 50  0000 L CNN
+F 1 "680 kΩ" H 12918 10555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 12890 10590 50  0001 C CNN
+F 3 "~" H 12850 10600 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C4131" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C4131" H 12850 10600 50  0001 C CNN "LCSC Part #"
+	1    12850 10600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12850 10450 11800 10450
+Connection ~ 12850 10450
+Wire Wire Line
+	12850 10150 12850 9550
+Wire Wire Line
+	12850 9550 12600 9550
+Wire Wire Line
+	11800 9550 12050 9550
+Connection ~ 11800 9550
+Wire Wire Line
+	12850 10750 12850 10850
+$Comp
+L Device:C C?
+U 1 1 6462059D
+P 11900 10000
+AR Path="/6097FD06/6462059D" Ref="C?"  Part="1" 
+AR Path="/609BF883/6462059D" Ref="C615"  Part="1" 
+F 0 "C615" H 12015 10046 50  0000 L CNN
+F 1 "1 uF" H 12015 9955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 11938 9850 50  0001 C CNN
+F 3 "~" H 11900 10000 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C52923" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C52923" H 11900 10000 50  0001 C CNN "LCSC Part #"
+	1    11900 10000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 646205A4
+P 12050 9850
+AR Path="/6097FD06/646205A4" Ref="R?"  Part="1" 
+AR Path="/609BF883/646205A4" Ref="R626"  Part="1" 
+F 0 "R626" V 11845 9850 50  0000 C CNN
+F 1 "1 kΩ" V 11936 9850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 12090 9840 50  0001 C CNN
+F 3 "~" H 12050 9850 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C11702" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C11702" H 12050 9850 50  0001 C CNN "LCSC Part #"
+	1    12050 9850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 646205AB
+P 12050 10150
+AR Path="/6097FD06/646205AB" Ref="R?"  Part="1" 
+AR Path="/609BF883/646205AB" Ref="R627"  Part="1" 
+F 0 "R627" V 12163 10150 50  0000 C CNN
+F 1 "1 kΩ" V 12254 10150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 12090 10140 50  0001 C CNN
+F 3 "~" H 12050 10150 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C11702" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C11702" H 12050 10150 50  0001 C CNN "LCSC Part #"
+	1    12050 10150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11800 10150 11900 10150
+Connection ~ 11900 10150
+Wire Wire Line
+	11800 9850 11900 9850
+Connection ~ 11900 9850
+Wire Wire Line
+	12200 9850 12300 9850
+Wire Wire Line
+	12300 9850 12300 9550
+Connection ~ 12300 9550
+Wire Wire Line
+	12200 10150 12600 10150
+Wire Wire Line
+	12600 10150 12600 9550
+Connection ~ 12600 9550
+$Comp
+L Device:C C?
+U 1 1 646205BC
+P 13500 10150
+AR Path="/6097FD06/646205BC" Ref="C?"  Part="1" 
+AR Path="/609BF883/646205BC" Ref="C618"  Part="1" 
+F 0 "C618" H 13615 10196 50  0000 L CNN
+F 1 "150 uF" H 13615 10105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 13538 10000 50  0001 C CNN
+F 3 "~" H 13500 10150 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "CL32A157MQVNNNE" H 0   0   50  0001 C CNN "Order Code"
+F 6 "1210" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 13500 10150 50  0001 C CNN "LCSC Part #"
+	1    13500 10150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12050 9550 12050 9200
+Wire Wire Line
+	12050 9200 13500 9200
+Wire Wire Line
+	13500 9200 13500 10000
+Connection ~ 12050 9550
+Wire Wire Line
+	12050 9550 12300 9550
+Wire Wire Line
+	13500 10300 13500 10850
+Wire Wire Line
+	13500 10850 12850 10850
+Connection ~ 12850 10850
+Connection ~ 12850 9550
+Wire Wire Line
+	9150 9550 9350 9550
+Connection ~ 9350 9550
+Wire Wire Line
+	12850 9550 13950 9550
+$Comp
+L Device:D_Schottky D?
+U 1 1 646205D0
+P 14100 9550
+AR Path="/6097FD06/646205D0" Ref="D?"  Part="1" 
+AR Path="/609BF883/646205D0" Ref="D612"  Part="1" 
+F 0 "D612" H 14100 9450 50  0000 C CNN
+F 1 "Vf=0.3V and If=3A" H 14100 9425 50  0001 C CNN
+F 2 "EPS_v3_Library:DO-214AB-2" H 14100 9550 50  0001 C CNN
+F 3 "~" H 14100 9550 50  0001 C CNN
+F 4 "VS-30BQ015-M3/9AT" H 14100 9550 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "DO-214AB-2" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 14100 9550 50  0001 C CNN "LCSC Part #"
+	1    14100 9550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	14250 4250 14700 4250
+Wire Wire Line
+	14250 6950 14700 6950
+Wire Wire Line
+	14250 9550 14700 9550
+Wire Wire Line
+	21550 3200 21550 4250
+$Comp
+L EPS_v3_Library:SPV1040T U?
+U 1 1 647112E8
+P 17700 4700
+AR Path="/6097FD06/647112E8" Ref="U?"  Part="1" 
+AR Path="/609BF883/647112E8" Ref="U607"  Part="1" 
+F 0 "U607" H 17700 5587 60  0000 C CNN
+F 1 "SPV1040T" H 17700 5481 60  0000 C CNN
+F 2 "EPS_v3_Library:SPV1040T" H 17700 5440 60  0001 C CNN
+F 3 "" H 16750 5150 60  0000 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "SPV1040T" H 0   0   50  0001 C CNN "Order Code"
+F 6 "TSSOP-8" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 17700 4700 50  0001 C CNN "LCSC Part #"
+	1    17700 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 647112F7
+P 16450 4250
+AR Path="/6097FD06/647112F7" Ref="L?"  Part="1" 
+AR Path="/609BF883/647112F7" Ref="L607"  Part="1" 
+F 0 "L607" V 16640 4250 50  0000 C CNN
+F 1 "47 uH" V 16549 4250 50  0000 C CNN
+F 2 "EPS_v3_Library:NRS5020T4R7MMGJ" H 16450 4250 50  0001 C CNN
+F 3 "~" H 16450 4250 50  0001 C CNN
+F 4 "NRS5020T470MMGJV" V 16450 4250 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "5020" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 16450 4250 50  0001 C CNN "LCSC Part #"
+	1    16450 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 647112FF
+P 17700 3650
+AR Path="/6097FD06/647112FF" Ref="D?"  Part="1" 
+AR Path="/609BF883/647112FF" Ref="D613"  Part="1" 
+F 0 "D613" H 17700 3434 50  0000 C CNN
+F 1 "Vf=0.3V and If=3A" H 17700 3525 50  0000 C CNN
+F 2 "EPS_v3_Library:DO-214AB-2" H 17700 3650 50  0001 C CNN
+F 3 "~" H 17700 3650 50  0001 C CNN
+F 4 "VS-30BQ015-M3/9AT" H 17700 3650 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "DO-214AB-2" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 17700 3650 50  0001 C CNN "LCSC Part #"
+	1    17700 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	16750 5150 16750 5550
+Connection ~ 16750 5550
+Wire Wire Line
+	16750 5550 16200 5550
+Wire Wire Line
+	16600 4250 16700 4250
+Wire Wire Line
+	16700 4250 16700 3650
+Wire Wire Line
+	16700 3650 17550 3650
+Connection ~ 16700 4250
+Wire Wire Line
+	16700 4250 16750 4250
+Wire Wire Line
+	17850 3650 18650 3650
+Wire Wire Line
+	18650 3650 18650 4250
+Wire Wire Line
+	16750 4850 16200 4850
+Connection ~ 16200 4850
+Wire Wire Line
+	16750 4550 16200 4550
+Wire Wire Line
+	16200 4550 16200 4850
+Wire Wire Line
+	16200 4550 16200 4250
+Connection ~ 16200 4550
+Wire Wire Line
+	16200 4250 16300 4250
+Wire Wire Line
+	16200 4850 16200 5050
+Wire Wire Line
+	16200 5350 16200 5550
+$Comp
+L Device:R_US R?
+U 1 1 64711321
+P 19300 4250
+AR Path="/6097FD06/64711321" Ref="R?"  Part="1" 
+AR Path="/609BF883/64711321" Ref="R646"  Part="1" 
+F 0 "R646" V 19095 4250 50  0000 C CNN
+F 1 "33.2 mΩ" V 19186 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 19340 4240 50  0001 C CNN
+F 3 "~" H 19300 4250 50  0001 C CNN
+F 4 "RCWH080533L2FNEA" V 19300 4250 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "0805" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 19300 4250 50  0001 C CNN "LCSC Part #"
+	1    19300 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 64711328
+P 19700 5000
+AR Path="/6097FD06/64711328" Ref="R?"  Part="1" 
+AR Path="/609BF883/64711328" Ref="R649"  Part="1" 
+F 0 "R649" H 19768 5046 50  0000 L CNN
+F 1 "2 MΩ" H 19768 4955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 19740 4990 50  0001 C CNN
+F 3 "~" H 19700 5000 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0603" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C22976" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C22976" H 19700 5000 50  0001 C CNN "LCSC Part #"
+	1    19700 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 6471132F
+P 19700 5300
+AR Path="/6097FD06/6471132F" Ref="R?"  Part="1" 
+AR Path="/609BF883/6471132F" Ref="R650"  Part="1" 
+F 0 "R650" H 19768 5346 50  0000 L CNN
+F 1 "680 kΩ" H 19768 5255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 19740 5290 50  0001 C CNN
+F 3 "~" H 19700 5300 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C4131" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C4131" H 19700 5300 50  0001 C CNN "LCSC Part #"
+	1    19700 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19700 5150 18650 5150
+Connection ~ 19700 5150
+Wire Wire Line
+	19700 4850 19700 4250
+Wire Wire Line
+	19700 4250 19450 4250
+Wire Wire Line
+	18650 4250 18900 4250
+Connection ~ 18650 4250
+Wire Wire Line
+	19700 5450 19700 5550
+$Comp
+L Device:C C?
+U 1 1 6471133F
+P 18750 4700
+AR Path="/6097FD06/6471133F" Ref="C?"  Part="1" 
+AR Path="/609BF883/6471133F" Ref="C622"  Part="1" 
+F 0 "C622" H 18865 4746 50  0000 L CNN
+F 1 "1 uF" H 18865 4655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 18788 4550 50  0001 C CNN
+F 3 "~" H 18750 4700 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C52923" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C52923" H 18750 4700 50  0001 C CNN "LCSC Part #"
+	1    18750 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 64711346
+P 18900 4550
+AR Path="/6097FD06/64711346" Ref="R?"  Part="1" 
+AR Path="/609BF883/64711346" Ref="R640"  Part="1" 
+F 0 "R640" V 18695 4550 50  0000 C CNN
+F 1 "1 kΩ" V 18786 4550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 18940 4540 50  0001 C CNN
+F 3 "~" H 18900 4550 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C11702" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C11702" H 18900 4550 50  0001 C CNN "LCSC Part #"
+	1    18900 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 6471134D
+P 18900 4850
+AR Path="/6097FD06/6471134D" Ref="R?"  Part="1" 
+AR Path="/609BF883/6471134D" Ref="R641"  Part="1" 
+F 0 "R641" V 19013 4850 50  0000 C CNN
+F 1 "1 kΩ" V 19104 4850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 18940 4840 50  0001 C CNN
+F 3 "~" H 18900 4850 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C11702" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C11702" H 18900 4850 50  0001 C CNN "LCSC Part #"
+	1    18900 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18650 4850 18750 4850
+Connection ~ 18750 4850
+Wire Wire Line
+	18650 4550 18750 4550
+Connection ~ 18750 4550
+Wire Wire Line
+	19050 4550 19150 4550
+Wire Wire Line
+	19150 4550 19150 4250
+Connection ~ 19150 4250
+Wire Wire Line
+	19050 4850 19450 4850
+Wire Wire Line
+	19450 4850 19450 4250
+Connection ~ 19450 4250
+$Comp
+L Device:C C?
+U 1 1 6471135E
+P 20350 4850
+AR Path="/6097FD06/6471135E" Ref="C?"  Part="1" 
+AR Path="/609BF883/6471135E" Ref="C625"  Part="1" 
+F 0 "C625" H 20465 4896 50  0000 L CNN
+F 1 "150 uF" H 20465 4805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 20388 4700 50  0001 C CNN
+F 3 "~" H 20350 4850 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "CL32A157MQVNNNE" H 0   0   50  0001 C CNN "Order Code"
+F 6 "1210" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 20350 4850 50  0001 C CNN "LCSC Part #"
+	1    20350 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18900 4250 18900 3900
+Wire Wire Line
+	18900 3900 20350 3900
+Wire Wire Line
+	20350 3900 20350 4700
+Connection ~ 18900 4250
+Wire Wire Line
+	18900 4250 19150 4250
+Wire Wire Line
+	20350 5000 20350 5550
+Wire Wire Line
+	20350 5550 19700 5550
+Connection ~ 19700 5550
+Connection ~ 19700 4250
+Wire Wire Line
+	16000 4250 16200 4250
+Connection ~ 16200 4250
+Wire Wire Line
+	19700 4250 20800 4250
+$Comp
+L Device:D_Schottky D?
+U 1 1 64711372
+P 20950 4250
+AR Path="/6097FD06/64711372" Ref="D?"  Part="1" 
+AR Path="/609BF883/64711372" Ref="D616"  Part="1" 
+F 0 "D616" H 20950 4150 50  0000 C CNN
+F 1 "Vf=0.3V and If=3A" H 20950 4125 50  0001 C CNN
+F 2 "EPS_v3_Library:DO-214AB-2" H 20950 4250 50  0001 C CNN
+F 3 "~" H 20950 4250 50  0001 C CNN
+F 4 "VS-30BQ015-M3/9AT" H 20950 4250 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "DO-214AB-2" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 20950 4250 50  0001 C CNN "LCSC Part #"
+	1    20950 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L EPS_v3_Library:SPV1040T U?
+U 1 1 64711379
+P 17700 7400
+AR Path="/6097FD06/64711379" Ref="U?"  Part="1" 
+AR Path="/609BF883/64711379" Ref="U608"  Part="1" 
+F 0 "U608" H 17700 8287 60  0000 C CNN
+F 1 "SPV1040T" H 17700 8181 60  0000 C CNN
+F 2 "EPS_v3_Library:SPV1040T" H 17700 8140 60  0001 C CNN
+F 3 "" H 16750 7850 60  0000 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "SPV1040T" H 0   0   50  0001 C CNN "Order Code"
+F 6 "TSSOP-8" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 17700 7400 50  0001 C CNN "LCSC Part #"
+	1    17700 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 64711388
+P 16450 6950
+AR Path="/6097FD06/64711388" Ref="L?"  Part="1" 
+AR Path="/609BF883/64711388" Ref="L608"  Part="1" 
+F 0 "L608" V 16640 6950 50  0000 C CNN
+F 1 "47 uH" V 16549 6950 50  0000 C CNN
+F 2 "EPS_v3_Library:NRS5020T4R7MMGJ" H 16450 6950 50  0001 C CNN
+F 3 "~" H 16450 6950 50  0001 C CNN
+F 4 "NRS5020T470MMGJV" V 16450 6950 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "5020" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 16450 6950 50  0001 C CNN "LCSC Part #"
+	1    16450 6950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 64711390
+P 17700 6350
+AR Path="/6097FD06/64711390" Ref="D?"  Part="1" 
+AR Path="/609BF883/64711390" Ref="D614"  Part="1" 
+F 0 "D614" H 17700 6134 50  0000 C CNN
+F 1 "Vf=0.3V and If=3A" H 17700 6225 50  0000 C CNN
+F 2 "EPS_v3_Library:DO-214AB-2" H 17700 6350 50  0001 C CNN
+F 3 "~" H 17700 6350 50  0001 C CNN
+F 4 "VS-30BQ015-M3/9AT" H 17700 6350 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "DO-214AB-2" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 17700 6350 50  0001 C CNN "LCSC Part #"
+	1    17700 6350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	16750 7850 16750 8250
+Connection ~ 16750 8250
+Wire Wire Line
+	16750 8250 16200 8250
+Wire Wire Line
+	16600 6950 16700 6950
+Wire Wire Line
+	16700 6950 16700 6350
+Wire Wire Line
+	16700 6350 17550 6350
+Connection ~ 16700 6950
+Wire Wire Line
+	16700 6950 16750 6950
+Wire Wire Line
+	17850 6350 18650 6350
+Wire Wire Line
+	18650 6350 18650 6950
+Wire Wire Line
+	16750 7550 16200 7550
+Connection ~ 16200 7550
+Wire Wire Line
+	16750 7250 16200 7250
+Wire Wire Line
+	16200 7250 16200 7550
+Wire Wire Line
+	16200 7250 16200 6950
+Connection ~ 16200 7250
+Wire Wire Line
+	16200 6950 16300 6950
+Wire Wire Line
+	16200 7550 16200 7750
+Wire Wire Line
+	16200 8050 16200 8250
+$Comp
+L Device:R_US R?
+U 1 1 647113B2
+P 19300 6950
+AR Path="/6097FD06/647113B2" Ref="R?"  Part="1" 
+AR Path="/609BF883/647113B2" Ref="R647"  Part="1" 
+F 0 "R647" V 19095 6950 50  0000 C CNN
+F 1 "33.2 mΩ" V 19186 6950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 19340 6940 50  0001 C CNN
+F 3 "~" H 19300 6950 50  0001 C CNN
+F 4 "RCWH080533L2FNEA" V 19300 6950 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "0805" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 19300 6950 50  0001 C CNN "LCSC Part #"
+	1    19300 6950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 647113B9
+P 19700 7700
+AR Path="/6097FD06/647113B9" Ref="R?"  Part="1" 
+AR Path="/609BF883/647113B9" Ref="R651"  Part="1" 
+F 0 "R651" H 19768 7746 50  0000 L CNN
+F 1 "2 MΩ" H 19768 7655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 19740 7690 50  0001 C CNN
+F 3 "~" H 19700 7700 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0603" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C22976" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C22976" H 19700 7700 50  0001 C CNN "LCSC Part #"
+	1    19700 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 647113C0
+P 19700 8000
+AR Path="/6097FD06/647113C0" Ref="R?"  Part="1" 
+AR Path="/609BF883/647113C0" Ref="R652"  Part="1" 
+F 0 "R652" H 19768 8046 50  0000 L CNN
+F 1 "680 kΩ" H 19768 7955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 19740 7990 50  0001 C CNN
+F 3 "~" H 19700 8000 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C4131" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C4131" H 19700 8000 50  0001 C CNN "LCSC Part #"
+	1    19700 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19700 7850 18650 7850
+Connection ~ 19700 7850
+Wire Wire Line
+	19700 7550 19700 6950
+Wire Wire Line
+	19700 6950 19450 6950
+Wire Wire Line
+	18650 6950 18900 6950
+Connection ~ 18650 6950
+Wire Wire Line
+	19700 8150 19700 8250
+$Comp
+L Device:C C?
+U 1 1 647113D0
+P 18750 7400
+AR Path="/6097FD06/647113D0" Ref="C?"  Part="1" 
+AR Path="/609BF883/647113D0" Ref="C623"  Part="1" 
+F 0 "C623" H 18865 7446 50  0000 L CNN
+F 1 "1 uF" H 18865 7355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 18788 7250 50  0001 C CNN
+F 3 "~" H 18750 7400 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C52923" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C52923" H 18750 7400 50  0001 C CNN "LCSC Part #"
+	1    18750 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 647113D7
+P 18900 7250
+AR Path="/6097FD06/647113D7" Ref="R?"  Part="1" 
+AR Path="/609BF883/647113D7" Ref="R642"  Part="1" 
+F 0 "R642" V 18695 7250 50  0000 C CNN
+F 1 "1 kΩ" V 18786 7250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 18940 7240 50  0001 C CNN
+F 3 "~" H 18900 7250 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C11702" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C11702" H 18900 7250 50  0001 C CNN "LCSC Part #"
+	1    18900 7250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 647113DE
+P 18900 7550
+AR Path="/6097FD06/647113DE" Ref="R?"  Part="1" 
+AR Path="/609BF883/647113DE" Ref="R643"  Part="1" 
+F 0 "R643" V 19013 7550 50  0000 C CNN
+F 1 "1 kΩ" V 19104 7550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 18940 7540 50  0001 C CNN
+F 3 "~" H 18900 7550 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C11702" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C11702" H 18900 7550 50  0001 C CNN "LCSC Part #"
+	1    18900 7550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18650 7550 18750 7550
+Connection ~ 18750 7550
+Wire Wire Line
+	18650 7250 18750 7250
+Connection ~ 18750 7250
+Wire Wire Line
+	19050 7250 19150 7250
+Wire Wire Line
+	19150 7250 19150 6950
+Connection ~ 19150 6950
+Wire Wire Line
+	19050 7550 19450 7550
+Wire Wire Line
+	19450 7550 19450 6950
+Connection ~ 19450 6950
+$Comp
+L Device:C C?
+U 1 1 647113EF
+P 20350 7550
+AR Path="/6097FD06/647113EF" Ref="C?"  Part="1" 
+AR Path="/609BF883/647113EF" Ref="C626"  Part="1" 
+F 0 "C626" H 20465 7596 50  0000 L CNN
+F 1 "150 uF" H 20465 7505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 20388 7400 50  0001 C CNN
+F 3 "~" H 20350 7550 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "CL32A157MQVNNNE" H 0   0   50  0001 C CNN "Order Code"
+F 6 "1210" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 20350 7550 50  0001 C CNN "LCSC Part #"
+	1    20350 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18900 6950 18900 6600
+Wire Wire Line
+	18900 6600 20350 6600
+Wire Wire Line
+	20350 6600 20350 7400
+Connection ~ 18900 6950
+Wire Wire Line
+	18900 6950 19150 6950
+Wire Wire Line
+	20350 7700 20350 8250
+Wire Wire Line
+	20350 8250 19700 8250
+Connection ~ 19700 8250
+Connection ~ 19700 6950
+Wire Wire Line
+	16000 6950 16200 6950
+Connection ~ 16200 6950
+Wire Wire Line
+	19700 6950 20800 6950
+$Comp
+L Device:D_Schottky D?
+U 1 1 64711403
+P 20950 6950
+AR Path="/6097FD06/64711403" Ref="D?"  Part="1" 
+AR Path="/609BF883/64711403" Ref="D617"  Part="1" 
+F 0 "D617" H 20950 6850 50  0000 C CNN
+F 1 "Vf=0.3V and If=3A" H 20950 6825 50  0001 C CNN
+F 2 "EPS_v3_Library:DO-214AB-2" H 20950 6950 50  0001 C CNN
+F 3 "~" H 20950 6950 50  0001 C CNN
+F 4 "VS-30BQ015-M3/9AT" H 20950 6950 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "DO-214AB-2" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 20950 6950 50  0001 C CNN "LCSC Part #"
+	1    20950 6950
+	-1   0    0    1   
+$EndComp
+$Comp
+L EPS_v3_Library:SPV1040T U?
+U 1 1 6471140A
+P 17700 10000
+AR Path="/6097FD06/6471140A" Ref="U?"  Part="1" 
+AR Path="/609BF883/6471140A" Ref="U609"  Part="1" 
+F 0 "U609" H 17700 10887 60  0000 C CNN
+F 1 "SPV1040T" H 17700 10781 60  0000 C CNN
+F 2 "EPS_v3_Library:SPV1040T" H 17700 10740 60  0001 C CNN
+F 3 "" H 16750 10450 60  0000 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "SPV1040T" H 0   0   50  0001 C CNN "Order Code"
+F 6 "TSSOP-8" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 17700 10000 50  0001 C CNN "LCSC Part #"
+	1    17700 10000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 64711419
+P 16450 9550
+AR Path="/6097FD06/64711419" Ref="L?"  Part="1" 
+AR Path="/609BF883/64711419" Ref="L609"  Part="1" 
+F 0 "L609" V 16640 9550 50  0000 C CNN
+F 1 "47 uH" V 16549 9550 50  0000 C CNN
+F 2 "EPS_v3_Library:NRS5020T4R7MMGJ" H 16450 9550 50  0001 C CNN
+F 3 "~" H 16450 9550 50  0001 C CNN
+F 4 "NRS5020T470MMGJV" V 16450 9550 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "5020" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 16450 9550 50  0001 C CNN "LCSC Part #"
+	1    16450 9550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 64711421
+P 17700 8950
+AR Path="/6097FD06/64711421" Ref="D?"  Part="1" 
+AR Path="/609BF883/64711421" Ref="D615"  Part="1" 
+F 0 "D615" H 17700 8734 50  0000 C CNN
+F 1 "Vf=0.3V and If=3A" H 17700 8825 50  0000 C CNN
+F 2 "EPS_v3_Library:DO-214AB-2" H 17700 8950 50  0001 C CNN
+F 3 "~" H 17700 8950 50  0001 C CNN
+F 4 "VS-30BQ015-M3/9AT" H 17700 8950 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "DO-214AB-2" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 17700 8950 50  0001 C CNN "LCSC Part #"
+	1    17700 8950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	16750 10450 16750 10850
+Connection ~ 16750 10850
+Wire Wire Line
+	16750 10850 16200 10850
+Wire Wire Line
+	16600 9550 16700 9550
+Wire Wire Line
+	16700 9550 16700 8950
+Wire Wire Line
+	16700 8950 17550 8950
+Connection ~ 16700 9550
+Wire Wire Line
+	16700 9550 16750 9550
+Wire Wire Line
+	17850 8950 18650 8950
+Wire Wire Line
+	18650 8950 18650 9550
+Wire Wire Line
+	16750 10150 16200 10150
+Connection ~ 16200 10150
+Wire Wire Line
+	16750 9850 16200 9850
+Wire Wire Line
+	16200 9850 16200 10150
+Wire Wire Line
+	16200 9850 16200 9550
+Connection ~ 16200 9850
+Wire Wire Line
+	16200 9550 16300 9550
+Wire Wire Line
+	16200 10150 16200 10350
+Wire Wire Line
+	16200 10650 16200 10850
+$Comp
+L Device:R_US R?
+U 1 1 64711443
+P 19300 9550
+AR Path="/6097FD06/64711443" Ref="R?"  Part="1" 
+AR Path="/609BF883/64711443" Ref="R648"  Part="1" 
+F 0 "R648" V 19095 9550 50  0000 C CNN
+F 1 "33.2 mΩ" V 19186 9550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 19340 9540 50  0001 C CNN
+F 3 "~" H 19300 9550 50  0001 C CNN
+F 4 "RCWH080533L2FNEA" V 19300 9550 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "0805" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 19300 9550 50  0001 C CNN "LCSC Part #"
+	1    19300 9550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 6471144A
+P 19700 10300
+AR Path="/6097FD06/6471144A" Ref="R?"  Part="1" 
+AR Path="/609BF883/6471144A" Ref="R653"  Part="1" 
+F 0 "R653" H 19768 10346 50  0000 L CNN
+F 1 "2 MΩ" H 19768 10255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 19740 10290 50  0001 C CNN
+F 3 "~" H 19700 10300 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0603" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C22976" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C22976" H 19700 10300 50  0001 C CNN "LCSC Part #"
+	1    19700 10300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 64711451
+P 19700 10600
+AR Path="/6097FD06/64711451" Ref="R?"  Part="1" 
+AR Path="/609BF883/64711451" Ref="R654"  Part="1" 
+F 0 "R654" H 19768 10646 50  0000 L CNN
+F 1 "680 kΩ" H 19768 10555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 19740 10590 50  0001 C CNN
+F 3 "~" H 19700 10600 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C4131" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C4131" H 19700 10600 50  0001 C CNN "LCSC Part #"
+	1    19700 10600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19700 10450 18650 10450
+Connection ~ 19700 10450
+Wire Wire Line
+	19700 10150 19700 9550
+Wire Wire Line
+	19700 9550 19450 9550
+Wire Wire Line
+	18650 9550 18900 9550
+Connection ~ 18650 9550
+Wire Wire Line
+	19700 10750 19700 10850
+$Comp
+L Device:C C?
+U 1 1 64711461
+P 18750 10000
+AR Path="/6097FD06/64711461" Ref="C?"  Part="1" 
+AR Path="/609BF883/64711461" Ref="C624"  Part="1" 
+F 0 "C624" H 18865 10046 50  0000 L CNN
+F 1 "1 uF" H 18865 9955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 18788 9850 50  0001 C CNN
+F 3 "~" H 18750 10000 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C52923" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C52923" H 18750 10000 50  0001 C CNN "LCSC Part #"
+	1    18750 10000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 64711468
+P 18900 9850
+AR Path="/6097FD06/64711468" Ref="R?"  Part="1" 
+AR Path="/609BF883/64711468" Ref="R644"  Part="1" 
+F 0 "R644" V 18695 9850 50  0000 C CNN
+F 1 "1 kΩ" V 18786 9850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 18940 9840 50  0001 C CNN
+F 3 "~" H 18900 9850 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C11702" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C11702" H 18900 9850 50  0001 C CNN "LCSC Part #"
+	1    18900 9850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 6471146F
+P 18900 10150
+AR Path="/6097FD06/6471146F" Ref="R?"  Part="1" 
+AR Path="/609BF883/6471146F" Ref="R645"  Part="1" 
+F 0 "R645" V 19013 10150 50  0000 C CNN
+F 1 "1 kΩ" V 19104 10150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 18940 10140 50  0001 C CNN
+F 3 "~" H 18900 10150 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0402" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C11702" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C11702" H 18900 10150 50  0001 C CNN "LCSC Part #"
+	1    18900 10150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	18650 10150 18750 10150
+Connection ~ 18750 10150
+Wire Wire Line
+	18650 9850 18750 9850
+Connection ~ 18750 9850
+Wire Wire Line
+	19050 9850 19150 9850
+Wire Wire Line
+	19150 9850 19150 9550
+Connection ~ 19150 9550
+Wire Wire Line
+	19050 10150 19450 10150
+Wire Wire Line
+	19450 10150 19450 9550
+Connection ~ 19450 9550
+$Comp
+L Device:C C?
+U 1 1 64711480
+P 20350 10150
+AR Path="/6097FD06/64711480" Ref="C?"  Part="1" 
+AR Path="/609BF883/64711480" Ref="C627"  Part="1" 
+F 0 "C627" H 20465 10196 50  0000 L CNN
+F 1 "150 uF" H 20465 10105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 20388 10000 50  0001 C CNN
+F 3 "~" H 20350 10150 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "CL32A157MQVNNNE" H 0   0   50  0001 C CNN "Order Code"
+F 6 "1210" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 20350 10150 50  0001 C CNN "LCSC Part #"
+	1    20350 10150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18900 9550 18900 9200
+Wire Wire Line
+	18900 9200 20350 9200
+Wire Wire Line
+	20350 9200 20350 10000
+Connection ~ 18900 9550
+Wire Wire Line
+	18900 9550 19150 9550
+Wire Wire Line
+	20350 10300 20350 10850
+Wire Wire Line
+	20350 10850 19700 10850
+Connection ~ 19700 10850
+Connection ~ 19700 9550
+Wire Wire Line
+	16000 9550 16200 9550
+Connection ~ 16200 9550
+Wire Wire Line
+	19700 9550 20800 9550
+$Comp
+L Device:D_Schottky D?
+U 1 1 64711494
+P 20950 9550
+AR Path="/6097FD06/64711494" Ref="D?"  Part="1" 
+AR Path="/609BF883/64711494" Ref="D618"  Part="1" 
+F 0 "D618" H 20950 9450 50  0000 C CNN
+F 1 "Vf=0.3V and If=3A" H 20950 9425 50  0001 C CNN
+F 2 "EPS_v3_Library:DO-214AB-2" H 20950 9550 50  0001 C CNN
+F 3 "~" H 20950 9550 50  0001 C CNN
+F 4 "VS-30BQ015-M3/9AT" H 20950 9550 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "DO-214AB-2" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 20950 9550 50  0001 C CNN "LCSC Part #"
+	1    20950 9550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	21100 4250 21550 4250
+Wire Wire Line
+	21100 6950 21550 6950
+Wire Wire Line
+	21100 9550 21550 9550
+Connection ~ 21550 3200
+$Comp
+L Connector:TestPoint TP?
+U 1 1 61032768
+P 21550 3150
+AR Path="/6097FD06/61032768" Ref="TP?"  Part="1" 
+AR Path="/609BF883/61032768" Ref="TP601"  Part="1" 
+F 0 "TP601" H 21550 3384 50  0000 C CNN
+F 1 "TestPoint" H 21608 3179 50  0001 L CNN
+F 2 "EPS_v3_Library:TESTPOINT_5013" H 21750 3150 50  0001 C CNN
+F 3 "~" H 21750 3150 50  0001 C CNN
+F 4 "5013" H 0   0   50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "TP" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 21550 3150 50  0001 C CNN "LCSC Part #"
+	1    21550 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21550 3150 21550 3200
+$Comp
+L Device:R_US R?
+U 1 1 61732C46
+P 2100 4250
+AR Path="/6097FD06/61732C46" Ref="R?"  Part="1" 
+AR Path="/609BF883/61732C46" Ref="R601"  Part="1" 
+F 0 "R601" V 2213 4250 50  0000 C CNN
+F 1 "0 Ω" V 2304 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2140 4240 50  0001 C CNN
+F 3 "~" H 2100 4250 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0603" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C21189" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C21189" H 2100 4250 50  0001 C CNN "LCSC Part #"
+	1    2100 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 617823D3
+P 2100 6950
+AR Path="/6097FD06/617823D3" Ref="R?"  Part="1" 
+AR Path="/609BF883/617823D3" Ref="R602"  Part="1" 
+F 0 "R602" V 2213 6950 50  0000 C CNN
+F 1 "0 Ω" V 2304 6950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2140 6940 50  0001 C CNN
+F 3 "~" H 2100 6950 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0603" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C21189" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C21189" H 2100 6950 50  0001 C CNN "LCSC Part #"
+	1    2100 6950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 617D1EDF
+P 2100 9550
+AR Path="/6097FD06/617D1EDF" Ref="R?"  Part="1" 
+AR Path="/609BF883/617D1EDF" Ref="R603"  Part="1" 
+F 0 "R603" V 2213 9550 50  0000 C CNN
+F 1 "0 Ω" V 2304 9550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2140 9540 50  0001 C CNN
+F 3 "~" H 2100 9550 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0603" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C21189" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C21189" H 2100 9550 50  0001 C CNN "LCSC Part #"
+	1    2100 9550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 6182075C
+P 9000 4250
+AR Path="/6097FD06/6182075C" Ref="R?"  Part="1" 
+AR Path="/609BF883/6182075C" Ref="R619"  Part="1" 
+F 0 "R619" V 9113 4250 50  0000 C CNN
+F 1 "0 Ω" V 9204 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9040 4240 50  0001 C CNN
+F 3 "~" H 9000 4250 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0603" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C21189" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C21189" H 9000 4250 50  0001 C CNN "LCSC Part #"
+	1    9000 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 618A6951
+P 9000 6950
+AR Path="/6097FD06/618A6951" Ref="R?"  Part="1" 
+AR Path="/609BF883/618A6951" Ref="R620"  Part="1" 
+F 0 "R620" V 9113 6950 50  0000 C CNN
+F 1 "0 Ω" V 9204 6950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9040 6940 50  0001 C CNN
+F 3 "~" H 9000 6950 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0603" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C21189" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C21189" H 9000 6950 50  0001 C CNN "LCSC Part #"
+	1    9000 6950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 618F474A
+P 9000 9550
+AR Path="/6097FD06/618F474A" Ref="R?"  Part="1" 
+AR Path="/609BF883/618F474A" Ref="R621"  Part="1" 
+F 0 "R621" V 9113 9550 50  0000 C CNN
+F 1 "0 Ω" V 9204 9550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9040 9540 50  0001 C CNN
+F 3 "~" H 9000 9550 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0603" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C21189" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C21189" H 9000 9550 50  0001 C CNN "LCSC Part #"
+	1    9000 9550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 6190E8A4
+P 15850 6950
+AR Path="/6097FD06/6190E8A4" Ref="R?"  Part="1" 
+AR Path="/609BF883/6190E8A4" Ref="R638"  Part="1" 
+F 0 "R638" V 15963 6950 50  0000 C CNN
+F 1 "0 Ω" V 16054 6950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 15890 6940 50  0001 C CNN
+F 3 "~" H 15850 6950 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0603" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C21189" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C21189" H 15850 6950 50  0001 C CNN "LCSC Part #"
+	1    15850 6950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 61928604
+P 15850 9550
+AR Path="/6097FD06/61928604" Ref="R?"  Part="1" 
+AR Path="/609BF883/61928604" Ref="R639"  Part="1" 
+F 0 "R639" V 15963 9550 50  0000 C CNN
+F 1 "0 Ω" V 16054 9550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 15890 9540 50  0001 C CNN
+F 3 "~" H 15850 9550 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0603" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C21189" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C21189" H 15850 9550 50  0001 C CNN "LCSC Part #"
+	1    15850 9550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 61942637
+P 15850 4250
+AR Path="/6097FD06/61942637" Ref="R?"  Part="1" 
+AR Path="/609BF883/61942637" Ref="R637"  Part="1" 
+F 0 "R637" V 15963 4250 50  0000 C CNN
+F 1 "0 Ω" V 16054 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 15890 4240 50  0001 C CNN
+F 3 "~" H 15850 4250 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "" H 0   0   50  0001 C CNN "Order Code"
+F 6 "0603" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "C21189" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "1" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "C21189" H 15850 4250 50  0001 C CNN "LCSC Part #"
+	1    15850 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60AD4785
+P 2450 7900
+AR Path="/6097FD06/60AD4785" Ref="C?"  Part="1" 
+AR Path="/609BF883/60AD4785" Ref="C602"  Part="1" 
+F 0 "C602" H 2565 7946 50  0000 L CNN
+F 1 "100 uF" H 2565 7855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 2488 7750 50  0001 C CNN
+F 3 "~" H 2450 7900 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "JMK325ABJ107MM-P" H 0   0   50  0001 C CNN "Order Code"
+F 6 "1210" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 2450 7900 50  0001 C CNN "LCSC Part #"
+	1    2450 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60AEE5EC
+P 2450 10500
+AR Path="/6097FD06/60AEE5EC" Ref="C?"  Part="1" 
+AR Path="/609BF883/60AEE5EC" Ref="C603"  Part="1" 
+F 0 "C603" H 2565 10546 50  0000 L CNN
+F 1 "100 uF" H 2565 10455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 2488 10350 50  0001 C CNN
+F 3 "~" H 2450 10500 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "JMK325ABJ107MM-P" H 0   0   50  0001 C CNN "Order Code"
+F 6 "1210" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 2450 10500 50  0001 C CNN "LCSC Part #"
+	1    2450 10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60B08859
+P 9350 5200
+AR Path="/6097FD06/60B08859" Ref="C?"  Part="1" 
+AR Path="/609BF883/60B08859" Ref="C610"  Part="1" 
+F 0 "C610" H 9465 5246 50  0000 L CNN
+F 1 "100 uF" H 9465 5155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 9388 5050 50  0001 C CNN
+F 3 "~" H 9350 5200 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "JMK325ABJ107MM-P" H 0   0   50  0001 C CNN "Order Code"
+F 6 "1210" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 9350 5200 50  0001 C CNN "LCSC Part #"
+	1    9350 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60B2260A
+P 9350 7900
+AR Path="/6097FD06/60B2260A" Ref="C?"  Part="1" 
+AR Path="/609BF883/60B2260A" Ref="C611"  Part="1" 
+F 0 "C611" H 9465 7946 50  0000 L CNN
+F 1 "100 uF" H 9465 7855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 9388 7750 50  0001 C CNN
+F 3 "~" H 9350 7900 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "JMK325ABJ107MM-P" H 0   0   50  0001 C CNN "Order Code"
+F 6 "1210" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 9350 7900 50  0001 C CNN "LCSC Part #"
+	1    9350 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60B3C4A9
+P 9350 10500
+AR Path="/6097FD06/60B3C4A9" Ref="C?"  Part="1" 
+AR Path="/609BF883/60B3C4A9" Ref="C612"  Part="1" 
+F 0 "C612" H 9465 10546 50  0000 L CNN
+F 1 "100 uF" H 9465 10455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 9388 10350 50  0001 C CNN
+F 3 "~" H 9350 10500 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "JMK325ABJ107MM-P" H 0   0   50  0001 C CNN "Order Code"
+F 6 "1210" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 9350 10500 50  0001 C CNN "LCSC Part #"
+	1    9350 10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60B56541
+P 16200 10500
+AR Path="/6097FD06/60B56541" Ref="C?"  Part="1" 
+AR Path="/609BF883/60B56541" Ref="C621"  Part="1" 
+F 0 "C621" H 16315 10546 50  0000 L CNN
+F 1 "100 uF" H 16315 10455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 16238 10350 50  0001 C CNN
+F 3 "~" H 16200 10500 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "JMK325ABJ107MM-P" H 0   0   50  0001 C CNN "Order Code"
+F 6 "1210" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 16200 10500 50  0001 C CNN "LCSC Part #"
+	1    16200 10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60B70479
+P 16200 7900
+AR Path="/6097FD06/60B70479" Ref="C?"  Part="1" 
+AR Path="/609BF883/60B70479" Ref="C620"  Part="1" 
+F 0 "C620" H 16315 7946 50  0000 L CNN
+F 1 "100 uF" H 16315 7855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 16238 7750 50  0001 C CNN
+F 3 "~" H 16200 7900 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "JMK325ABJ107MM-P" H 0   0   50  0001 C CNN "Order Code"
+F 6 "1210" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 16200 7900 50  0001 C CNN "LCSC Part #"
+	1    16200 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60B8A2D1
+P 16200 5200
+AR Path="/6097FD06/60B8A2D1" Ref="C?"  Part="1" 
+AR Path="/609BF883/60B8A2D1" Ref="C619"  Part="1" 
+F 0 "C619" H 16315 5246 50  0000 L CNN
+F 1 "100 uF" H 16315 5155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 16238 5050 50  0001 C CNN
+F 3 "~" H 16200 5200 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "JMK325ABJ107MM-P" H 0   0   50  0001 C CNN "Order Code"
+F 6 "1210" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "- - -" H 16200 5200 50  0001 C CNN "LCSC Part #"
+	1    16200 5200
+	1    0    0    -1  
+$EndComp
+Connection ~ 7800 6950
+Wire Wire Line
+	7800 6950 7800 9550
+Connection ~ 14700 4250
+Wire Wire Line
+	14700 4250 14700 6950
+Connection ~ 14700 6950
+Wire Wire Line
+	14700 6950 14700 9550
+Connection ~ 21550 6950
+Wire Wire Line
+	21550 6950 21550 9550
+Connection ~ 21550 4250
+Wire Wire Line
+	21550 4250 21550 6950
+Wire Wire Line
+	3000 5550 3950 5550
+$Comp
+L power:GND #PWR?
+U 1 1 60F4A7FF
+P 3950 5550
+AR Path="/6097FD06/60F4A7FF" Ref="#PWR?"  Part="1" 
+AR Path="/609BF883/60F4A7FF" Ref="#PWR0152"  Part="1" 
+F 0 "#PWR0152" H 3950 5300 50  0001 C CNN
+F 1 "GND" H 3955 5377 50  0000 C CNN
+F 2 "" H 3950 5550 50  0001 C CNN
+F 3 "" H 3950 5550 50  0001 C CNN
+	1    3950 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 8250 3950 8250
+$Comp
+L power:GND #PWR?
+U 1 1 60F6582A
+P 3950 8250
+AR Path="/6097FD06/60F6582A" Ref="#PWR?"  Part="1" 
+AR Path="/609BF883/60F6582A" Ref="#PWR0153"  Part="1" 
+F 0 "#PWR0153" H 3950 8000 50  0001 C CNN
+F 1 "GND" H 3955 8077 50  0000 C CNN
+F 2 "" H 3950 8250 50  0001 C CNN
+F 3 "" H 3950 8250 50  0001 C CNN
+	1    3950 8250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 10850 3950 10850
+$Comp
+L power:GND #PWR?
+U 1 1 60F7FE7B
+P 3950 10850
+AR Path="/6097FD06/60F7FE7B" Ref="#PWR?"  Part="1" 
+AR Path="/609BF883/60F7FE7B" Ref="#PWR0154"  Part="1" 
+F 0 "#PWR0154" H 3950 10600 50  0001 C CNN
+F 1 "GND" H 3955 10677 50  0000 C CNN
+F 2 "" H 3950 10850 50  0001 C CNN
+F 3 "" H 3950 10850 50  0001 C CNN
+	1    3950 10850
+	1    0    0    -1  
+$EndComp
+Connection ~ 3950 10850
+Wire Wire Line
+	3950 10850 5950 10850
+Connection ~ 3950 8250
+Wire Wire Line
+	3950 8250 5950 8250
+Connection ~ 3950 5550
+Wire Wire Line
+	3950 5550 5950 5550
+Wire Wire Line
+	9900 5550 10850 5550
+$Comp
+L power:GND #PWR?
+U 1 1 6103CB15
+P 10850 5550
+AR Path="/6097FD06/6103CB15" Ref="#PWR?"  Part="1" 
+AR Path="/609BF883/6103CB15" Ref="#PWR0155"  Part="1" 
+F 0 "#PWR0155" H 10850 5300 50  0001 C CNN
+F 1 "GND" H 10855 5377 50  0000 C CNN
+F 2 "" H 10850 5550 50  0001 C CNN
+F 3 "" H 10850 5550 50  0001 C CNN
+	1    10850 5550
+	1    0    0    -1  
+$EndComp
+Connection ~ 10850 5550
+Wire Wire Line
+	10850 5550 12850 5550
+Wire Wire Line
+	9900 8250 10800 8250
+$Comp
+L power:GND #PWR?
+U 1 1 6107342D
+P 10800 8250
+AR Path="/6097FD06/6107342D" Ref="#PWR?"  Part="1" 
+AR Path="/609BF883/6107342D" Ref="#PWR0156"  Part="1" 
+F 0 "#PWR0156" H 10800 8000 50  0001 C CNN
+F 1 "GND" H 10805 8077 50  0000 C CNN
+F 2 "" H 10800 8250 50  0001 C CNN
+F 3 "" H 10800 8250 50  0001 C CNN
+	1    10800 8250
+	1    0    0    -1  
+$EndComp
+Connection ~ 10800 8250
+Wire Wire Line
+	10800 8250 12850 8250
+Wire Wire Line
+	9900 10850 10850 10850
+$Comp
+L power:GND #PWR?
+U 1 1 6108F940
+P 10850 10850
+AR Path="/6097FD06/6108F940" Ref="#PWR?"  Part="1" 
+AR Path="/609BF883/6108F940" Ref="#PWR0157"  Part="1" 
+F 0 "#PWR0157" H 10850 10600 50  0001 C CNN
+F 1 "GND" H 10855 10677 50  0000 C CNN
+F 2 "" H 10850 10850 50  0001 C CNN
+F 3 "" H 10850 10850 50  0001 C CNN
+	1    10850 10850
+	1    0    0    -1  
+$EndComp
+Connection ~ 10850 10850
+Wire Wire Line
+	10850 10850 12850 10850
+Wire Wire Line
+	16750 5550 17700 5550
+Wire Wire Line
+	16750 8250 17700 8250
+Wire Wire Line
+	16750 10850 17750 10850
+$Comp
+L power:GND #PWR?
+U 1 1 610AC7F3
+P 17750 10850
+AR Path="/6097FD06/610AC7F3" Ref="#PWR?"  Part="1" 
+AR Path="/609BF883/610AC7F3" Ref="#PWR0158"  Part="1" 
+F 0 "#PWR0158" H 17750 10600 50  0001 C CNN
+F 1 "GND" H 17755 10677 50  0000 C CNN
+F 2 "" H 17750 10850 50  0001 C CNN
+F 3 "" H 17750 10850 50  0001 C CNN
+	1    17750 10850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 610C74D8
+P 17700 8250
+AR Path="/6097FD06/610C74D8" Ref="#PWR?"  Part="1" 
+AR Path="/609BF883/610C74D8" Ref="#PWR0159"  Part="1" 
+F 0 "#PWR0159" H 17700 8000 50  0001 C CNN
+F 1 "GND" H 17705 8077 50  0000 C CNN
+F 2 "" H 17700 8250 50  0001 C CNN
+F 3 "" H 17700 8250 50  0001 C CNN
+	1    17700 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 610E21BD
+P 17700 5550
+AR Path="/6097FD06/610E21BD" Ref="#PWR?"  Part="1" 
+AR Path="/609BF883/610E21BD" Ref="#PWR0160"  Part="1" 
+F 0 "#PWR0160" H 17700 5300 50  0001 C CNN
+F 1 "GND" H 17705 5377 50  0000 C CNN
+F 2 "" H 17700 5550 50  0001 C CNN
+F 3 "" H 17700 5550 50  0001 C CNN
+	1    17700 5550
+	1    0    0    -1  
+$EndComp
+Connection ~ 17700 5550
+Wire Wire Line
+	17700 5550 19700 5550
+Connection ~ 17700 8250
+Wire Wire Line
+	17700 8250 19700 8250
+Connection ~ 17750 10850
+Wire Wire Line
+	17750 10850 19700 10850
+Wire Wire Line
+	21550 3200 22100 3200
+$EndSCHEMATC

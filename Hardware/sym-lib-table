@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name EPS_v3_Library)(type Legacy)(uri /Users/MohamedBenomar/Desktop/ETSETB/MEE/2B/IR/Hardware/EPS_v3_NanoSatLab/EPS_v3_Library/EPS_v3_Library.lib)(options "")(descr "Electrical Powe System (EPS) for NanoSat Lab"))
+)

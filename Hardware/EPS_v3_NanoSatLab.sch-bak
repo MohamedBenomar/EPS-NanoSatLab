@@ -1,0 +1,1021 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 6
+Title "Electrical Power System (EPS)"
+Date ""
+Rev "v3.0"
+Comp "NanoSat Lab"
+Comment1 "Mohamed Benomar"
+Comment2 "Introduction to Research (IR)"
+Comment3 "Q2-2020/2021"
+Comment4 ""
+$EndDescr
+$Sheet
+S 5050 3300 1600 1350
+U 60975E88
+F0 "EPS - MCU" 79
+F1 "EPS_v3_NanoSatLab_MCU.sch" 50
+F2 "VOUT_3V3_BAT" O R 6650 4150 50 
+F3 "SW_12V_BAT_uC" I R 6650 3650 50 
+F4 "SW_5V_BAT_uC" I R 6650 3750 50 
+F5 "SW_12V_SC_uC" I R 6650 3950 50 
+F6 "SW_3V3_BAT_uC" I R 6650 3850 50 
+F7 "BAT_CHG_STAT0" O R 6650 4350 50 
+F8 "BAT_CHG_STAT1" O R 6650 4450 50 
+F9 "BAT_CHG_ISMON" O R 6650 4550 50 
+F10 "PGOOD_SC" O R 6650 3400 50 
+F11 "*PFO_SC" O R 6650 3500 50 
+F12 "SWDIO" O L 5050 3400 50 
+F13 "SWCLK" O L 5050 3500 50 
+F14 "SPI1_NSS" O L 5050 3650 50 
+F15 "SPI1_SCK" O L 5050 3750 50 
+F16 "SPI1_MISO" O L 5050 3850 50 
+F17 "SPI1_MOSI" O L 5050 3950 50 
+F18 "LPUART1_RX" O L 5050 4100 50 
+F19 "LPUART1_TX" O L 5050 4200 50 
+F20 "I2C2_SCL" O L 5050 4350 50 
+F21 "I2C2_SDA" O L 5050 4450 50 
+F22 "NRST_MCU" O L 5050 4600 50 
+$EndSheet
+$Sheet
+S 8100 3300 1600 1350
+U 6097FD06
+F0 "EPS - Converters" 79
+F1 "EPS_v3_NanoSatLab_Converters.sch" 50
+F2 "SW_12V_BAT_uC" O L 8100 3650 50 
+F3 "SW_3V3_BAT_uC" O L 8100 3850 50 
+F4 "SW_5V_BAT_uC" O L 8100 3750 50 
+F5 "SW_12V_SC_uC" O L 8100 3950 50 
+F6 "VOUT_3V3_BAT" O L 8100 4350 50 
+F7 "VOUT_5V_BAT" O L 8100 4250 50 
+F8 "VOUT_12V_SC" O L 8100 4450 50 
+F9 "VOUT_12V_BAT" O L 8100 4150 50 
+F10 "V_BAT" O R 9700 4400 50 
+F11 "SC_TOP" O R 9700 3550 50 
+F12 "PV_BLOCKS" O L 8100 4550 50 
+$EndSheet
+Text Notes 3450 1100 0    256  ~ 51
+Electrical Power System (EPS) SuperCapacitors v3.0
+$Sheet
+S 10700 3300 1600 1350
+U 6098AAA2
+F0 "EPS - SuperCapacitors" 79
+F1 "EPS_v3_NanoSatLab_SC.sch" 50
+F2 "SC_TOP" O R 12300 3850 50 
+F3 "SC_MID" O R 12300 3950 50 
+F4 "PGOOD_SC" O L 10700 3450 50 
+F5 "*PFO_SC" O L 10700 3550 50 
+F6 "PV_BLOCKS" O L 10700 3950 50 
+$EndSheet
+$Sheet
+S 10700 4950 1600 1350
+U 6098AAA6
+F0 "EPS - Batteries" 79
+F1 "EPS_v3_NanoSatLab_BAT.sch" 50
+F2 "BAT_CHG_STAT0" O L 10700 5800 50 
+F3 "BAT_CHG_STAT1" O L 10700 5900 50 
+F4 "BAT_CHG_ISMON" O L 10700 6000 50 
+F5 "V_BAT" O R 12300 5600 50 
+F6 "PV_BLOCKS" O L 10700 5600 50 
+$EndSheet
+Wire Wire Line
+	10400 3950 10400 5600
+Wire Wire Line
+	10400 3950 10700 3950
+Wire Wire Line
+	10400 5600 10700 5600
+Wire Wire Line
+	10350 3100 10350 3550
+Wire Wire Line
+	10350 3550 10700 3550
+Wire Wire Line
+	10700 3450 10450 3450
+Wire Wire Line
+	10450 3450 10450 2950
+Text Label 12800 3850 0    50   ~ 0
+SC_TOP
+Text Label 12800 3950 0    50   ~ 0
+SC_MID
+Wire Notes Line
+	12500 3650 13900 3650
+Wire Notes Line
+	13900 4350 12500 4350
+Wire Wire Line
+	12300 3950 13250 3950
+$Comp
+L Connector:Conn_01x03_Female J112
+U 1 1 6123E3EA
+P 13450 3950
+F 0 "J112" H 13478 3976 50  0000 L CNN
+F 1 "502382-0370" H 13478 3885 50  0000 L CNN
+F 2 "EPS_v3_Library:MOLEX_502382-0370" H 13450 3950 50  0001 C CNN
+F 3 "~" H 13450 3950 50  0001 C CNN
+F 4 "502494-0370" H 13450 3950 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "MOLEX" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "SC_CONN" H 0   0   50  0001 C CNN "Description"
+F 11 "- - -" H 13450 3950 50  0001 C CNN "LCSC Part #"
+	1    13450 3950
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	13900 3650 13900 4350
+Wire Notes Line
+	12500 3650 12500 4350
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 612407A0
+P 13400 5700
+AR Path="/6097FD06/612407A0" Ref="J?"  Part="1" 
+AR Path="/612407A0" Ref="J111"  Part="1" 
+F 0 "J111" H 13294 5375 50  0000 C CNN
+F 1 "502382-0370" H 13294 5466 50  0000 C CNN
+F 2 "EPS_v3_Library:MOLEX_502382-0370" H 13400 5700 50  0001 C CNN
+F 3 "~" H 13400 5700 50  0001 C CNN
+F 4 "502382-0370" H 13400 5700 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "MOLEX" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "BAT_CONN" H 0   0   50  0001 C CNN "Description"
+F 11 "- - -" H 13400 5700 50  0001 C CNN "LCSC Part #"
+	1    13400 5700
+	1    0    0    1   
+$EndComp
+Wire Notes Line
+	12900 5250 13650 5250
+Wire Notes Line
+	13650 5250 13650 6100
+Wire Notes Line
+	12900 6100 12900 5250
+Wire Notes Line
+	12900 6100 13650 6100
+Wire Wire Line
+	10000 3550 10000 2650
+Wire Wire Line
+	12600 2650 12600 3850
+$Comp
+L EPS_v3_Library:PC104 J110
+U 1 1 6095C9D4
+P 6300 8650
+F 0 "J110" H 6350 10117 50  0000 C CNN
+F 1 "PC104" H 6350 10026 50  0000 C CNN
+F 2 "EPS_v3_Library:PC104" H 5900 10000 50  0001 C CNN
+F 3 "" H 5900 10000 50  0001 C CNN
+F 4 "- - -" H -900 -50 50  0001 C CNN "LCSC Part #"
+F 5 "– – –" H -900 -50 50  0001 C CNN "Order Code"
+F 6 "– – –" H -900 -50 50  0001 C CNN "Package"
+F 7 "" H 6300 8650 50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "PinHeaders" H 0   0   50  0001 C CNN "Description"
+	1    6300 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L EPS_v3_Library:PC104 J110
+U 2 1 6095CA69
+P 9100 8700
+F 0 "J110" H 9150 10167 50  0000 C CNN
+F 1 "PC104" H 9150 10076 50  0000 C CNN
+F 2 "EPS_v3_Library:PC104" H 8700 10050 50  0001 C CNN
+F 3 "" H 8700 10050 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "– – –" H 0   0   50  0001 C CNN "Order Code"
+F 6 "– – –" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 9100 8700 50  0001 C CNN "LCSC BOM"
+F 10 "PinHeaders" H 0   0   50  0001 C CNN "Description"
+F 11 "- - -" H 9100 8700 50  0001 C CNN "LCSC Part #"
+	2    9100 8700
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 2800 4950 1600 1350
+U 609BF883
+F0 "EPS – MPPT" 79
+F1 "EPS_v3_NanoSatLab_MPPT.sch" 50
+F2 "PV_Array_X_1" I L 2800 5200 50 
+F3 "PV_Array_Y_1" I L 2800 5300 50 
+F4 "PV_Array_Z_1" I L 2800 5400 50 
+F5 "PV_Array_X_2" I L 2800 5500 50 
+F6 "PV_Array_Y_2" I L 2800 5600 50 
+F7 "PV_Array_Z_2" I L 2800 5700 50 
+F8 "PV_Array_Z_3" I L 2800 6000 50 
+F9 "PV_Array_Y_3" I L 2800 5900 50 
+F10 "PV_Array_X_3" I L 2800 5800 50 
+F11 "PV_BLOCKS" O R 4400 5600 50 
+$EndSheet
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 63ACBF8B
+P 1700 3550
+AR Path="/609F59B2/63ACBF8B" Ref="J?"  Part="1" 
+AR Path="/609BF883/63ACBF8B" Ref="J?"  Part="1" 
+AR Path="/63ACBF8B" Ref="J101"  Part="1" 
+F 0 "J101" H 1727 3576 50  0000 L CNN
+F 1 "502382-0370" H 1727 3485 50  0000 L CNN
+F 2 "EPS_v3_Library:MOLEX_502382-0370" H 1700 3550 50  0001 C CNN
+F 3 "~" H 1700 3550 50  0001 C CNN
+F 4 "502382-0370" H 1700 3550 50  0001 C CNN "Order Code"
+F 5 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 6 "MOLEX" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "X_1" H 0   0   50  0001 C CNN "Description"
+F 11 "- - -" H 1700 3550 50  0001 C CNN "LCSC Part #"
+	1    1700 3550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 63ACBF99
+P 1700 4100
+AR Path="/609F59B2/63ACBF99" Ref="J?"  Part="1" 
+AR Path="/609BF883/63ACBF99" Ref="J?"  Part="1" 
+AR Path="/63ACBF99" Ref="J102"  Part="1" 
+F 0 "J102" H 1727 4126 50  0000 L CNN
+F 1 "502382-0370" H 1727 4035 50  0000 L CNN
+F 2 "EPS_v3_Library:MOLEX_502382-0370" H 1700 4100 50  0001 C CNN
+F 3 "~" H 1700 4100 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "502382-0370" H 0   0   50  0001 C CNN "Order Code"
+F 6 "MOLEX" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "Y_1" H 0   0   50  0001 C CNN "Description"
+F 11 "- - -" H 1700 4100 50  0001 C CNN "LCSC Part #"
+	1    1700 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 63ACBFA7
+P 1700 4600
+AR Path="/609F59B2/63ACBFA7" Ref="J?"  Part="1" 
+AR Path="/609BF883/63ACBFA7" Ref="J?"  Part="1" 
+AR Path="/63ACBFA7" Ref="J103"  Part="1" 
+F 0 "J103" H 1727 4626 50  0000 L CNN
+F 1 "502382-0370" H 1727 4535 50  0000 L CNN
+F 2 "EPS_v3_Library:MOLEX_502382-0370" H 1700 4600 50  0001 C CNN
+F 3 "~" H 1700 4600 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "502382-0370" H 0   0   50  0001 C CNN "Order Code"
+F 6 "MOLEX" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "Z_1" H 0   0   50  0001 C CNN "Description"
+F 11 "- - -" H 1700 4600 50  0001 C CNN "LCSC Part #"
+	1    1700 4600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 63ACE3EC
+P 1700 5100
+AR Path="/609F59B2/63ACE3EC" Ref="J?"  Part="1" 
+AR Path="/609BF883/63ACE3EC" Ref="J?"  Part="1" 
+AR Path="/63ACE3EC" Ref="J104"  Part="1" 
+F 0 "J104" H 1727 5126 50  0000 L CNN
+F 1 "502382-0370" H 1727 5035 50  0000 L CNN
+F 2 "EPS_v3_Library:MOLEX_502382-0370" H 1700 5100 50  0001 C CNN
+F 3 "~" H 1700 5100 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "502382-0370" H 0   0   50  0001 C CNN "Order Code"
+F 6 "MOLEX" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "X_2" H 0   0   50  0001 C CNN "Description"
+F 11 "- - -" H 1700 5100 50  0001 C CNN "LCSC Part #"
+	1    1700 5100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 63ACE3F9
+P 1700 5650
+AR Path="/609F59B2/63ACE3F9" Ref="J?"  Part="1" 
+AR Path="/609BF883/63ACE3F9" Ref="J?"  Part="1" 
+AR Path="/63ACE3F9" Ref="J105"  Part="1" 
+F 0 "J105" H 1727 5676 50  0000 L CNN
+F 1 "502382-0370" H 1727 5585 50  0000 L CNN
+F 2 "EPS_v3_Library:MOLEX_502382-0370" H 1700 5650 50  0001 C CNN
+F 3 "~" H 1700 5650 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "502382-0370" H 0   0   50  0001 C CNN "Order Code"
+F 6 "MOLEX" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "Y_2" H 0   0   50  0001 C CNN "Description"
+F 11 "- - -" H 1700 5650 50  0001 C CNN "LCSC Part #"
+	1    1700 5650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 63ACE406
+P 1700 6150
+AR Path="/609F59B2/63ACE406" Ref="J?"  Part="1" 
+AR Path="/609BF883/63ACE406" Ref="J?"  Part="1" 
+AR Path="/63ACE406" Ref="J106"  Part="1" 
+F 0 "J106" H 1727 6176 50  0000 L CNN
+F 1 "502382-0370" H 1727 6085 50  0000 L CNN
+F 2 "EPS_v3_Library:MOLEX_502382-0370" H 1700 6150 50  0001 C CNN
+F 3 "~" H 1700 6150 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "502382-0370" H 0   0   50  0001 C CNN "Order Code"
+F 6 "MOLEX" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "Z_2" H 0   0   50  0001 C CNN "Description"
+F 11 "- - -" H 1700 6150 50  0001 C CNN "LCSC Part #"
+	1    1700 6150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 63ACEEAE
+P 1700 6650
+AR Path="/609F59B2/63ACEEAE" Ref="J?"  Part="1" 
+AR Path="/609BF883/63ACEEAE" Ref="J?"  Part="1" 
+AR Path="/63ACEEAE" Ref="J107"  Part="1" 
+F 0 "J107" H 1727 6676 50  0000 L CNN
+F 1 "502382-0370" H 1727 6585 50  0000 L CNN
+F 2 "EPS_v3_Library:MOLEX_502382-0370" H 1700 6650 50  0001 C CNN
+F 3 "~" H 1700 6650 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "502382-0370" H 0   0   50  0001 C CNN "Order Code"
+F 6 "MOLEX" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "X_3" H 0   0   50  0001 C CNN "Description"
+F 11 "- - -" H 1700 6650 50  0001 C CNN "LCSC Part #"
+	1    1700 6650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 63ACEEBB
+P 1700 7200
+AR Path="/609F59B2/63ACEEBB" Ref="J?"  Part="1" 
+AR Path="/609BF883/63ACEEBB" Ref="J?"  Part="1" 
+AR Path="/63ACEEBB" Ref="J108"  Part="1" 
+F 0 "J108" H 1727 7226 50  0000 L CNN
+F 1 "502382-0370" H 1727 7135 50  0000 L CNN
+F 2 "EPS_v3_Library:MOLEX_502382-0370" H 1700 7200 50  0001 C CNN
+F 3 "~" H 1700 7200 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "502382-0370" H 0   0   50  0001 C CNN "Order Code"
+F 6 "MOLEX" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "Y_3" H 0   0   50  0001 C CNN "Description"
+F 11 "- - -" H 1700 7200 50  0001 C CNN "LCSC Part #"
+	1    1700 7200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 63ACEEC8
+P 1700 7700
+AR Path="/609F59B2/63ACEEC8" Ref="J?"  Part="1" 
+AR Path="/609BF883/63ACEEC8" Ref="J?"  Part="1" 
+AR Path="/63ACEEC8" Ref="J109"  Part="1" 
+F 0 "J109" H 1727 7726 50  0000 L CNN
+F 1 "502382-0370" H 1727 7635 50  0000 L CNN
+F 2 "EPS_v3_Library:MOLEX_502382-0370" H 1700 7700 50  0001 C CNN
+F 3 "~" H 1700 7700 50  0001 C CNN
+F 4 "" H 0   0   50  0001 C CNN "JLCPCB"
+F 5 "502382-0370" H 0   0   50  0001 C CNN "Order Code"
+F 6 "MOLEX" H 0   0   50  0001 C CNN "Package"
+F 7 "" H 0   0   50  0001 C CNN "Ref"
+F 8 "" H 0   0   50  0001 C CNN "LCSC Part"
+F 9 "0" H 0   0   50  0001 C CNN "LCSC BOM"
+F 10 "Z_3" H 0   0   50  0001 C CNN "Description"
+F 11 "- - -" H 1700 7700 50  0001 C CNN "LCSC Part #"
+	1    1700 7700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 5550 1950 5550
+Wire Wire Line
+	1950 5550 1950 5600
+Wire Wire Line
+	1950 5650 1900 5650
+Connection ~ 1950 5600
+Wire Wire Line
+	1950 5600 1950 5650
+Wire Wire Line
+	1950 5600 2800 5600
+Wire Wire Line
+	1900 6050 1950 6050
+Wire Wire Line
+	1950 6050 1950 6100
+Wire Wire Line
+	1950 6150 1900 6150
+Wire Wire Line
+	1900 6550 1950 6550
+Wire Wire Line
+	1950 6550 1950 6600
+Wire Wire Line
+	1950 6650 1900 6650
+Wire Wire Line
+	1900 7100 1950 7100
+Wire Wire Line
+	1950 7100 1950 7150
+Wire Wire Line
+	1950 7200 1900 7200
+Wire Wire Line
+	1900 7600 1950 7600
+Wire Wire Line
+	1950 7600 1950 7650
+Wire Wire Line
+	1950 7700 1900 7700
+Wire Wire Line
+	2800 6000 2600 6000
+Wire Wire Line
+	2600 6000 2600 7650
+Wire Wire Line
+	2600 7650 1950 7650
+Connection ~ 1950 7650
+Wire Wire Line
+	1950 7650 1950 7700
+Wire Wire Line
+	1950 7150 2500 7150
+Wire Wire Line
+	2500 7150 2500 5900
+Wire Wire Line
+	2500 5900 2800 5900
+Connection ~ 1950 7150
+Wire Wire Line
+	1950 7150 1950 7200
+Wire Wire Line
+	2800 5800 2400 5800
+Wire Wire Line
+	2400 5800 2400 6600
+Wire Wire Line
+	2400 6600 1950 6600
+Connection ~ 1950 6600
+Wire Wire Line
+	1950 6600 1950 6650
+Wire Wire Line
+	1950 6100 2300 6100
+Wire Wire Line
+	2300 6100 2300 5700
+Wire Wire Line
+	2300 5700 2800 5700
+Connection ~ 1950 6100
+Wire Wire Line
+	1950 6100 1950 6150
+Wire Wire Line
+	2800 5500 2300 5500
+Wire Wire Line
+	2300 5500 2300 5050
+Wire Wire Line
+	2300 5050 1950 5050
+Wire Wire Line
+	1950 5050 1950 5100
+Wire Wire Line
+	1900 5100 1950 5100
+Wire Wire Line
+	1900 5000 1950 5000
+Wire Wire Line
+	1950 5000 1950 5050
+Connection ~ 1950 5050
+Wire Wire Line
+	1900 4600 1950 4600
+Wire Wire Line
+	1950 4600 1950 4550
+Wire Wire Line
+	1950 4500 1900 4500
+Wire Wire Line
+	1950 4550 2400 4550
+Wire Wire Line
+	2400 4550 2400 5400
+Wire Wire Line
+	2400 5400 2800 5400
+Connection ~ 1950 4550
+Wire Wire Line
+	1950 4550 1950 4500
+Wire Wire Line
+	2800 5300 2500 5300
+Wire Wire Line
+	2500 4050 1950 4050
+Wire Wire Line
+	1950 4050 1950 4100
+Wire Wire Line
+	1950 4100 1900 4100
+Wire Wire Line
+	2500 4050 2500 5300
+Wire Wire Line
+	1900 4000 1950 4000
+Wire Wire Line
+	1950 4000 1950 4050
+Connection ~ 1950 4050
+Wire Wire Line
+	1900 3550 1950 3550
+Wire Wire Line
+	1950 3550 1950 3500
+Wire Wire Line
+	1950 3450 1900 3450
+Wire Wire Line
+	1950 3500 2600 3500
+Wire Wire Line
+	2600 3500 2600 5200
+Wire Wire Line
+	2600 5200 2800 5200
+Connection ~ 1950 3500
+Wire Wire Line
+	1950 3500 1950 3450
+Connection ~ 10400 5600
+Wire Wire Line
+	7350 4550 7350 5600
+Wire Wire Line
+	12300 5600 12600 5600
+Wire Wire Line
+	12600 5600 12600 4800
+Wire Wire Line
+	10000 4800 10000 4400
+Connection ~ 12600 5600
+Wire Wire Line
+	12600 5600 13200 5600
+Wire Wire Line
+	7200 3400 7200 2950
+Wire Wire Line
+	7350 3100 7350 3500
+Wire Wire Line
+	7150 4350 7150 5800
+Wire Wire Line
+	7000 4450 7000 5900
+Wire Wire Line
+	6650 3400 7200 3400
+Wire Wire Line
+	6650 3500 7350 3500
+Wire Wire Line
+	6650 4350 7150 4350
+Wire Wire Line
+	6650 4450 7000 4450
+Wire Wire Line
+	6650 4550 6850 4550
+Wire Wire Line
+	6850 4550 6850 6000
+Wire Wire Line
+	7300 4350 7300 4150
+Wire Wire Line
+	6650 4150 7300 4150
+Wire Wire Line
+	4400 3400 5050 3400
+Wire Wire Line
+	4400 3500 5050 3500
+Wire Wire Line
+	4400 3650 5050 3650
+Wire Wire Line
+	4400 3750 5050 3750
+Wire Wire Line
+	4400 3850 5050 3850
+Wire Wire Line
+	4400 3950 5050 3950
+Wire Wire Line
+	4400 4100 5050 4100
+Wire Wire Line
+	4400 4200 5050 4200
+Wire Wire Line
+	4400 4350 5050 4350
+Wire Wire Line
+	4400 4450 5050 4450
+Text Label 4400 3750 0    50   ~ 0
+SPI1_SCK
+Text Label 4400 3850 0    50   ~ 0
+SPI1_MISO
+Text Label 4400 3950 0    50   ~ 0
+SPI1_MOSI
+Text Label 4400 3650 0    50   ~ 0
+SPI1_NSS
+Text Label 4400 3400 0    50   ~ 0
+SWDIO
+Text Label 4400 3500 0    50   ~ 0
+SWCLK
+Text Label 4400 4100 0    50   ~ 0
+LPUART1_RX
+Text Label 4400 4200 0    50   ~ 0
+LPUART1_TX
+Text Label 4400 4350 0    50   ~ 0
+I2C2_SCL
+Text Label 4400 4450 0    50   ~ 0
+I2C2_SDA
+Wire Wire Line
+	5100 8350 5750 8350
+Wire Wire Line
+	5100 8450 5750 8450
+Wire Wire Line
+	5100 8650 5750 8650
+Wire Wire Line
+	5100 8750 5750 8750
+Wire Wire Line
+	5100 8850 5750 8850
+Wire Wire Line
+	5100 8950 5750 8950
+Wire Wire Line
+	7600 8550 6950 8550
+Wire Wire Line
+	7600 8650 6950 8650
+Wire Wire Line
+	7600 8850 6950 8850
+Wire Wire Line
+	7600 8950 6950 8950
+Text Label 5100 8750 0    50   ~ 0
+SPI1_SCK
+Text Label 5100 8850 0    50   ~ 0
+SPI1_MISO
+Text Label 5100 8950 0    50   ~ 0
+SPI1_MOSI
+Text Label 5100 8650 0    50   ~ 0
+SPI1_NSS
+Text Label 5100 8350 0    50   ~ 0
+SWDIO
+Text Label 5100 8450 0    50   ~ 0
+SWCLK
+Text Label 7600 8550 2    50   ~ 0
+LPUART1_RX
+Text Label 7600 8650 2    50   ~ 0
+LPUART1_TX
+Text Label 7600 8850 2    50   ~ 0
+I2C2_SCL
+Text Label 7600 8950 2    50   ~ 0
+I2C2_SDA
+Wire Wire Line
+	7350 5600 4400 5600
+Wire Wire Line
+	6650 3650 8100 3650
+Wire Wire Line
+	6650 3750 8100 3750
+Wire Wire Line
+	6650 3850 8100 3850
+Wire Wire Line
+	6650 3950 8100 3950
+Wire Wire Line
+	7300 4350 8100 4350
+Wire Wire Line
+	7500 4250 8100 4250
+Wire Wire Line
+	8100 4150 7500 4150
+Wire Wire Line
+	7350 4550 8100 4550
+Wire Wire Line
+	8100 4450 7500 4450
+Text Label 7500 4150 0    50   ~ 0
+12V_BAT
+Text Label 7500 4250 0    50   ~ 0
+5V_BAT
+Text Label 7500 4450 0    50   ~ 0
+12V_SC
+Text Label 7500 4350 0    50   ~ 0
+3V3_BAT
+Wire Wire Line
+	5150 9450 5750 9450
+Wire Wire Line
+	5750 9350 5150 9350
+Wire Wire Line
+	5750 9650 5150 9650
+Text Label 5150 9350 0    50   ~ 0
+12V_BAT
+Text Label 5150 9450 0    50   ~ 0
+5V_BAT
+Text Label 5150 9650 0    50   ~ 0
+12V_SC
+Text Label 5150 9550 0    50   ~ 0
+3V3_BAT
+Wire Wire Line
+	5150 9550 5750 9550
+Text Label 5050 5600 0    50   ~ 0
+PV_BLOCKS
+Wire Wire Line
+	5750 7950 5150 7950
+Text Label 5150 7950 0    50   ~ 0
+PV_BLOCKS
+NoConn ~ 5750 7850
+NoConn ~ 6950 9950
+NoConn ~ 6950 9850
+NoConn ~ 6950 9750
+NoConn ~ 6950 9650
+NoConn ~ 6950 9550
+NoConn ~ 6950 9450
+NoConn ~ 6950 9350
+NoConn ~ 6950 9250
+NoConn ~ 6950 9150
+NoConn ~ 6950 9050
+NoConn ~ 6950 8750
+NoConn ~ 6950 8450
+NoConn ~ 6950 8350
+NoConn ~ 6950 8250
+NoConn ~ 6950 8150
+NoConn ~ 6950 8050
+NoConn ~ 6950 7950
+NoConn ~ 6950 7850
+NoConn ~ 6950 7750
+NoConn ~ 6950 7650
+NoConn ~ 6950 7550
+NoConn ~ 6950 7450
+NoConn ~ 8550 10000
+NoConn ~ 8550 9900
+NoConn ~ 8550 9800
+NoConn ~ 8550 9700
+NoConn ~ 8550 9600
+NoConn ~ 8550 9500
+NoConn ~ 8550 9400
+NoConn ~ 8550 9300
+NoConn ~ 8550 9200
+NoConn ~ 8550 9100
+NoConn ~ 8550 9000
+NoConn ~ 8550 8900
+NoConn ~ 8550 8800
+NoConn ~ 8550 8700
+NoConn ~ 8550 8600
+NoConn ~ 8550 8500
+NoConn ~ 8550 8400
+NoConn ~ 8550 8300
+NoConn ~ 8550 8200
+NoConn ~ 8550 8100
+NoConn ~ 8550 8000
+NoConn ~ 8550 7900
+NoConn ~ 8550 7800
+NoConn ~ 8550 7700
+NoConn ~ 8550 7600
+NoConn ~ 8550 7500
+NoConn ~ 9750 10000
+NoConn ~ 9750 9900
+NoConn ~ 9750 9800
+NoConn ~ 9750 9700
+NoConn ~ 9750 9600
+NoConn ~ 9750 9500
+NoConn ~ 9750 9400
+NoConn ~ 9750 9300
+NoConn ~ 9750 9200
+NoConn ~ 9750 9100
+NoConn ~ 9750 9000
+NoConn ~ 9750 8900
+NoConn ~ 9750 8800
+NoConn ~ 9750 8700
+NoConn ~ 9750 8600
+NoConn ~ 9750 8500
+NoConn ~ 9750 8400
+NoConn ~ 9750 8300
+NoConn ~ 9750 8200
+NoConn ~ 9750 8100
+NoConn ~ 9750 8000
+NoConn ~ 9750 7900
+NoConn ~ 9750 7800
+NoConn ~ 9750 7700
+NoConn ~ 9750 7600
+NoConn ~ 9750 7500
+Wire Wire Line
+	1950 3700 1950 3650
+Wire Wire Line
+	1950 3650 1900 3650
+Wire Wire Line
+	1950 4750 1950 4700
+Wire Wire Line
+	1950 4700 1900 4700
+Wire Wire Line
+	1950 5250 1950 5200
+Wire Wire Line
+	1950 5200 1900 5200
+Wire Wire Line
+	1950 5800 1950 5750
+Wire Wire Line
+	1950 5750 1900 5750
+Wire Wire Line
+	1950 6300 1950 6250
+Wire Wire Line
+	1950 6250 1900 6250
+Wire Wire Line
+	1950 6800 1950 6750
+Wire Wire Line
+	1950 6750 1900 6750
+Wire Wire Line
+	1950 7350 1950 7300
+Wire Wire Line
+	1950 7300 1900 7300
+Wire Wire Line
+	1950 7850 1950 7800
+Wire Wire Line
+	1950 7800 1900 7800
+Wire Wire Line
+	1950 4250 1950 4200
+Wire Wire Line
+	1950 4200 1900 4200
+Wire Wire Line
+	13200 4100 13200 4050
+Wire Wire Line
+	13200 4050 13250 4050
+Wire Wire Line
+	13150 5750 13150 5700
+Wire Wire Line
+	13150 5700 13200 5700
+Wire Wire Line
+	4400 4600 5050 4600
+Text Label 4400 4600 0    50   ~ 0
+NRST_MCU
+Wire Wire Line
+	5100 8150 5750 8150
+Text Label 5100 8150 0    50   ~ 0
+NRST_MCU
+Wire Wire Line
+	7200 2950 10450 2950
+Wire Wire Line
+	7350 3100 10350 3100
+Wire Wire Line
+	7350 5600 10400 5600
+Connection ~ 7350 5600
+Wire Wire Line
+	7150 5800 10700 5800
+Wire Wire Line
+	7000 5900 10700 5900
+Wire Wire Line
+	6850 6000 10700 6000
+Wire Wire Line
+	9700 4400 10000 4400
+Wire Wire Line
+	9700 3550 10000 3550
+Wire Wire Line
+	10000 4800 12600 4800
+Connection ~ 12600 3850
+Wire Wire Line
+	12600 3850 13250 3850
+Wire Wire Line
+	12300 3850 12600 3850
+Wire Wire Line
+	10000 2650 12600 2650
+NoConn ~ 5750 7450
+NoConn ~ 5750 7550
+NoConn ~ 5750 7650
+NoConn ~ 5750 7750
+NoConn ~ 5750 8050
+NoConn ~ 5750 8250
+NoConn ~ 5750 8550
+NoConn ~ 5750 9050
+NoConn ~ 5750 9150
+NoConn ~ 5750 9250
+NoConn ~ 5750 9750
+NoConn ~ 5750 9850
+NoConn ~ 5750 9950
+$Comp
+L power:GND #PWR?
+U 1 1 60EBF108
+P 13200 4100
+AR Path="/6097FD06/60EBF108" Ref="#PWR?"  Part="1" 
+AR Path="/60EBF108" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 13200 3850 50  0001 C CNN
+F 1 "GND" H 13205 3927 50  0000 C CNN
+F 2 "" H 13200 4100 50  0001 C CNN
+F 3 "" H 13200 4100 50  0001 C CNN
+	1    13200 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60EC633D
+P 13150 5750
+AR Path="/6097FD06/60EC633D" Ref="#PWR?"  Part="1" 
+AR Path="/60EC633D" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 13150 5500 50  0001 C CNN
+F 1 "GND" H 13155 5577 50  0000 C CNN
+F 2 "" H 13150 5750 50  0001 C CNN
+F 3 "" H 13150 5750 50  0001 C CNN
+	1    13150 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60ECDBAC
+P 1950 3700
+AR Path="/6097FD06/60ECDBAC" Ref="#PWR?"  Part="1" 
+AR Path="/60ECDBAC" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 1950 3450 50  0001 C CNN
+F 1 "GND" H 1955 3527 50  0000 C CNN
+F 2 "" H 1950 3700 50  0001 C CNN
+F 3 "" H 1950 3700 50  0001 C CNN
+	1    1950 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60ED4DC7
+P 1950 4250
+AR Path="/6097FD06/60ED4DC7" Ref="#PWR?"  Part="1" 
+AR Path="/60ED4DC7" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H 1950 4000 50  0001 C CNN
+F 1 "GND" H 1955 4077 50  0000 C CNN
+F 2 "" H 1950 4250 50  0001 C CNN
+F 3 "" H 1950 4250 50  0001 C CNN
+	1    1950 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60EDBFC8
+P 1950 4750
+AR Path="/6097FD06/60EDBFC8" Ref="#PWR?"  Part="1" 
+AR Path="/60EDBFC8" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0105" H 1950 4500 50  0001 C CNN
+F 1 "GND" H 1955 4577 50  0000 C CNN
+F 2 "" H 1950 4750 50  0001 C CNN
+F 3 "" H 1950 4750 50  0001 C CNN
+	1    1950 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60EE31D6
+P 1950 5250
+AR Path="/6097FD06/60EE31D6" Ref="#PWR?"  Part="1" 
+AR Path="/60EE31D6" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0106" H 1950 5000 50  0001 C CNN
+F 1 "GND" H 1955 5077 50  0000 C CNN
+F 2 "" H 1950 5250 50  0001 C CNN
+F 3 "" H 1950 5250 50  0001 C CNN
+	1    1950 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60EEA425
+P 1950 5800
+AR Path="/6097FD06/60EEA425" Ref="#PWR?"  Part="1" 
+AR Path="/60EEA425" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 1950 5550 50  0001 C CNN
+F 1 "GND" H 1955 5627 50  0000 C CNN
+F 2 "" H 1950 5800 50  0001 C CNN
+F 3 "" H 1950 5800 50  0001 C CNN
+	1    1950 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60EF1667
+P 1950 6300
+AR Path="/6097FD06/60EF1667" Ref="#PWR?"  Part="1" 
+AR Path="/60EF1667" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 1950 6050 50  0001 C CNN
+F 1 "GND" H 1955 6127 50  0000 C CNN
+F 2 "" H 1950 6300 50  0001 C CNN
+F 3 "" H 1950 6300 50  0001 C CNN
+	1    1950 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60EF889C
+P 1950 6800
+AR Path="/6097FD06/60EF889C" Ref="#PWR?"  Part="1" 
+AR Path="/60EF889C" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 1950 6550 50  0001 C CNN
+F 1 "GND" H 1955 6627 50  0000 C CNN
+F 2 "" H 1950 6800 50  0001 C CNN
+F 3 "" H 1950 6800 50  0001 C CNN
+	1    1950 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60F06E16
+P 1950 7350
+AR Path="/6097FD06/60F06E16" Ref="#PWR?"  Part="1" 
+AR Path="/60F06E16" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 1950 7100 50  0001 C CNN
+F 1 "GND" H 1955 7177 50  0000 C CNN
+F 2 "" H 1950 7350 50  0001 C CNN
+F 3 "" H 1950 7350 50  0001 C CNN
+	1    1950 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60F0E0A7
+P 1950 7850
+AR Path="/6097FD06/60F0E0A7" Ref="#PWR?"  Part="1" 
+AR Path="/60F0E0A7" Ref="#PWR0111"  Part="1" 
+F 0 "#PWR0111" H 1950 7600 50  0001 C CNN
+F 1 "GND" H 1955 7677 50  0000 C CNN
+F 2 "" H 1950 7850 50  0001 C CNN
+F 3 "" H 1950 7850 50  0001 C CNN
+	1    1950 7850
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

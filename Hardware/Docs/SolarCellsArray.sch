@@ -1,0 +1,4139 @@
+EESchema Schematic File Version 4
+LIBS:EPS_v3_NanoSatLab-cache
+EELAYER 26 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 7 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 609F5AD7
+P 2000 3100
+F 0 "SC?" H 2108 3196 50  0000 L CNN
+F 1 "Solar_Cell" H 2108 3105 50  0000 L CNN
+F 2 "" V 2000 3160 50  0001 C CNN
+F 3 "~" V 2000 3160 50  0001 C CNN
+	1    2000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 609F5BA6
+P 2000 3400
+F 0 "SC?" H 2108 3496 50  0000 L CNN
+F 1 "Solar_Cell" H 2108 3405 50  0000 L CNN
+F 2 "" V 2000 3460 50  0001 C CNN
+F 3 "~" V 2000 3460 50  0001 C CNN
+	1    2000 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 609F5D1B
+P 1750 3050
+F 0 "D?" V 1750 2972 50  0000 R CNN
+F 1 "D_Schottky" V 1795 3129 50  0001 L CNN
+F 2 "" H 1750 3050 50  0001 C CNN
+F 3 "~" H 1750 3050 50  0001 C CNN
+	1    1750 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 609F5F4C
+P 1750 3350
+F 0 "D?" V 1750 3272 50  0000 R CNN
+F 1 "D_Schottky" V 1795 3429 50  0001 L CNN
+F 2 "" H 1750 3350 50  0001 C CNN
+F 3 "~" H 1750 3350 50  0001 C CNN
+	1    1750 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 609F6965
+P 2000 2750
+F 0 "D?" H 2000 2626 50  0000 C CNN
+F 1 "D_Schottky" V 2045 2829 50  0001 L CNN
+F 2 "" H 2000 2750 50  0001 C CNN
+F 3 "~" H 2000 2750 50  0001 C CNN
+	1    2000 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 60A20F45
+P 5150 3500
+F 0 "J?" H 5177 3526 50  0000 L CNN
+F 1 "PV_Array_X_1" H 5177 3435 50  0000 L CNN
+F 2 "" H 5150 3500 50  0001 C CNN
+F 3 "~" H 5150 3500 50  0001 C CNN
+	1    5150 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 3200 2000 3200
+Connection ~ 1750 3200
+Connection ~ 2000 3200
+Wire Wire Line
+	1750 2900 2000 2900
+Connection ~ 2000 2900
+Wire Wire Line
+	1750 3500 2000 3500
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60AB490C
+P 3050 3100
+F 0 "SC?" H 3158 3196 50  0000 L CNN
+F 1 "Solar_Cell" H 3158 3105 50  0000 L CNN
+F 2 "" V 3050 3160 50  0001 C CNN
+F 3 "~" V 3050 3160 50  0001 C CNN
+	1    3050 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60AB4913
+P 3050 3400
+F 0 "SC?" H 3158 3496 50  0000 L CNN
+F 1 "Solar_Cell" H 3158 3405 50  0000 L CNN
+F 2 "" V 3050 3460 50  0001 C CNN
+F 3 "~" V 3050 3460 50  0001 C CNN
+	1    3050 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60AB491A
+P 2800 3050
+F 0 "D?" V 2800 2972 50  0000 R CNN
+F 1 "D_Schottky" V 2845 3129 50  0001 L CNN
+F 2 "" H 2800 3050 50  0001 C CNN
+F 3 "~" H 2800 3050 50  0001 C CNN
+	1    2800 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60AB4921
+P 2800 3350
+F 0 "D?" V 2800 3272 50  0000 R CNN
+F 1 "D_Schottky" V 2845 3429 50  0001 L CNN
+F 2 "" H 2800 3350 50  0001 C CNN
+F 3 "~" H 2800 3350 50  0001 C CNN
+	1    2800 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60AB4928
+P 3050 2750
+F 0 "D?" H 3050 2626 50  0000 C CNN
+F 1 "D_Schottky" V 3095 2829 50  0001 L CNN
+F 2 "" H 3050 2750 50  0001 C CNN
+F 3 "~" H 3050 2750 50  0001 C CNN
+	1    3050 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2800 3200 3050 3200
+Connection ~ 2800 3200
+Connection ~ 3050 3200
+Wire Wire Line
+	2800 2900 3050 2900
+Connection ~ 3050 2900
+Wire Wire Line
+	2800 3500 3050 3500
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60ABCC85
+P 4100 3100
+F 0 "SC?" H 4208 3196 50  0000 L CNN
+F 1 "Solar_Cell" H 4208 3105 50  0000 L CNN
+F 2 "" V 4100 3160 50  0001 C CNN
+F 3 "~" V 4100 3160 50  0001 C CNN
+	1    4100 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60ABCC8C
+P 4100 3400
+F 0 "SC?" H 4208 3496 50  0000 L CNN
+F 1 "Solar_Cell" H 4208 3405 50  0000 L CNN
+F 2 "" V 4100 3460 50  0001 C CNN
+F 3 "~" V 4100 3460 50  0001 C CNN
+	1    4100 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60ABCC93
+P 3850 3050
+F 0 "D?" V 3850 2972 50  0000 R CNN
+F 1 "D_Schottky" V 3895 3129 50  0001 L CNN
+F 2 "" H 3850 3050 50  0001 C CNN
+F 3 "~" H 3850 3050 50  0001 C CNN
+	1    3850 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60ABCC9A
+P 3850 3350
+F 0 "D?" V 3850 3272 50  0000 R CNN
+F 1 "D_Schottky" V 3895 3429 50  0001 L CNN
+F 2 "" H 3850 3350 50  0001 C CNN
+F 3 "~" H 3850 3350 50  0001 C CNN
+	1    3850 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60ABCCA1
+P 4100 2750
+F 0 "D?" H 4100 2626 50  0000 C CNN
+F 1 "D_Schottky" V 4145 2829 50  0001 L CNN
+F 2 "" H 4100 2750 50  0001 C CNN
+F 3 "~" H 4100 2750 50  0001 C CNN
+	1    4100 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 3200 4100 3200
+Connection ~ 3850 3200
+Connection ~ 4100 3200
+Wire Wire Line
+	3850 2900 4100 2900
+Connection ~ 4100 2900
+Wire Wire Line
+	3850 3500 4100 3500
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60AEBB0D
+P 2000 4100
+F 0 "SC?" H 2108 4196 50  0000 L CNN
+F 1 "Solar_Cell" H 2108 4105 50  0000 L CNN
+F 2 "" V 2000 4160 50  0001 C CNN
+F 3 "~" V 2000 4160 50  0001 C CNN
+	1    2000 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60AEBB14
+P 2000 4400
+F 0 "SC?" H 2108 4496 50  0000 L CNN
+F 1 "Solar_Cell" H 2108 4405 50  0000 L CNN
+F 2 "" V 2000 4460 50  0001 C CNN
+F 3 "~" V 2000 4460 50  0001 C CNN
+	1    2000 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60AEBB1B
+P 1750 4050
+F 0 "D?" V 1750 3972 50  0000 R CNN
+F 1 "D_Schottky" V 1795 4129 50  0001 L CNN
+F 2 "" H 1750 4050 50  0001 C CNN
+F 3 "~" H 1750 4050 50  0001 C CNN
+	1    1750 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60AEBB22
+P 1750 4350
+F 0 "D?" V 1750 4272 50  0000 R CNN
+F 1 "D_Schottky" V 1795 4429 50  0001 L CNN
+F 2 "" H 1750 4350 50  0001 C CNN
+F 3 "~" H 1750 4350 50  0001 C CNN
+	1    1750 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60AEBB29
+P 2000 3750
+F 0 "D?" H 2000 3626 50  0000 C CNN
+F 1 "D_Schottky" V 2045 3829 50  0001 L CNN
+F 2 "" H 2000 3750 50  0001 C CNN
+F 3 "~" H 2000 3750 50  0001 C CNN
+	1    2000 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 4200 2000 4200
+Connection ~ 1750 4200
+Connection ~ 2000 4200
+Wire Wire Line
+	1750 3900 2000 3900
+Connection ~ 2000 3900
+Wire Wire Line
+	1750 4500 2000 4500
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60AEBB38
+P 3050 4100
+F 0 "SC?" H 3158 4196 50  0000 L CNN
+F 1 "Solar_Cell" H 3158 4105 50  0000 L CNN
+F 2 "" V 3050 4160 50  0001 C CNN
+F 3 "~" V 3050 4160 50  0001 C CNN
+	1    3050 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60AEBB3F
+P 3050 4400
+F 0 "SC?" H 3158 4496 50  0000 L CNN
+F 1 "Solar_Cell" H 3158 4405 50  0000 L CNN
+F 2 "" V 3050 4460 50  0001 C CNN
+F 3 "~" V 3050 4460 50  0001 C CNN
+	1    3050 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60AEBB46
+P 2800 4050
+F 0 "D?" V 2800 3972 50  0000 R CNN
+F 1 "D_Schottky" V 2845 4129 50  0001 L CNN
+F 2 "" H 2800 4050 50  0001 C CNN
+F 3 "~" H 2800 4050 50  0001 C CNN
+	1    2800 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60AEBB4D
+P 2800 4350
+F 0 "D?" V 2800 4272 50  0000 R CNN
+F 1 "D_Schottky" V 2845 4429 50  0001 L CNN
+F 2 "" H 2800 4350 50  0001 C CNN
+F 3 "~" H 2800 4350 50  0001 C CNN
+	1    2800 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60AEBB54
+P 3050 3750
+F 0 "D?" H 3050 3626 50  0000 C CNN
+F 1 "D_Schottky" V 3095 3829 50  0001 L CNN
+F 2 "" H 3050 3750 50  0001 C CNN
+F 3 "~" H 3050 3750 50  0001 C CNN
+	1    3050 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2800 4200 3050 4200
+Connection ~ 2800 4200
+Connection ~ 3050 4200
+Wire Wire Line
+	2800 3900 3050 3900
+Connection ~ 3050 3900
+Wire Wire Line
+	2800 4500 3050 4500
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60AEBB61
+P 4100 4100
+F 0 "SC?" H 4208 4196 50  0000 L CNN
+F 1 "Solar_Cell" H 4208 4105 50  0000 L CNN
+F 2 "" V 4100 4160 50  0001 C CNN
+F 3 "~" V 4100 4160 50  0001 C CNN
+	1    4100 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60AEBB68
+P 4100 4400
+F 0 "SC?" H 4208 4496 50  0000 L CNN
+F 1 "Solar_Cell" H 4208 4405 50  0000 L CNN
+F 2 "" V 4100 4460 50  0001 C CNN
+F 3 "~" V 4100 4460 50  0001 C CNN
+	1    4100 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60AEBB6F
+P 3850 4050
+F 0 "D?" V 3850 3972 50  0000 R CNN
+F 1 "D_Schottky" V 3895 4129 50  0001 L CNN
+F 2 "" H 3850 4050 50  0001 C CNN
+F 3 "~" H 3850 4050 50  0001 C CNN
+	1    3850 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60AEBB76
+P 3850 4350
+F 0 "D?" V 3850 4272 50  0000 R CNN
+F 1 "D_Schottky" V 3895 4429 50  0001 L CNN
+F 2 "" H 3850 4350 50  0001 C CNN
+F 3 "~" H 3850 4350 50  0001 C CNN
+	1    3850 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60AEBB7D
+P 4100 3750
+F 0 "D?" H 4100 3626 50  0000 C CNN
+F 1 "D_Schottky" V 4145 3829 50  0001 L CNN
+F 2 "" H 4100 3750 50  0001 C CNN
+F 3 "~" H 4100 3750 50  0001 C CNN
+	1    4100 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 4200 4100 4200
+Connection ~ 3850 4200
+Connection ~ 4100 4200
+Wire Wire Line
+	3850 3900 4100 3900
+Connection ~ 4100 3900
+Wire Wire Line
+	3850 4500 4100 4500
+Wire Wire Line
+	4100 3600 3050 3600
+Connection ~ 4100 3600
+Wire Wire Line
+	2000 3600 3050 3600
+Connection ~ 3050 3600
+Wire Wire Line
+	4700 4500 4700 3500
+Connection ~ 4700 3500
+Wire Wire Line
+	2000 2600 3050 2600
+Connection ~ 3050 2600
+Wire Wire Line
+	3050 2600 4100 2600
+Wire Wire Line
+	4100 3600 4950 3600
+Wire Wire Line
+	2000 4500 2800 4500
+Connection ~ 2000 4500
+Connection ~ 2800 4500
+Connection ~ 3050 4500
+Wire Wire Line
+	3050 4500 3850 4500
+Connection ~ 3850 4500
+Connection ~ 4100 4500
+Wire Wire Line
+	4100 4500 4700 4500
+Wire Wire Line
+	2000 3500 2800 3500
+Wire Wire Line
+	4700 3500 4950 3500
+Connection ~ 2000 3500
+Connection ~ 2800 3500
+Connection ~ 3050 3500
+Wire Wire Line
+	3050 3500 3850 3500
+Connection ~ 3850 3500
+Connection ~ 4100 3500
+Wire Wire Line
+	4100 3500 4700 3500
+Wire Wire Line
+	4950 3400 4700 3400
+Wire Wire Line
+	4700 3400 4700 2600
+Wire Wire Line
+	4700 2600 4100 2600
+Connection ~ 4100 2600
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B448F9
+P 2000 5500
+F 0 "SC?" H 2108 5596 50  0000 L CNN
+F 1 "Solar_Cell" H 2108 5505 50  0000 L CNN
+F 2 "" V 2000 5560 50  0001 C CNN
+F 3 "~" V 2000 5560 50  0001 C CNN
+	1    2000 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B44900
+P 2000 5800
+F 0 "SC?" H 2108 5896 50  0000 L CNN
+F 1 "Solar_Cell" H 2108 5805 50  0000 L CNN
+F 2 "" V 2000 5860 50  0001 C CNN
+F 3 "~" V 2000 5860 50  0001 C CNN
+	1    2000 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B44907
+P 1750 5450
+F 0 "D?" V 1750 5372 50  0000 R CNN
+F 1 "D_Schottky" V 1795 5529 50  0001 L CNN
+F 2 "" H 1750 5450 50  0001 C CNN
+F 3 "~" H 1750 5450 50  0001 C CNN
+	1    1750 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B4490E
+P 1750 5750
+F 0 "D?" V 1750 5672 50  0000 R CNN
+F 1 "D_Schottky" V 1795 5829 50  0001 L CNN
+F 2 "" H 1750 5750 50  0001 C CNN
+F 3 "~" H 1750 5750 50  0001 C CNN
+	1    1750 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B44915
+P 2000 5150
+F 0 "D?" H 2000 5026 50  0000 C CNN
+F 1 "D_Schottky" V 2045 5229 50  0001 L CNN
+F 2 "" H 2000 5150 50  0001 C CNN
+F 3 "~" H 2000 5150 50  0001 C CNN
+	1    2000 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 60B4491C
+P 5150 5900
+F 0 "J?" H 5177 5926 50  0000 L CNN
+F 1 "PV_Array_X_2" H 5177 5835 50  0000 L CNN
+F 2 "" H 5150 5900 50  0001 C CNN
+F 3 "~" H 5150 5900 50  0001 C CNN
+	1    5150 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 5600 2000 5600
+Connection ~ 1750 5600
+Connection ~ 2000 5600
+Wire Wire Line
+	1750 5300 2000 5300
+Connection ~ 2000 5300
+Wire Wire Line
+	1750 5900 2000 5900
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B44929
+P 3050 5500
+F 0 "SC?" H 3158 5596 50  0000 L CNN
+F 1 "Solar_Cell" H 3158 5505 50  0000 L CNN
+F 2 "" V 3050 5560 50  0001 C CNN
+F 3 "~" V 3050 5560 50  0001 C CNN
+	1    3050 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B44930
+P 3050 5800
+F 0 "SC?" H 3158 5896 50  0000 L CNN
+F 1 "Solar_Cell" H 3158 5805 50  0000 L CNN
+F 2 "" V 3050 5860 50  0001 C CNN
+F 3 "~" V 3050 5860 50  0001 C CNN
+	1    3050 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B44937
+P 2800 5450
+F 0 "D?" V 2800 5372 50  0000 R CNN
+F 1 "D_Schottky" V 2845 5529 50  0001 L CNN
+F 2 "" H 2800 5450 50  0001 C CNN
+F 3 "~" H 2800 5450 50  0001 C CNN
+	1    2800 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B4493E
+P 2800 5750
+F 0 "D?" V 2800 5672 50  0000 R CNN
+F 1 "D_Schottky" V 2845 5829 50  0001 L CNN
+F 2 "" H 2800 5750 50  0001 C CNN
+F 3 "~" H 2800 5750 50  0001 C CNN
+	1    2800 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B44945
+P 3050 5150
+F 0 "D?" H 3050 5026 50  0000 C CNN
+F 1 "D_Schottky" V 3095 5229 50  0001 L CNN
+F 2 "" H 3050 5150 50  0001 C CNN
+F 3 "~" H 3050 5150 50  0001 C CNN
+	1    3050 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2800 5600 3050 5600
+Connection ~ 2800 5600
+Connection ~ 3050 5600
+Wire Wire Line
+	2800 5300 3050 5300
+Connection ~ 3050 5300
+Wire Wire Line
+	2800 5900 3050 5900
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B44952
+P 4100 5500
+F 0 "SC?" H 4208 5596 50  0000 L CNN
+F 1 "Solar_Cell" H 4208 5505 50  0000 L CNN
+F 2 "" V 4100 5560 50  0001 C CNN
+F 3 "~" V 4100 5560 50  0001 C CNN
+	1    4100 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B44959
+P 4100 5800
+F 0 "SC?" H 4208 5896 50  0000 L CNN
+F 1 "Solar_Cell" H 4208 5805 50  0000 L CNN
+F 2 "" V 4100 5860 50  0001 C CNN
+F 3 "~" V 4100 5860 50  0001 C CNN
+	1    4100 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B44960
+P 3850 5450
+F 0 "D?" V 3850 5372 50  0000 R CNN
+F 1 "D_Schottky" V 3895 5529 50  0001 L CNN
+F 2 "" H 3850 5450 50  0001 C CNN
+F 3 "~" H 3850 5450 50  0001 C CNN
+	1    3850 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B44967
+P 3850 5750
+F 0 "D?" V 3850 5672 50  0000 R CNN
+F 1 "D_Schottky" V 3895 5829 50  0001 L CNN
+F 2 "" H 3850 5750 50  0001 C CNN
+F 3 "~" H 3850 5750 50  0001 C CNN
+	1    3850 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B4496E
+P 4100 5150
+F 0 "D?" H 4100 5026 50  0000 C CNN
+F 1 "D_Schottky" V 4145 5229 50  0001 L CNN
+F 2 "" H 4100 5150 50  0001 C CNN
+F 3 "~" H 4100 5150 50  0001 C CNN
+	1    4100 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 5600 4100 5600
+Connection ~ 3850 5600
+Connection ~ 4100 5600
+Wire Wire Line
+	3850 5300 4100 5300
+Connection ~ 4100 5300
+Wire Wire Line
+	3850 5900 4100 5900
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B4497B
+P 2000 6500
+F 0 "SC?" H 2108 6596 50  0000 L CNN
+F 1 "Solar_Cell" H 2108 6505 50  0000 L CNN
+F 2 "" V 2000 6560 50  0001 C CNN
+F 3 "~" V 2000 6560 50  0001 C CNN
+	1    2000 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B44982
+P 2000 6800
+F 0 "SC?" H 2108 6896 50  0000 L CNN
+F 1 "Solar_Cell" H 2108 6805 50  0000 L CNN
+F 2 "" V 2000 6860 50  0001 C CNN
+F 3 "~" V 2000 6860 50  0001 C CNN
+	1    2000 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B44989
+P 1750 6450
+F 0 "D?" V 1750 6372 50  0000 R CNN
+F 1 "D_Schottky" V 1795 6529 50  0001 L CNN
+F 2 "" H 1750 6450 50  0001 C CNN
+F 3 "~" H 1750 6450 50  0001 C CNN
+	1    1750 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B44990
+P 1750 6750
+F 0 "D?" V 1750 6672 50  0000 R CNN
+F 1 "D_Schottky" V 1795 6829 50  0001 L CNN
+F 2 "" H 1750 6750 50  0001 C CNN
+F 3 "~" H 1750 6750 50  0001 C CNN
+	1    1750 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B44997
+P 2000 6150
+F 0 "D?" H 2000 6026 50  0000 C CNN
+F 1 "D_Schottky" V 2045 6229 50  0001 L CNN
+F 2 "" H 2000 6150 50  0001 C CNN
+F 3 "~" H 2000 6150 50  0001 C CNN
+	1    2000 6150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 6600 2000 6600
+Connection ~ 1750 6600
+Connection ~ 2000 6600
+Wire Wire Line
+	1750 6300 2000 6300
+Connection ~ 2000 6300
+Wire Wire Line
+	1750 6900 2000 6900
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B449A4
+P 3050 6500
+F 0 "SC?" H 3158 6596 50  0000 L CNN
+F 1 "Solar_Cell" H 3158 6505 50  0000 L CNN
+F 2 "" V 3050 6560 50  0001 C CNN
+F 3 "~" V 3050 6560 50  0001 C CNN
+	1    3050 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B449AB
+P 3050 6800
+F 0 "SC?" H 3158 6896 50  0000 L CNN
+F 1 "Solar_Cell" H 3158 6805 50  0000 L CNN
+F 2 "" V 3050 6860 50  0001 C CNN
+F 3 "~" V 3050 6860 50  0001 C CNN
+	1    3050 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B449B2
+P 2800 6450
+F 0 "D?" V 2800 6372 50  0000 R CNN
+F 1 "D_Schottky" V 2845 6529 50  0001 L CNN
+F 2 "" H 2800 6450 50  0001 C CNN
+F 3 "~" H 2800 6450 50  0001 C CNN
+	1    2800 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B449B9
+P 2800 6750
+F 0 "D?" V 2800 6672 50  0000 R CNN
+F 1 "D_Schottky" V 2845 6829 50  0001 L CNN
+F 2 "" H 2800 6750 50  0001 C CNN
+F 3 "~" H 2800 6750 50  0001 C CNN
+	1    2800 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B449C0
+P 3050 6150
+F 0 "D?" H 3050 6026 50  0000 C CNN
+F 1 "D_Schottky" V 3095 6229 50  0001 L CNN
+F 2 "" H 3050 6150 50  0001 C CNN
+F 3 "~" H 3050 6150 50  0001 C CNN
+	1    3050 6150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2800 6600 3050 6600
+Connection ~ 2800 6600
+Connection ~ 3050 6600
+Wire Wire Line
+	2800 6300 3050 6300
+Connection ~ 3050 6300
+Wire Wire Line
+	2800 6900 3050 6900
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B449CD
+P 4100 6500
+F 0 "SC?" H 4208 6596 50  0000 L CNN
+F 1 "Solar_Cell" H 4208 6505 50  0000 L CNN
+F 2 "" V 4100 6560 50  0001 C CNN
+F 3 "~" V 4100 6560 50  0001 C CNN
+	1    4100 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B449D4
+P 4100 6800
+F 0 "SC?" H 4208 6896 50  0000 L CNN
+F 1 "Solar_Cell" H 4208 6805 50  0000 L CNN
+F 2 "" V 4100 6860 50  0001 C CNN
+F 3 "~" V 4100 6860 50  0001 C CNN
+	1    4100 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B449DB
+P 3850 6450
+F 0 "D?" V 3850 6372 50  0000 R CNN
+F 1 "D_Schottky" V 3895 6529 50  0001 L CNN
+F 2 "" H 3850 6450 50  0001 C CNN
+F 3 "~" H 3850 6450 50  0001 C CNN
+	1    3850 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B449E2
+P 3850 6750
+F 0 "D?" V 3850 6672 50  0000 R CNN
+F 1 "D_Schottky" V 3895 6829 50  0001 L CNN
+F 2 "" H 3850 6750 50  0001 C CNN
+F 3 "~" H 3850 6750 50  0001 C CNN
+	1    3850 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B449E9
+P 4100 6150
+F 0 "D?" H 4100 6026 50  0000 C CNN
+F 1 "D_Schottky" V 4145 6229 50  0001 L CNN
+F 2 "" H 4100 6150 50  0001 C CNN
+F 3 "~" H 4100 6150 50  0001 C CNN
+	1    4100 6150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 6600 4100 6600
+Connection ~ 3850 6600
+Connection ~ 4100 6600
+Wire Wire Line
+	3850 6300 4100 6300
+Connection ~ 4100 6300
+Wire Wire Line
+	3850 6900 4100 6900
+Wire Wire Line
+	4100 6000 3050 6000
+Connection ~ 4100 6000
+Wire Wire Line
+	2000 6000 3050 6000
+Connection ~ 3050 6000
+Wire Wire Line
+	4700 6900 4700 5900
+Connection ~ 4700 5900
+Wire Wire Line
+	2000 5000 3050 5000
+Connection ~ 3050 5000
+Wire Wire Line
+	3050 5000 4100 5000
+Wire Wire Line
+	4100 6000 4950 6000
+Wire Wire Line
+	2000 6900 2800 6900
+Connection ~ 2000 6900
+Connection ~ 2800 6900
+Connection ~ 3050 6900
+Wire Wire Line
+	3050 6900 3850 6900
+Connection ~ 3850 6900
+Connection ~ 4100 6900
+Wire Wire Line
+	4100 6900 4700 6900
+Wire Wire Line
+	2000 5900 2800 5900
+Wire Wire Line
+	4700 5900 4950 5900
+Connection ~ 2000 5900
+Connection ~ 2800 5900
+Connection ~ 3050 5900
+Wire Wire Line
+	3050 5900 3850 5900
+Connection ~ 3850 5900
+Connection ~ 4100 5900
+Wire Wire Line
+	4100 5900 4700 5900
+Wire Wire Line
+	4950 5800 4700 5800
+Wire Wire Line
+	4700 5800 4700 5000
+Wire Wire Line
+	4700 5000 4100 5000
+Connection ~ 4100 5000
+Wire Notes Line
+	1550 2550 4650 2550
+Wire Notes Line
+	4650 3550 1550 3550
+Wire Notes Line
+	1550 4550 4650 4550
+Wire Notes Line
+	1550 2550 1550 4550
+Wire Notes Line
+	4650 2550 4650 4550
+Text Notes 1250 3100 0    67   ~ 13
+X+_1
+Text Notes 1250 4100 0    67   ~ 13
+X-_1
+Wire Notes Line
+	1550 4950 4650 4950
+Wire Notes Line
+	4650 5950 1550 5950
+Wire Notes Line
+	1550 6950 4650 6950
+Wire Notes Line
+	1550 4950 1550 6950
+Text Notes 1250 5500 0    67   ~ 13
+X+_2
+Text Notes 1250 6500 0    67   ~ 13
+X-_2
+Wire Notes Line
+	4650 4950 4650 6950
+Text Notes 2700 2500 0    67   ~ 0
+V_PACK = 5.7V\nI_OUT = 1.5A
+Text Notes 2700 4900 0    67   ~ 0
+V_PACK = 4.8V\nI_OUT = 1.5A
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82BB5
+P 6950 3100
+F 0 "SC?" H 7058 3196 50  0000 L CNN
+F 1 "Solar_Cell" H 7058 3105 50  0000 L CNN
+F 2 "" V 6950 3160 50  0001 C CNN
+F 3 "~" V 6950 3160 50  0001 C CNN
+	1    6950 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82BBC
+P 6950 3400
+F 0 "SC?" H 7058 3496 50  0000 L CNN
+F 1 "Solar_Cell" H 7058 3405 50  0000 L CNN
+F 2 "" V 6950 3460 50  0001 C CNN
+F 3 "~" V 6950 3460 50  0001 C CNN
+	1    6950 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82BC3
+P 6700 3050
+F 0 "D?" V 6700 2972 50  0000 R CNN
+F 1 "D_Schottky" V 6745 3129 50  0001 L CNN
+F 2 "" H 6700 3050 50  0001 C CNN
+F 3 "~" H 6700 3050 50  0001 C CNN
+	1    6700 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82BCA
+P 6700 3350
+F 0 "D?" V 6700 3272 50  0000 R CNN
+F 1 "D_Schottky" V 6745 3429 50  0001 L CNN
+F 2 "" H 6700 3350 50  0001 C CNN
+F 3 "~" H 6700 3350 50  0001 C CNN
+	1    6700 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82BD1
+P 6950 2750
+F 0 "D?" H 6950 2626 50  0000 C CNN
+F 1 "D_Schottky" V 6995 2829 50  0001 L CNN
+F 2 "" H 6950 2750 50  0001 C CNN
+F 3 "~" H 6950 2750 50  0001 C CNN
+	1    6950 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 60B82BD8
+P 10100 3500
+F 0 "J?" H 10127 3526 50  0000 L CNN
+F 1 "PV_Array_Y_1" H 10127 3435 50  0000 L CNN
+F 2 "" H 10100 3500 50  0001 C CNN
+F 3 "~" H 10100 3500 50  0001 C CNN
+	1    10100 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3200 6950 3200
+Connection ~ 6700 3200
+Connection ~ 6950 3200
+Wire Wire Line
+	6700 2900 6950 2900
+Connection ~ 6950 2900
+Wire Wire Line
+	6700 3500 6950 3500
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82BE5
+P 8000 3100
+F 0 "SC?" H 8108 3196 50  0000 L CNN
+F 1 "Solar_Cell" H 8108 3105 50  0000 L CNN
+F 2 "" V 8000 3160 50  0001 C CNN
+F 3 "~" V 8000 3160 50  0001 C CNN
+	1    8000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82BEC
+P 8000 3400
+F 0 "SC?" H 8108 3496 50  0000 L CNN
+F 1 "Solar_Cell" H 8108 3405 50  0000 L CNN
+F 2 "" V 8000 3460 50  0001 C CNN
+F 3 "~" V 8000 3460 50  0001 C CNN
+	1    8000 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82BF3
+P 7750 3050
+F 0 "D?" V 7750 2972 50  0000 R CNN
+F 1 "D_Schottky" V 7795 3129 50  0001 L CNN
+F 2 "" H 7750 3050 50  0001 C CNN
+F 3 "~" H 7750 3050 50  0001 C CNN
+	1    7750 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82BFA
+P 7750 3350
+F 0 "D?" V 7750 3272 50  0000 R CNN
+F 1 "D_Schottky" V 7795 3429 50  0001 L CNN
+F 2 "" H 7750 3350 50  0001 C CNN
+F 3 "~" H 7750 3350 50  0001 C CNN
+	1    7750 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82C01
+P 8000 2750
+F 0 "D?" H 8000 2626 50  0000 C CNN
+F 1 "D_Schottky" V 8045 2829 50  0001 L CNN
+F 2 "" H 8000 2750 50  0001 C CNN
+F 3 "~" H 8000 2750 50  0001 C CNN
+	1    8000 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7750 3200 8000 3200
+Connection ~ 7750 3200
+Connection ~ 8000 3200
+Wire Wire Line
+	7750 2900 8000 2900
+Connection ~ 8000 2900
+Wire Wire Line
+	7750 3500 8000 3500
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82C0E
+P 9050 3100
+F 0 "SC?" H 9158 3196 50  0000 L CNN
+F 1 "Solar_Cell" H 9158 3105 50  0000 L CNN
+F 2 "" V 9050 3160 50  0001 C CNN
+F 3 "~" V 9050 3160 50  0001 C CNN
+	1    9050 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82C15
+P 9050 3400
+F 0 "SC?" H 9158 3496 50  0000 L CNN
+F 1 "Solar_Cell" H 9158 3405 50  0000 L CNN
+F 2 "" V 9050 3460 50  0001 C CNN
+F 3 "~" V 9050 3460 50  0001 C CNN
+	1    9050 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82C1C
+P 8800 3050
+F 0 "D?" V 8800 2972 50  0000 R CNN
+F 1 "D_Schottky" V 8845 3129 50  0001 L CNN
+F 2 "" H 8800 3050 50  0001 C CNN
+F 3 "~" H 8800 3050 50  0001 C CNN
+	1    8800 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82C23
+P 8800 3350
+F 0 "D?" V 8800 3272 50  0000 R CNN
+F 1 "D_Schottky" V 8845 3429 50  0001 L CNN
+F 2 "" H 8800 3350 50  0001 C CNN
+F 3 "~" H 8800 3350 50  0001 C CNN
+	1    8800 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82C2A
+P 9050 2750
+F 0 "D?" H 9050 2626 50  0000 C CNN
+F 1 "D_Schottky" V 9095 2829 50  0001 L CNN
+F 2 "" H 9050 2750 50  0001 C CNN
+F 3 "~" H 9050 2750 50  0001 C CNN
+	1    9050 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8800 3200 9050 3200
+Connection ~ 8800 3200
+Connection ~ 9050 3200
+Wire Wire Line
+	8800 2900 9050 2900
+Connection ~ 9050 2900
+Wire Wire Line
+	8800 3500 9050 3500
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82C37
+P 6950 4100
+F 0 "SC?" H 7058 4196 50  0000 L CNN
+F 1 "Solar_Cell" H 7058 4105 50  0000 L CNN
+F 2 "" V 6950 4160 50  0001 C CNN
+F 3 "~" V 6950 4160 50  0001 C CNN
+	1    6950 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82C3E
+P 6950 4400
+F 0 "SC?" H 7058 4496 50  0000 L CNN
+F 1 "Solar_Cell" H 7058 4405 50  0000 L CNN
+F 2 "" V 6950 4460 50  0001 C CNN
+F 3 "~" V 6950 4460 50  0001 C CNN
+	1    6950 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82C45
+P 6700 4050
+F 0 "D?" V 6700 3972 50  0000 R CNN
+F 1 "D_Schottky" V 6745 4129 50  0001 L CNN
+F 2 "" H 6700 4050 50  0001 C CNN
+F 3 "~" H 6700 4050 50  0001 C CNN
+	1    6700 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82C4C
+P 6700 4350
+F 0 "D?" V 6700 4272 50  0000 R CNN
+F 1 "D_Schottky" V 6745 4429 50  0001 L CNN
+F 2 "" H 6700 4350 50  0001 C CNN
+F 3 "~" H 6700 4350 50  0001 C CNN
+	1    6700 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82C53
+P 6950 3750
+F 0 "D?" H 6950 3626 50  0000 C CNN
+F 1 "D_Schottky" V 6995 3829 50  0001 L CNN
+F 2 "" H 6950 3750 50  0001 C CNN
+F 3 "~" H 6950 3750 50  0001 C CNN
+	1    6950 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 4200 6950 4200
+Connection ~ 6700 4200
+Connection ~ 6950 4200
+Wire Wire Line
+	6700 3900 6950 3900
+Connection ~ 6950 3900
+Wire Wire Line
+	6700 4500 6950 4500
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82C60
+P 8000 4100
+F 0 "SC?" H 8108 4196 50  0000 L CNN
+F 1 "Solar_Cell" H 8108 4105 50  0000 L CNN
+F 2 "" V 8000 4160 50  0001 C CNN
+F 3 "~" V 8000 4160 50  0001 C CNN
+	1    8000 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82C67
+P 8000 4400
+F 0 "SC?" H 8108 4496 50  0000 L CNN
+F 1 "Solar_Cell" H 8108 4405 50  0000 L CNN
+F 2 "" V 8000 4460 50  0001 C CNN
+F 3 "~" V 8000 4460 50  0001 C CNN
+	1    8000 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82C6E
+P 7750 4050
+F 0 "D?" V 7750 3972 50  0000 R CNN
+F 1 "D_Schottky" V 7795 4129 50  0001 L CNN
+F 2 "" H 7750 4050 50  0001 C CNN
+F 3 "~" H 7750 4050 50  0001 C CNN
+	1    7750 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82C75
+P 7750 4350
+F 0 "D?" V 7750 4272 50  0000 R CNN
+F 1 "D_Schottky" V 7795 4429 50  0001 L CNN
+F 2 "" H 7750 4350 50  0001 C CNN
+F 3 "~" H 7750 4350 50  0001 C CNN
+	1    7750 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82C7C
+P 8000 3750
+F 0 "D?" H 8000 3626 50  0000 C CNN
+F 1 "D_Schottky" V 8045 3829 50  0001 L CNN
+F 2 "" H 8000 3750 50  0001 C CNN
+F 3 "~" H 8000 3750 50  0001 C CNN
+	1    8000 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7750 4200 8000 4200
+Connection ~ 7750 4200
+Connection ~ 8000 4200
+Wire Wire Line
+	7750 3900 8000 3900
+Connection ~ 8000 3900
+Wire Wire Line
+	7750 4500 8000 4500
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82C89
+P 9050 4100
+F 0 "SC?" H 9158 4196 50  0000 L CNN
+F 1 "Solar_Cell" H 9158 4105 50  0000 L CNN
+F 2 "" V 9050 4160 50  0001 C CNN
+F 3 "~" V 9050 4160 50  0001 C CNN
+	1    9050 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82C90
+P 9050 4400
+F 0 "SC?" H 9158 4496 50  0000 L CNN
+F 1 "Solar_Cell" H 9158 4405 50  0000 L CNN
+F 2 "" V 9050 4460 50  0001 C CNN
+F 3 "~" V 9050 4460 50  0001 C CNN
+	1    9050 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82C97
+P 8800 4050
+F 0 "D?" V 8800 3972 50  0000 R CNN
+F 1 "D_Schottky" V 8845 4129 50  0001 L CNN
+F 2 "" H 8800 4050 50  0001 C CNN
+F 3 "~" H 8800 4050 50  0001 C CNN
+	1    8800 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82C9E
+P 8800 4350
+F 0 "D?" V 8800 4272 50  0000 R CNN
+F 1 "D_Schottky" V 8845 4429 50  0001 L CNN
+F 2 "" H 8800 4350 50  0001 C CNN
+F 3 "~" H 8800 4350 50  0001 C CNN
+	1    8800 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82CA5
+P 9050 3750
+F 0 "D?" H 9050 3626 50  0000 C CNN
+F 1 "D_Schottky" V 9095 3829 50  0001 L CNN
+F 2 "" H 9050 3750 50  0001 C CNN
+F 3 "~" H 9050 3750 50  0001 C CNN
+	1    9050 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8800 4200 9050 4200
+Connection ~ 8800 4200
+Connection ~ 9050 4200
+Wire Wire Line
+	8800 3900 9050 3900
+Connection ~ 9050 3900
+Wire Wire Line
+	8800 4500 9050 4500
+Wire Wire Line
+	9050 3600 8000 3600
+Connection ~ 9050 3600
+Wire Wire Line
+	6950 3600 8000 3600
+Connection ~ 8000 3600
+Wire Wire Line
+	9650 4500 9650 3500
+Connection ~ 9650 3500
+Wire Wire Line
+	6950 2600 8000 2600
+Connection ~ 8000 2600
+Wire Wire Line
+	8000 2600 9050 2600
+Wire Wire Line
+	9050 3600 9900 3600
+Wire Wire Line
+	6950 4500 7750 4500
+Connection ~ 6950 4500
+Connection ~ 7750 4500
+Connection ~ 8000 4500
+Wire Wire Line
+	8000 4500 8800 4500
+Connection ~ 8800 4500
+Connection ~ 9050 4500
+Wire Wire Line
+	9050 4500 9650 4500
+Wire Wire Line
+	6950 3500 7750 3500
+Wire Wire Line
+	9650 3500 9900 3500
+Connection ~ 6950 3500
+Connection ~ 7750 3500
+Connection ~ 8000 3500
+Wire Wire Line
+	8000 3500 8800 3500
+Connection ~ 8800 3500
+Connection ~ 9050 3500
+Wire Wire Line
+	9050 3500 9650 3500
+Wire Wire Line
+	9900 3400 9650 3400
+Wire Wire Line
+	9650 3400 9650 2600
+Wire Wire Line
+	9650 2600 9050 2600
+Connection ~ 9050 2600
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82CD1
+P 6950 5500
+F 0 "SC?" H 7058 5596 50  0000 L CNN
+F 1 "Solar_Cell" H 7058 5505 50  0000 L CNN
+F 2 "" V 6950 5560 50  0001 C CNN
+F 3 "~" V 6950 5560 50  0001 C CNN
+	1    6950 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82CD8
+P 6950 5800
+F 0 "SC?" H 7058 5896 50  0000 L CNN
+F 1 "Solar_Cell" H 7058 5805 50  0000 L CNN
+F 2 "" V 6950 5860 50  0001 C CNN
+F 3 "~" V 6950 5860 50  0001 C CNN
+	1    6950 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82CDF
+P 6700 5450
+F 0 "D?" V 6700 5372 50  0000 R CNN
+F 1 "D_Schottky" V 6745 5529 50  0001 L CNN
+F 2 "" H 6700 5450 50  0001 C CNN
+F 3 "~" H 6700 5450 50  0001 C CNN
+	1    6700 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82CE6
+P 6700 5750
+F 0 "D?" V 6700 5672 50  0000 R CNN
+F 1 "D_Schottky" V 6745 5829 50  0001 L CNN
+F 2 "" H 6700 5750 50  0001 C CNN
+F 3 "~" H 6700 5750 50  0001 C CNN
+	1    6700 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82CED
+P 6950 5150
+F 0 "D?" H 6950 5026 50  0000 C CNN
+F 1 "D_Schottky" V 6995 5229 50  0001 L CNN
+F 2 "" H 6950 5150 50  0001 C CNN
+F 3 "~" H 6950 5150 50  0001 C CNN
+	1    6950 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 60B82CF4
+P 10100 5900
+F 0 "J?" H 10127 5926 50  0000 L CNN
+F 1 "PV_Array_Y_2" H 10127 5835 50  0000 L CNN
+F 2 "" H 10100 5900 50  0001 C CNN
+F 3 "~" H 10100 5900 50  0001 C CNN
+	1    10100 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 5600 6950 5600
+Connection ~ 6700 5600
+Connection ~ 6950 5600
+Wire Wire Line
+	6700 5300 6950 5300
+Connection ~ 6950 5300
+Wire Wire Line
+	6700 5900 6950 5900
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82D01
+P 8000 5500
+F 0 "SC?" H 8108 5596 50  0000 L CNN
+F 1 "Solar_Cell" H 8108 5505 50  0000 L CNN
+F 2 "" V 8000 5560 50  0001 C CNN
+F 3 "~" V 8000 5560 50  0001 C CNN
+	1    8000 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82D08
+P 8000 5800
+F 0 "SC?" H 8108 5896 50  0000 L CNN
+F 1 "Solar_Cell" H 8108 5805 50  0000 L CNN
+F 2 "" V 8000 5860 50  0001 C CNN
+F 3 "~" V 8000 5860 50  0001 C CNN
+	1    8000 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82D0F
+P 7750 5450
+F 0 "D?" V 7750 5372 50  0000 R CNN
+F 1 "D_Schottky" V 7795 5529 50  0001 L CNN
+F 2 "" H 7750 5450 50  0001 C CNN
+F 3 "~" H 7750 5450 50  0001 C CNN
+	1    7750 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82D16
+P 7750 5750
+F 0 "D?" V 7750 5672 50  0000 R CNN
+F 1 "D_Schottky" V 7795 5829 50  0001 L CNN
+F 2 "" H 7750 5750 50  0001 C CNN
+F 3 "~" H 7750 5750 50  0001 C CNN
+	1    7750 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82D1D
+P 8000 5150
+F 0 "D?" H 8000 5026 50  0000 C CNN
+F 1 "D_Schottky" V 8045 5229 50  0001 L CNN
+F 2 "" H 8000 5150 50  0001 C CNN
+F 3 "~" H 8000 5150 50  0001 C CNN
+	1    8000 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7750 5600 8000 5600
+Connection ~ 7750 5600
+Connection ~ 8000 5600
+Wire Wire Line
+	7750 5300 8000 5300
+Connection ~ 8000 5300
+Wire Wire Line
+	7750 5900 8000 5900
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82D2A
+P 9050 5500
+F 0 "SC?" H 9158 5596 50  0000 L CNN
+F 1 "Solar_Cell" H 9158 5505 50  0000 L CNN
+F 2 "" V 9050 5560 50  0001 C CNN
+F 3 "~" V 9050 5560 50  0001 C CNN
+	1    9050 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82D31
+P 9050 5800
+F 0 "SC?" H 9158 5896 50  0000 L CNN
+F 1 "Solar_Cell" H 9158 5805 50  0000 L CNN
+F 2 "" V 9050 5860 50  0001 C CNN
+F 3 "~" V 9050 5860 50  0001 C CNN
+	1    9050 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82D38
+P 8800 5450
+F 0 "D?" V 8800 5372 50  0000 R CNN
+F 1 "D_Schottky" V 8845 5529 50  0001 L CNN
+F 2 "" H 8800 5450 50  0001 C CNN
+F 3 "~" H 8800 5450 50  0001 C CNN
+	1    8800 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82D3F
+P 8800 5750
+F 0 "D?" V 8800 5672 50  0000 R CNN
+F 1 "D_Schottky" V 8845 5829 50  0001 L CNN
+F 2 "" H 8800 5750 50  0001 C CNN
+F 3 "~" H 8800 5750 50  0001 C CNN
+	1    8800 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82D46
+P 9050 5150
+F 0 "D?" H 9050 5026 50  0000 C CNN
+F 1 "D_Schottky" V 9095 5229 50  0001 L CNN
+F 2 "" H 9050 5150 50  0001 C CNN
+F 3 "~" H 9050 5150 50  0001 C CNN
+	1    9050 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8800 5600 9050 5600
+Connection ~ 8800 5600
+Connection ~ 9050 5600
+Wire Wire Line
+	8800 5300 9050 5300
+Connection ~ 9050 5300
+Wire Wire Line
+	8800 5900 9050 5900
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82D53
+P 6950 6500
+F 0 "SC?" H 7058 6596 50  0000 L CNN
+F 1 "Solar_Cell" H 7058 6505 50  0000 L CNN
+F 2 "" V 6950 6560 50  0001 C CNN
+F 3 "~" V 6950 6560 50  0001 C CNN
+	1    6950 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82D5A
+P 6950 6800
+F 0 "SC?" H 7058 6896 50  0000 L CNN
+F 1 "Solar_Cell" H 7058 6805 50  0000 L CNN
+F 2 "" V 6950 6860 50  0001 C CNN
+F 3 "~" V 6950 6860 50  0001 C CNN
+	1    6950 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82D61
+P 6700 6450
+F 0 "D?" V 6700 6372 50  0000 R CNN
+F 1 "D_Schottky" V 6745 6529 50  0001 L CNN
+F 2 "" H 6700 6450 50  0001 C CNN
+F 3 "~" H 6700 6450 50  0001 C CNN
+	1    6700 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82D68
+P 6700 6750
+F 0 "D?" V 6700 6672 50  0000 R CNN
+F 1 "D_Schottky" V 6745 6829 50  0001 L CNN
+F 2 "" H 6700 6750 50  0001 C CNN
+F 3 "~" H 6700 6750 50  0001 C CNN
+	1    6700 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82D6F
+P 6950 6150
+F 0 "D?" H 6950 6026 50  0000 C CNN
+F 1 "D_Schottky" V 6995 6229 50  0001 L CNN
+F 2 "" H 6950 6150 50  0001 C CNN
+F 3 "~" H 6950 6150 50  0001 C CNN
+	1    6950 6150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 6600 6950 6600
+Connection ~ 6700 6600
+Connection ~ 6950 6600
+Wire Wire Line
+	6700 6300 6950 6300
+Connection ~ 6950 6300
+Wire Wire Line
+	6700 6900 6950 6900
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82D7C
+P 8000 6500
+F 0 "SC?" H 8108 6596 50  0000 L CNN
+F 1 "Solar_Cell" H 8108 6505 50  0000 L CNN
+F 2 "" V 8000 6560 50  0001 C CNN
+F 3 "~" V 8000 6560 50  0001 C CNN
+	1    8000 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82D83
+P 8000 6800
+F 0 "SC?" H 8108 6896 50  0000 L CNN
+F 1 "Solar_Cell" H 8108 6805 50  0000 L CNN
+F 2 "" V 8000 6860 50  0001 C CNN
+F 3 "~" V 8000 6860 50  0001 C CNN
+	1    8000 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82D8A
+P 7750 6450
+F 0 "D?" V 7750 6372 50  0000 R CNN
+F 1 "D_Schottky" V 7795 6529 50  0001 L CNN
+F 2 "" H 7750 6450 50  0001 C CNN
+F 3 "~" H 7750 6450 50  0001 C CNN
+	1    7750 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82D91
+P 7750 6750
+F 0 "D?" V 7750 6672 50  0000 R CNN
+F 1 "D_Schottky" V 7795 6829 50  0001 L CNN
+F 2 "" H 7750 6750 50  0001 C CNN
+F 3 "~" H 7750 6750 50  0001 C CNN
+	1    7750 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82D98
+P 8000 6150
+F 0 "D?" H 8000 6026 50  0000 C CNN
+F 1 "D_Schottky" V 8045 6229 50  0001 L CNN
+F 2 "" H 8000 6150 50  0001 C CNN
+F 3 "~" H 8000 6150 50  0001 C CNN
+	1    8000 6150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7750 6600 8000 6600
+Connection ~ 7750 6600
+Connection ~ 8000 6600
+Wire Wire Line
+	7750 6300 8000 6300
+Connection ~ 8000 6300
+Wire Wire Line
+	7750 6900 8000 6900
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82DA5
+P 9050 6500
+F 0 "SC?" H 9158 6596 50  0000 L CNN
+F 1 "Solar_Cell" H 9158 6505 50  0000 L CNN
+F 2 "" V 9050 6560 50  0001 C CNN
+F 3 "~" V 9050 6560 50  0001 C CNN
+	1    9050 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82DAC
+P 9050 6800
+F 0 "SC?" H 9158 6896 50  0000 L CNN
+F 1 "Solar_Cell" H 9158 6805 50  0000 L CNN
+F 2 "" V 9050 6860 50  0001 C CNN
+F 3 "~" V 9050 6860 50  0001 C CNN
+	1    9050 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82DB3
+P 8800 6450
+F 0 "D?" V 8800 6372 50  0000 R CNN
+F 1 "D_Schottky" V 8845 6529 50  0001 L CNN
+F 2 "" H 8800 6450 50  0001 C CNN
+F 3 "~" H 8800 6450 50  0001 C CNN
+	1    8800 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82DBA
+P 8800 6750
+F 0 "D?" V 8800 6672 50  0000 R CNN
+F 1 "D_Schottky" V 8845 6829 50  0001 L CNN
+F 2 "" H 8800 6750 50  0001 C CNN
+F 3 "~" H 8800 6750 50  0001 C CNN
+	1    8800 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82DC1
+P 9050 6150
+F 0 "D?" H 9050 6026 50  0000 C CNN
+F 1 "D_Schottky" V 9095 6229 50  0001 L CNN
+F 2 "" H 9050 6150 50  0001 C CNN
+F 3 "~" H 9050 6150 50  0001 C CNN
+	1    9050 6150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8800 6600 9050 6600
+Connection ~ 8800 6600
+Connection ~ 9050 6600
+Wire Wire Line
+	8800 6300 9050 6300
+Connection ~ 9050 6300
+Wire Wire Line
+	8800 6900 9050 6900
+Wire Wire Line
+	9050 6000 8000 6000
+Connection ~ 9050 6000
+Wire Wire Line
+	6950 6000 8000 6000
+Connection ~ 8000 6000
+Wire Wire Line
+	9650 6900 9650 5900
+Connection ~ 9650 5900
+Wire Wire Line
+	6950 5000 8000 5000
+Connection ~ 8000 5000
+Wire Wire Line
+	8000 5000 9050 5000
+Wire Wire Line
+	9050 6000 9900 6000
+Wire Wire Line
+	6950 6900 7750 6900
+Connection ~ 6950 6900
+Connection ~ 7750 6900
+Connection ~ 8000 6900
+Wire Wire Line
+	8000 6900 8800 6900
+Connection ~ 8800 6900
+Connection ~ 9050 6900
+Wire Wire Line
+	9050 6900 9650 6900
+Wire Wire Line
+	6950 5900 7750 5900
+Wire Wire Line
+	9650 5900 9900 5900
+Connection ~ 6950 5900
+Connection ~ 7750 5900
+Connection ~ 8000 5900
+Wire Wire Line
+	8000 5900 8800 5900
+Connection ~ 8800 5900
+Connection ~ 9050 5900
+Wire Wire Line
+	9050 5900 9650 5900
+Wire Wire Line
+	9900 5800 9650 5800
+Wire Wire Line
+	9650 5800 9650 5000
+Wire Wire Line
+	9650 5000 9050 5000
+Connection ~ 9050 5000
+Wire Notes Line
+	6500 2550 9600 2550
+Wire Notes Line
+	9600 3550 6500 3550
+Wire Notes Line
+	6500 4550 9600 4550
+Wire Notes Line
+	6500 2550 6500 4550
+Wire Notes Line
+	9600 2550 9600 4550
+Text Notes 6200 3100 0    67   ~ 13
+Y+_1
+Text Notes 6200 4100 0    67   ~ 13
+Y-_1
+Wire Notes Line
+	6500 4950 9600 4950
+Wire Notes Line
+	9600 5950 6500 5950
+Wire Notes Line
+	6500 6950 9600 6950
+Wire Notes Line
+	6500 4950 6500 6950
+Text Notes 6200 5500 0    67   ~ 13
+Y+_2
+Text Notes 6200 6500 0    67   ~ 13
+Y-_2
+Wire Notes Line
+	9600 4950 9600 6950
+Text Notes 7650 2500 0    67   ~ 0
+V_PACK = 4.8V\nI_OUT = 1.5A
+Text Notes 7650 4900 0    67   ~ 0
+V_PACK = 4.8V\nI_OUT = 1.5A
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB43EB
+P 11600 3100
+F 0 "SC?" H 11708 3196 50  0000 L CNN
+F 1 "Solar_Cell" H 11708 3105 50  0000 L CNN
+F 2 "" V 11600 3160 50  0001 C CNN
+F 3 "~" V 11600 3160 50  0001 C CNN
+	1    11600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB43F2
+P 11600 3400
+F 0 "SC?" H 11708 3496 50  0000 L CNN
+F 1 "Solar_Cell" H 11708 3405 50  0000 L CNN
+F 2 "" V 11600 3460 50  0001 C CNN
+F 3 "~" V 11600 3460 50  0001 C CNN
+	1    11600 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB43F9
+P 11350 3050
+F 0 "D?" V 11350 2972 50  0000 R CNN
+F 1 "D_Schottky" V 11395 3129 50  0001 L CNN
+F 2 "" H 11350 3050 50  0001 C CNN
+F 3 "~" H 11350 3050 50  0001 C CNN
+	1    11350 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB4400
+P 11350 3350
+F 0 "D?" V 11350 3272 50  0000 R CNN
+F 1 "D_Schottky" V 11395 3429 50  0001 L CNN
+F 2 "" H 11350 3350 50  0001 C CNN
+F 3 "~" H 11350 3350 50  0001 C CNN
+	1    11350 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB4407
+P 11600 2750
+F 0 "D?" H 11600 2626 50  0000 C CNN
+F 1 "D_Schottky" V 11645 2829 50  0001 L CNN
+F 2 "" H 11600 2750 50  0001 C CNN
+F 3 "~" H 11600 2750 50  0001 C CNN
+	1    11600 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 60BB440E
+P 14750 3500
+F 0 "J?" H 14777 3526 50  0000 L CNN
+F 1 "PV_Array_Z_1" H 14777 3435 50  0000 L CNN
+F 2 "" H 14750 3500 50  0001 C CNN
+F 3 "~" H 14750 3500 50  0001 C CNN
+	1    14750 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11350 3200 11600 3200
+Connection ~ 11350 3200
+Connection ~ 11600 3200
+Wire Wire Line
+	11350 2900 11600 2900
+Connection ~ 11600 2900
+Wire Wire Line
+	11350 3500 11600 3500
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB441B
+P 12650 3100
+F 0 "SC?" H 12758 3196 50  0000 L CNN
+F 1 "Solar_Cell" H 12758 3105 50  0000 L CNN
+F 2 "" V 12650 3160 50  0001 C CNN
+F 3 "~" V 12650 3160 50  0001 C CNN
+	1    12650 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB4422
+P 12650 3400
+F 0 "SC?" H 12758 3496 50  0000 L CNN
+F 1 "Solar_Cell" H 12758 3405 50  0000 L CNN
+F 2 "" V 12650 3460 50  0001 C CNN
+F 3 "~" V 12650 3460 50  0001 C CNN
+	1    12650 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB4429
+P 12400 3050
+F 0 "D?" V 12400 2972 50  0000 R CNN
+F 1 "D_Schottky" V 12445 3129 50  0001 L CNN
+F 2 "" H 12400 3050 50  0001 C CNN
+F 3 "~" H 12400 3050 50  0001 C CNN
+	1    12400 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB4430
+P 12400 3350
+F 0 "D?" V 12400 3272 50  0000 R CNN
+F 1 "D_Schottky" V 12445 3429 50  0001 L CNN
+F 2 "" H 12400 3350 50  0001 C CNN
+F 3 "~" H 12400 3350 50  0001 C CNN
+	1    12400 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB4437
+P 12650 2750
+F 0 "D?" H 12650 2626 50  0000 C CNN
+F 1 "D_Schottky" V 12695 2829 50  0001 L CNN
+F 2 "" H 12650 2750 50  0001 C CNN
+F 3 "~" H 12650 2750 50  0001 C CNN
+	1    12650 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12400 3200 12650 3200
+Connection ~ 12400 3200
+Connection ~ 12650 3200
+Wire Wire Line
+	12400 2900 12650 2900
+Connection ~ 12650 2900
+Wire Wire Line
+	12400 3500 12650 3500
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB4444
+P 13700 3100
+F 0 "SC?" H 13808 3196 50  0000 L CNN
+F 1 "Solar_Cell" H 13808 3105 50  0000 L CNN
+F 2 "" V 13700 3160 50  0001 C CNN
+F 3 "~" V 13700 3160 50  0001 C CNN
+	1    13700 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB444B
+P 13700 3400
+F 0 "SC?" H 13808 3496 50  0000 L CNN
+F 1 "Solar_Cell" H 13808 3405 50  0000 L CNN
+F 2 "" V 13700 3460 50  0001 C CNN
+F 3 "~" V 13700 3460 50  0001 C CNN
+	1    13700 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB4452
+P 13450 3050
+F 0 "D?" V 13450 2972 50  0000 R CNN
+F 1 "D_Schottky" V 13495 3129 50  0001 L CNN
+F 2 "" H 13450 3050 50  0001 C CNN
+F 3 "~" H 13450 3050 50  0001 C CNN
+	1    13450 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB4459
+P 13450 3350
+F 0 "D?" V 13450 3272 50  0000 R CNN
+F 1 "D_Schottky" V 13495 3429 50  0001 L CNN
+F 2 "" H 13450 3350 50  0001 C CNN
+F 3 "~" H 13450 3350 50  0001 C CNN
+	1    13450 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB4460
+P 13700 2750
+F 0 "D?" H 13700 2626 50  0000 C CNN
+F 1 "D_Schottky" V 13745 2829 50  0001 L CNN
+F 2 "" H 13700 2750 50  0001 C CNN
+F 3 "~" H 13700 2750 50  0001 C CNN
+	1    13700 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13450 3200 13700 3200
+Connection ~ 13450 3200
+Connection ~ 13700 3200
+Wire Wire Line
+	13450 2900 13700 2900
+Connection ~ 13700 2900
+Wire Wire Line
+	13450 3500 13700 3500
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB446D
+P 11600 4100
+F 0 "SC?" H 11708 4196 50  0000 L CNN
+F 1 "Solar_Cell" H 11708 4105 50  0000 L CNN
+F 2 "" V 11600 4160 50  0001 C CNN
+F 3 "~" V 11600 4160 50  0001 C CNN
+	1    11600 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB4474
+P 11600 4400
+F 0 "SC?" H 11708 4496 50  0000 L CNN
+F 1 "Solar_Cell" H 11708 4405 50  0000 L CNN
+F 2 "" V 11600 4460 50  0001 C CNN
+F 3 "~" V 11600 4460 50  0001 C CNN
+	1    11600 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB447B
+P 11350 4050
+F 0 "D?" V 11350 3972 50  0000 R CNN
+F 1 "D_Schottky" V 11395 4129 50  0001 L CNN
+F 2 "" H 11350 4050 50  0001 C CNN
+F 3 "~" H 11350 4050 50  0001 C CNN
+	1    11350 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB4482
+P 11350 4350
+F 0 "D?" V 11350 4272 50  0000 R CNN
+F 1 "D_Schottky" V 11395 4429 50  0001 L CNN
+F 2 "" H 11350 4350 50  0001 C CNN
+F 3 "~" H 11350 4350 50  0001 C CNN
+	1    11350 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB4489
+P 11600 3750
+F 0 "D?" H 11600 3626 50  0000 C CNN
+F 1 "D_Schottky" V 11645 3829 50  0001 L CNN
+F 2 "" H 11600 3750 50  0001 C CNN
+F 3 "~" H 11600 3750 50  0001 C CNN
+	1    11600 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11350 4200 11600 4200
+Connection ~ 11350 4200
+Connection ~ 11600 4200
+Wire Wire Line
+	11350 3900 11600 3900
+Connection ~ 11600 3900
+Wire Wire Line
+	11350 4500 11600 4500
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB4496
+P 12650 4100
+F 0 "SC?" H 12758 4196 50  0000 L CNN
+F 1 "Solar_Cell" H 12758 4105 50  0000 L CNN
+F 2 "" V 12650 4160 50  0001 C CNN
+F 3 "~" V 12650 4160 50  0001 C CNN
+	1    12650 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB449D
+P 12650 4400
+F 0 "SC?" H 12758 4496 50  0000 L CNN
+F 1 "Solar_Cell" H 12758 4405 50  0000 L CNN
+F 2 "" V 12650 4460 50  0001 C CNN
+F 3 "~" V 12650 4460 50  0001 C CNN
+	1    12650 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB44A4
+P 12400 4050
+F 0 "D?" V 12400 3972 50  0000 R CNN
+F 1 "D_Schottky" V 12445 4129 50  0001 L CNN
+F 2 "" H 12400 4050 50  0001 C CNN
+F 3 "~" H 12400 4050 50  0001 C CNN
+	1    12400 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB44AB
+P 12400 4350
+F 0 "D?" V 12400 4272 50  0000 R CNN
+F 1 "D_Schottky" V 12445 4429 50  0001 L CNN
+F 2 "" H 12400 4350 50  0001 C CNN
+F 3 "~" H 12400 4350 50  0001 C CNN
+	1    12400 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB44B2
+P 12650 3750
+F 0 "D?" H 12650 3626 50  0000 C CNN
+F 1 "D_Schottky" V 12695 3829 50  0001 L CNN
+F 2 "" H 12650 3750 50  0001 C CNN
+F 3 "~" H 12650 3750 50  0001 C CNN
+	1    12650 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12400 4200 12650 4200
+Connection ~ 12400 4200
+Connection ~ 12650 4200
+Wire Wire Line
+	12400 3900 12650 3900
+Connection ~ 12650 3900
+Wire Wire Line
+	12400 4500 12650 4500
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB44BF
+P 13700 4100
+F 0 "SC?" H 13808 4196 50  0000 L CNN
+F 1 "Solar_Cell" H 13808 4105 50  0000 L CNN
+F 2 "" V 13700 4160 50  0001 C CNN
+F 3 "~" V 13700 4160 50  0001 C CNN
+	1    13700 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB44C6
+P 13700 4400
+F 0 "SC?" H 13808 4496 50  0000 L CNN
+F 1 "Solar_Cell" H 13808 4405 50  0000 L CNN
+F 2 "" V 13700 4460 50  0001 C CNN
+F 3 "~" V 13700 4460 50  0001 C CNN
+	1    13700 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB44CD
+P 13450 4050
+F 0 "D?" V 13450 3972 50  0000 R CNN
+F 1 "D_Schottky" V 13495 4129 50  0001 L CNN
+F 2 "" H 13450 4050 50  0001 C CNN
+F 3 "~" H 13450 4050 50  0001 C CNN
+	1    13450 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB44D4
+P 13450 4350
+F 0 "D?" V 13450 4272 50  0000 R CNN
+F 1 "D_Schottky" V 13495 4429 50  0001 L CNN
+F 2 "" H 13450 4350 50  0001 C CNN
+F 3 "~" H 13450 4350 50  0001 C CNN
+	1    13450 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB44DB
+P 13700 3750
+F 0 "D?" H 13700 3626 50  0000 C CNN
+F 1 "D_Schottky" V 13745 3829 50  0001 L CNN
+F 2 "" H 13700 3750 50  0001 C CNN
+F 3 "~" H 13700 3750 50  0001 C CNN
+	1    13700 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13450 4200 13700 4200
+Connection ~ 13450 4200
+Connection ~ 13700 4200
+Wire Wire Line
+	13450 3900 13700 3900
+Connection ~ 13700 3900
+Wire Wire Line
+	13450 4500 13700 4500
+Wire Wire Line
+	13700 3600 12650 3600
+Connection ~ 13700 3600
+Wire Wire Line
+	11600 3600 12650 3600
+Connection ~ 12650 3600
+Wire Wire Line
+	14300 4500 14300 3500
+Connection ~ 14300 3500
+Wire Wire Line
+	11600 2600 12650 2600
+Connection ~ 12650 2600
+Wire Wire Line
+	12650 2600 13700 2600
+Wire Wire Line
+	13700 3600 14550 3600
+Wire Wire Line
+	11600 4500 12400 4500
+Connection ~ 11600 4500
+Connection ~ 12400 4500
+Connection ~ 12650 4500
+Wire Wire Line
+	12650 4500 13450 4500
+Connection ~ 13450 4500
+Connection ~ 13700 4500
+Wire Wire Line
+	13700 4500 14300 4500
+Wire Wire Line
+	11600 3500 12400 3500
+Wire Wire Line
+	14300 3500 14550 3500
+Connection ~ 11600 3500
+Connection ~ 12400 3500
+Connection ~ 12650 3500
+Wire Wire Line
+	12650 3500 13450 3500
+Connection ~ 13450 3500
+Connection ~ 13700 3500
+Wire Wire Line
+	13700 3500 14300 3500
+Wire Wire Line
+	14550 3400 14300 3400
+Wire Wire Line
+	14300 3400 14300 2600
+Wire Wire Line
+	14300 2600 13700 2600
+Connection ~ 13700 2600
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB4507
+P 11600 5500
+F 0 "SC?" H 11708 5596 50  0000 L CNN
+F 1 "Solar_Cell" H 11708 5505 50  0000 L CNN
+F 2 "" V 11600 5560 50  0001 C CNN
+F 3 "~" V 11600 5560 50  0001 C CNN
+	1    11600 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB450E
+P 11600 5800
+F 0 "SC?" H 11708 5896 50  0000 L CNN
+F 1 "Solar_Cell" H 11708 5805 50  0000 L CNN
+F 2 "" V 11600 5860 50  0001 C CNN
+F 3 "~" V 11600 5860 50  0001 C CNN
+	1    11600 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB4515
+P 11350 5450
+F 0 "D?" V 11350 5372 50  0000 R CNN
+F 1 "D_Schottky" V 11395 5529 50  0001 L CNN
+F 2 "" H 11350 5450 50  0001 C CNN
+F 3 "~" H 11350 5450 50  0001 C CNN
+	1    11350 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB451C
+P 11350 5750
+F 0 "D?" V 11350 5672 50  0000 R CNN
+F 1 "D_Schottky" V 11395 5829 50  0001 L CNN
+F 2 "" H 11350 5750 50  0001 C CNN
+F 3 "~" H 11350 5750 50  0001 C CNN
+	1    11350 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB4523
+P 11600 5150
+F 0 "D?" H 11600 5026 50  0000 C CNN
+F 1 "D_Schottky" V 11645 5229 50  0001 L CNN
+F 2 "" H 11600 5150 50  0001 C CNN
+F 3 "~" H 11600 5150 50  0001 C CNN
+	1    11600 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 60BB452A
+P 14750 5900
+F 0 "J?" H 14777 5926 50  0000 L CNN
+F 1 "PV_Array_Z_2" H 14777 5835 50  0000 L CNN
+F 2 "" H 14750 5900 50  0001 C CNN
+F 3 "~" H 14750 5900 50  0001 C CNN
+	1    14750 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11350 5600 11600 5600
+Connection ~ 11350 5600
+Connection ~ 11600 5600
+Wire Wire Line
+	11350 5300 11600 5300
+Connection ~ 11600 5300
+Wire Wire Line
+	11350 5900 11600 5900
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB4537
+P 12650 5500
+F 0 "SC?" H 12758 5596 50  0000 L CNN
+F 1 "Solar_Cell" H 12758 5505 50  0000 L CNN
+F 2 "" V 12650 5560 50  0001 C CNN
+F 3 "~" V 12650 5560 50  0001 C CNN
+	1    12650 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB453E
+P 12650 5800
+F 0 "SC?" H 12758 5896 50  0000 L CNN
+F 1 "Solar_Cell" H 12758 5805 50  0000 L CNN
+F 2 "" V 12650 5860 50  0001 C CNN
+F 3 "~" V 12650 5860 50  0001 C CNN
+	1    12650 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB4545
+P 12400 5450
+F 0 "D?" V 12400 5372 50  0000 R CNN
+F 1 "D_Schottky" V 12445 5529 50  0001 L CNN
+F 2 "" H 12400 5450 50  0001 C CNN
+F 3 "~" H 12400 5450 50  0001 C CNN
+	1    12400 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB454C
+P 12400 5750
+F 0 "D?" V 12400 5672 50  0000 R CNN
+F 1 "D_Schottky" V 12445 5829 50  0001 L CNN
+F 2 "" H 12400 5750 50  0001 C CNN
+F 3 "~" H 12400 5750 50  0001 C CNN
+	1    12400 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB4553
+P 12650 5150
+F 0 "D?" H 12650 5026 50  0000 C CNN
+F 1 "D_Schottky" V 12695 5229 50  0001 L CNN
+F 2 "" H 12650 5150 50  0001 C CNN
+F 3 "~" H 12650 5150 50  0001 C CNN
+	1    12650 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12400 5600 12650 5600
+Connection ~ 12400 5600
+Connection ~ 12650 5600
+Wire Wire Line
+	12400 5300 12650 5300
+Connection ~ 12650 5300
+Wire Wire Line
+	12400 5900 12650 5900
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB4560
+P 13700 5500
+F 0 "SC?" H 13808 5596 50  0000 L CNN
+F 1 "Solar_Cell" H 13808 5505 50  0000 L CNN
+F 2 "" V 13700 5560 50  0001 C CNN
+F 3 "~" V 13700 5560 50  0001 C CNN
+	1    13700 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB4567
+P 13700 5800
+F 0 "SC?" H 13808 5896 50  0000 L CNN
+F 1 "Solar_Cell" H 13808 5805 50  0000 L CNN
+F 2 "" V 13700 5860 50  0001 C CNN
+F 3 "~" V 13700 5860 50  0001 C CNN
+	1    13700 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB456E
+P 13450 5450
+F 0 "D?" V 13450 5372 50  0000 R CNN
+F 1 "D_Schottky" V 13495 5529 50  0001 L CNN
+F 2 "" H 13450 5450 50  0001 C CNN
+F 3 "~" H 13450 5450 50  0001 C CNN
+	1    13450 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB4575
+P 13450 5750
+F 0 "D?" V 13450 5672 50  0000 R CNN
+F 1 "D_Schottky" V 13495 5829 50  0001 L CNN
+F 2 "" H 13450 5750 50  0001 C CNN
+F 3 "~" H 13450 5750 50  0001 C CNN
+	1    13450 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB457C
+P 13700 5150
+F 0 "D?" H 13700 5026 50  0000 C CNN
+F 1 "D_Schottky" V 13745 5229 50  0001 L CNN
+F 2 "" H 13700 5150 50  0001 C CNN
+F 3 "~" H 13700 5150 50  0001 C CNN
+	1    13700 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13450 5600 13700 5600
+Connection ~ 13450 5600
+Connection ~ 13700 5600
+Wire Wire Line
+	13450 5300 13700 5300
+Connection ~ 13700 5300
+Wire Wire Line
+	13450 5900 13700 5900
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB4589
+P 11600 6500
+F 0 "SC?" H 11708 6596 50  0000 L CNN
+F 1 "Solar_Cell" H 11708 6505 50  0000 L CNN
+F 2 "" V 11600 6560 50  0001 C CNN
+F 3 "~" V 11600 6560 50  0001 C CNN
+	1    11600 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB4590
+P 11600 6800
+F 0 "SC?" H 11708 6896 50  0000 L CNN
+F 1 "Solar_Cell" H 11708 6805 50  0000 L CNN
+F 2 "" V 11600 6860 50  0001 C CNN
+F 3 "~" V 11600 6860 50  0001 C CNN
+	1    11600 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB4597
+P 11350 6450
+F 0 "D?" V 11350 6372 50  0000 R CNN
+F 1 "D_Schottky" V 11395 6529 50  0001 L CNN
+F 2 "" H 11350 6450 50  0001 C CNN
+F 3 "~" H 11350 6450 50  0001 C CNN
+	1    11350 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB459E
+P 11350 6750
+F 0 "D?" V 11350 6672 50  0000 R CNN
+F 1 "D_Schottky" V 11395 6829 50  0001 L CNN
+F 2 "" H 11350 6750 50  0001 C CNN
+F 3 "~" H 11350 6750 50  0001 C CNN
+	1    11350 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB45A5
+P 11600 6150
+F 0 "D?" H 11600 6026 50  0000 C CNN
+F 1 "D_Schottky" V 11645 6229 50  0001 L CNN
+F 2 "" H 11600 6150 50  0001 C CNN
+F 3 "~" H 11600 6150 50  0001 C CNN
+	1    11600 6150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11350 6600 11600 6600
+Connection ~ 11350 6600
+Connection ~ 11600 6600
+Wire Wire Line
+	11350 6300 11600 6300
+Connection ~ 11600 6300
+Wire Wire Line
+	11350 6900 11600 6900
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB45B2
+P 12650 6500
+F 0 "SC?" H 12758 6596 50  0000 L CNN
+F 1 "Solar_Cell" H 12758 6505 50  0000 L CNN
+F 2 "" V 12650 6560 50  0001 C CNN
+F 3 "~" V 12650 6560 50  0001 C CNN
+	1    12650 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB45B9
+P 12650 6800
+F 0 "SC?" H 12758 6896 50  0000 L CNN
+F 1 "Solar_Cell" H 12758 6805 50  0000 L CNN
+F 2 "" V 12650 6860 50  0001 C CNN
+F 3 "~" V 12650 6860 50  0001 C CNN
+	1    12650 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB45C0
+P 12400 6450
+F 0 "D?" V 12400 6372 50  0000 R CNN
+F 1 "D_Schottky" V 12445 6529 50  0001 L CNN
+F 2 "" H 12400 6450 50  0001 C CNN
+F 3 "~" H 12400 6450 50  0001 C CNN
+	1    12400 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB45C7
+P 12400 6750
+F 0 "D?" V 12400 6672 50  0000 R CNN
+F 1 "D_Schottky" V 12445 6829 50  0001 L CNN
+F 2 "" H 12400 6750 50  0001 C CNN
+F 3 "~" H 12400 6750 50  0001 C CNN
+	1    12400 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB45CE
+P 12650 6150
+F 0 "D?" H 12650 6026 50  0000 C CNN
+F 1 "D_Schottky" V 12695 6229 50  0001 L CNN
+F 2 "" H 12650 6150 50  0001 C CNN
+F 3 "~" H 12650 6150 50  0001 C CNN
+	1    12650 6150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12400 6600 12650 6600
+Connection ~ 12400 6600
+Connection ~ 12650 6600
+Wire Wire Line
+	12400 6300 12650 6300
+Connection ~ 12650 6300
+Wire Wire Line
+	12400 6900 12650 6900
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB45DB
+P 13700 6500
+F 0 "SC?" H 13808 6596 50  0000 L CNN
+F 1 "Solar_Cell" H 13808 6505 50  0000 L CNN
+F 2 "" V 13700 6560 50  0001 C CNN
+F 3 "~" V 13700 6560 50  0001 C CNN
+	1    13700 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB45E2
+P 13700 6800
+F 0 "SC?" H 13808 6896 50  0000 L CNN
+F 1 "Solar_Cell" H 13808 6805 50  0000 L CNN
+F 2 "" V 13700 6860 50  0001 C CNN
+F 3 "~" V 13700 6860 50  0001 C CNN
+	1    13700 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB45E9
+P 13450 6450
+F 0 "D?" V 13450 6372 50  0000 R CNN
+F 1 "D_Schottky" V 13495 6529 50  0001 L CNN
+F 2 "" H 13450 6450 50  0001 C CNN
+F 3 "~" H 13450 6450 50  0001 C CNN
+	1    13450 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB45F0
+P 13450 6750
+F 0 "D?" V 13450 6672 50  0000 R CNN
+F 1 "D_Schottky" V 13495 6829 50  0001 L CNN
+F 2 "" H 13450 6750 50  0001 C CNN
+F 3 "~" H 13450 6750 50  0001 C CNN
+	1    13450 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB45F7
+P 13700 6150
+F 0 "D?" H 13700 6026 50  0000 C CNN
+F 1 "D_Schottky" V 13745 6229 50  0001 L CNN
+F 2 "" H 13700 6150 50  0001 C CNN
+F 3 "~" H 13700 6150 50  0001 C CNN
+	1    13700 6150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13450 6600 13700 6600
+Connection ~ 13450 6600
+Connection ~ 13700 6600
+Wire Wire Line
+	13450 6300 13700 6300
+Connection ~ 13700 6300
+Wire Wire Line
+	13450 6900 13700 6900
+Wire Wire Line
+	13700 6000 12650 6000
+Connection ~ 13700 6000
+Wire Wire Line
+	11600 6000 12650 6000
+Connection ~ 12650 6000
+Wire Wire Line
+	14300 6900 14300 5900
+Connection ~ 14300 5900
+Wire Wire Line
+	11600 5000 12650 5000
+Connection ~ 12650 5000
+Wire Wire Line
+	12650 5000 13700 5000
+Wire Wire Line
+	13700 6000 14550 6000
+Wire Wire Line
+	11600 6900 12400 6900
+Connection ~ 11600 6900
+Connection ~ 12400 6900
+Connection ~ 12650 6900
+Wire Wire Line
+	12650 6900 13450 6900
+Connection ~ 13450 6900
+Connection ~ 13700 6900
+Wire Wire Line
+	13700 6900 14300 6900
+Wire Wire Line
+	11600 5900 12400 5900
+Wire Wire Line
+	14300 5900 14550 5900
+Connection ~ 11600 5900
+Connection ~ 12400 5900
+Connection ~ 12650 5900
+Wire Wire Line
+	12650 5900 13450 5900
+Connection ~ 13450 5900
+Connection ~ 13700 5900
+Wire Wire Line
+	13700 5900 14300 5900
+Wire Wire Line
+	14550 5800 14300 5800
+Wire Wire Line
+	14300 5800 14300 5000
+Wire Wire Line
+	14300 5000 13700 5000
+Connection ~ 13700 5000
+Wire Notes Line
+	11150 2550 14250 2550
+Wire Notes Line
+	14250 3550 11150 3550
+Wire Notes Line
+	11150 4550 14250 4550
+Wire Notes Line
+	11150 2550 11150 4550
+Wire Notes Line
+	14250 2550 14250 4550
+Text Notes 10850 3100 0    67   ~ 13
+Z+_1
+Text Notes 10850 4100 0    67   ~ 13
+Z-_1
+Wire Notes Line
+	11150 4950 14250 4950
+Wire Notes Line
+	14250 5950 11150 5950
+Wire Notes Line
+	11150 6950 14250 6950
+Wire Notes Line
+	11150 4950 11150 6950
+Text Notes 10850 5500 0    67   ~ 13
+Z+_2
+Text Notes 10850 6500 0    67   ~ 13
+Z-_2
+Wire Notes Line
+	14250 4950 14250 6950
+Text Notes 12300 2500 0    67   ~ 0
+V_PACK = 4.8V\nI_OUT = 1.5A
+Text Notes 12300 4900 0    67   ~ 0
+V_PACK = 4.8V\nI_OUT = 1.5A
+Text Notes 12300 7250 0    67   ~ 0
+V_PACK = 4.8V\nI_OUT = 1.5A
+Wire Notes Line
+	14250 7300 14250 9300
+Text Notes 10850 8850 0    67   ~ 13
+Z-_3
+Text Notes 10850 7850 0    67   ~ 13
+Z+_3
+Wire Notes Line
+	11150 7300 11150 9300
+Wire Notes Line
+	11150 9300 14250 9300
+Wire Notes Line
+	14250 8300 11150 8300
+Wire Notes Line
+	11150 7300 14250 7300
+Wire Wire Line
+	14300 8150 14300 7350
+Wire Wire Line
+	14550 8150 14300 8150
+Wire Wire Line
+	14300 8250 14550 8250
+Connection ~ 14300 8250
+Wire Wire Line
+	14300 9250 14300 8250
+Wire Wire Line
+	13450 8650 13700 8650
+Wire Wire Line
+	13450 8950 13700 8950
+Wire Wire Line
+	13700 8350 14550 8350
+Connection ~ 13700 8350
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB4723
+P 13700 8500
+F 0 "D?" H 13700 8376 50  0000 C CNN
+F 1 "D_Schottky" V 13745 8579 50  0001 L CNN
+F 2 "" H 13700 8500 50  0001 C CNN
+F 3 "~" H 13700 8500 50  0001 C CNN
+	1    13700 8500
+	0    1    1    0   
+$EndComp
+Connection ~ 13450 9250
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB471C
+P 13450 9100
+F 0 "D?" V 13450 9022 50  0000 R CNN
+F 1 "D_Schottky" V 13495 9179 50  0001 L CNN
+F 2 "" H 13450 9100 50  0001 C CNN
+F 3 "~" H 13450 9100 50  0001 C CNN
+	1    13450 9100
+	0    1    1    0   
+$EndComp
+Connection ~ 13450 8950
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB4715
+P 13450 8800
+F 0 "D?" V 13450 8722 50  0000 R CNN
+F 1 "D_Schottky" V 13495 8879 50  0001 L CNN
+F 2 "" H 13450 8800 50  0001 C CNN
+F 3 "~" H 13450 8800 50  0001 C CNN
+	1    13450 8800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13700 9250 14300 9250
+Wire Wire Line
+	13450 9250 13700 9250
+Connection ~ 13700 9250
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB470E
+P 13700 9150
+F 0 "SC?" H 13808 9246 50  0000 L CNN
+F 1 "Solar_Cell" H 13808 9155 50  0000 L CNN
+F 2 "" V 13700 9210 50  0001 C CNN
+F 3 "~" V 13700 9210 50  0001 C CNN
+	1    13700 9150
+	1    0    0    -1  
+$EndComp
+Connection ~ 13700 8950
+Connection ~ 13700 8650
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB4707
+P 13700 8850
+F 0 "SC?" H 13808 8946 50  0000 L CNN
+F 1 "Solar_Cell" H 13808 8855 50  0000 L CNN
+F 2 "" V 13700 8910 50  0001 C CNN
+F 3 "~" V 13700 8910 50  0001 C CNN
+	1    13700 8850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12400 8650 12650 8650
+Wire Wire Line
+	12400 8950 12650 8950
+Wire Wire Line
+	11600 8350 12650 8350
+Wire Wire Line
+	13700 8350 12650 8350
+Connection ~ 12650 8350
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB46FA
+P 12650 8500
+F 0 "D?" H 12650 8376 50  0000 C CNN
+F 1 "D_Schottky" V 12695 8579 50  0001 L CNN
+F 2 "" H 12650 8500 50  0001 C CNN
+F 3 "~" H 12650 8500 50  0001 C CNN
+	1    12650 8500
+	0    1    1    0   
+$EndComp
+Connection ~ 12400 9250
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB46F3
+P 12400 9100
+F 0 "D?" V 12400 9022 50  0000 R CNN
+F 1 "D_Schottky" V 12445 9179 50  0001 L CNN
+F 2 "" H 12400 9100 50  0001 C CNN
+F 3 "~" H 12400 9100 50  0001 C CNN
+	1    12400 9100
+	0    1    1    0   
+$EndComp
+Connection ~ 12400 8950
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB46EC
+P 12400 8800
+F 0 "D?" V 12400 8722 50  0000 R CNN
+F 1 "D_Schottky" V 12445 8879 50  0001 L CNN
+F 2 "" H 12400 8800 50  0001 C CNN
+F 3 "~" H 12400 8800 50  0001 C CNN
+	1    12400 8800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12650 9250 13450 9250
+Wire Wire Line
+	12400 9250 12650 9250
+Connection ~ 12650 9250
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB46E5
+P 12650 9150
+F 0 "SC?" H 12758 9246 50  0000 L CNN
+F 1 "Solar_Cell" H 12758 9155 50  0000 L CNN
+F 2 "" V 12650 9210 50  0001 C CNN
+F 3 "~" V 12650 9210 50  0001 C CNN
+	1    12650 9150
+	1    0    0    -1  
+$EndComp
+Connection ~ 12650 8950
+Connection ~ 12650 8650
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB46DE
+P 12650 8850
+F 0 "SC?" H 12758 8946 50  0000 L CNN
+F 1 "Solar_Cell" H 12758 8855 50  0000 L CNN
+F 2 "" V 12650 8910 50  0001 C CNN
+F 3 "~" V 12650 8910 50  0001 C CNN
+	1    12650 8850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11350 8650 11600 8650
+Wire Wire Line
+	11350 8950 11600 8950
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB46D1
+P 11600 8500
+F 0 "D?" H 11600 8376 50  0000 C CNN
+F 1 "D_Schottky" V 11645 8579 50  0001 L CNN
+F 2 "" H 11600 8500 50  0001 C CNN
+F 3 "~" H 11600 8500 50  0001 C CNN
+	1    11600 8500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB46CA
+P 11350 9100
+F 0 "D?" V 11350 9022 50  0000 R CNN
+F 1 "D_Schottky" V 11395 9179 50  0001 L CNN
+F 2 "" H 11350 9100 50  0001 C CNN
+F 3 "~" H 11350 9100 50  0001 C CNN
+	1    11350 9100
+	0    1    1    0   
+$EndComp
+Connection ~ 11350 8950
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB46C3
+P 11350 8800
+F 0 "D?" V 11350 8722 50  0000 R CNN
+F 1 "D_Schottky" V 11395 8879 50  0001 L CNN
+F 2 "" H 11350 8800 50  0001 C CNN
+F 3 "~" H 11350 8800 50  0001 C CNN
+	1    11350 8800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11600 9250 12400 9250
+Wire Wire Line
+	11350 9250 11600 9250
+Connection ~ 11600 9250
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB46BC
+P 11600 9150
+F 0 "SC?" H 11708 9246 50  0000 L CNN
+F 1 "Solar_Cell" H 11708 9155 50  0000 L CNN
+F 2 "" V 11600 9210 50  0001 C CNN
+F 3 "~" V 11600 9210 50  0001 C CNN
+	1    11600 9150
+	1    0    0    -1  
+$EndComp
+Connection ~ 11600 8950
+Connection ~ 11600 8650
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB46B5
+P 11600 8850
+F 0 "SC?" H 11708 8946 50  0000 L CNN
+F 1 "Solar_Cell" H 11708 8855 50  0000 L CNN
+F 2 "" V 11600 8910 50  0001 C CNN
+F 3 "~" V 11600 8910 50  0001 C CNN
+	1    11600 8850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13450 7650 13700 7650
+Wire Wire Line
+	13450 7950 13700 7950
+Wire Wire Line
+	14300 7350 13700 7350
+Connection ~ 13700 7350
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB46A8
+P 13700 7500
+F 0 "D?" H 13700 7376 50  0000 C CNN
+F 1 "D_Schottky" V 13745 7579 50  0001 L CNN
+F 2 "" H 13700 7500 50  0001 C CNN
+F 3 "~" H 13700 7500 50  0001 C CNN
+	1    13700 7500
+	0    1    1    0   
+$EndComp
+Connection ~ 13450 8250
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB46A1
+P 13450 8100
+F 0 "D?" V 13450 8022 50  0000 R CNN
+F 1 "D_Schottky" V 13495 8179 50  0001 L CNN
+F 2 "" H 13450 8100 50  0001 C CNN
+F 3 "~" H 13450 8100 50  0001 C CNN
+	1    13450 8100
+	0    1    1    0   
+$EndComp
+Connection ~ 13450 7950
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB469A
+P 13450 7800
+F 0 "D?" V 13450 7722 50  0000 R CNN
+F 1 "D_Schottky" V 13495 7879 50  0001 L CNN
+F 2 "" H 13450 7800 50  0001 C CNN
+F 3 "~" H 13450 7800 50  0001 C CNN
+	1    13450 7800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13700 8250 14300 8250
+Wire Wire Line
+	13450 8250 13700 8250
+Connection ~ 13700 8250
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB4693
+P 13700 8150
+F 0 "SC?" H 13808 8246 50  0000 L CNN
+F 1 "Solar_Cell" H 13808 8155 50  0000 L CNN
+F 2 "" V 13700 8210 50  0001 C CNN
+F 3 "~" V 13700 8210 50  0001 C CNN
+	1    13700 8150
+	1    0    0    -1  
+$EndComp
+Connection ~ 13700 7950
+Connection ~ 13700 7650
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB468C
+P 13700 7850
+F 0 "SC?" H 13808 7946 50  0000 L CNN
+F 1 "Solar_Cell" H 13808 7855 50  0000 L CNN
+F 2 "" V 13700 7910 50  0001 C CNN
+F 3 "~" V 13700 7910 50  0001 C CNN
+	1    13700 7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12400 7650 12650 7650
+Wire Wire Line
+	12400 7950 12650 7950
+Wire Wire Line
+	12650 7350 13700 7350
+Wire Wire Line
+	11600 7350 12650 7350
+Connection ~ 12650 7350
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB467F
+P 12650 7500
+F 0 "D?" H 12650 7376 50  0000 C CNN
+F 1 "D_Schottky" V 12695 7579 50  0001 L CNN
+F 2 "" H 12650 7500 50  0001 C CNN
+F 3 "~" H 12650 7500 50  0001 C CNN
+	1    12650 7500
+	0    1    1    0   
+$EndComp
+Connection ~ 12400 8250
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB4678
+P 12400 8100
+F 0 "D?" V 12400 8022 50  0000 R CNN
+F 1 "D_Schottky" V 12445 8179 50  0001 L CNN
+F 2 "" H 12400 8100 50  0001 C CNN
+F 3 "~" H 12400 8100 50  0001 C CNN
+	1    12400 8100
+	0    1    1    0   
+$EndComp
+Connection ~ 12400 7950
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB4671
+P 12400 7800
+F 0 "D?" V 12400 7722 50  0000 R CNN
+F 1 "D_Schottky" V 12445 7879 50  0001 L CNN
+F 2 "" H 12400 7800 50  0001 C CNN
+F 3 "~" H 12400 7800 50  0001 C CNN
+	1    12400 7800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12650 8250 13450 8250
+Wire Wire Line
+	12400 8250 12650 8250
+Connection ~ 12650 8250
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB466A
+P 12650 8150
+F 0 "SC?" H 12758 8246 50  0000 L CNN
+F 1 "Solar_Cell" H 12758 8155 50  0000 L CNN
+F 2 "" V 12650 8210 50  0001 C CNN
+F 3 "~" V 12650 8210 50  0001 C CNN
+	1    12650 8150
+	1    0    0    -1  
+$EndComp
+Connection ~ 12650 7950
+Connection ~ 12650 7650
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB4663
+P 12650 7850
+F 0 "SC?" H 12758 7946 50  0000 L CNN
+F 1 "Solar_Cell" H 12758 7855 50  0000 L CNN
+F 2 "" V 12650 7910 50  0001 C CNN
+F 3 "~" V 12650 7910 50  0001 C CNN
+	1    12650 7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11350 7650 11600 7650
+Wire Wire Line
+	11350 7950 11600 7950
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 60BB4656
+P 14750 8250
+F 0 "J?" H 14777 8276 50  0000 L CNN
+F 1 "PV_Array_Z_3" H 14777 8185 50  0000 L CNN
+F 2 "" H 14750 8250 50  0001 C CNN
+F 3 "~" H 14750 8250 50  0001 C CNN
+	1    14750 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB464F
+P 11600 7500
+F 0 "D?" H 11600 7376 50  0000 C CNN
+F 1 "D_Schottky" V 11645 7579 50  0001 L CNN
+F 2 "" H 11600 7500 50  0001 C CNN
+F 3 "~" H 11600 7500 50  0001 C CNN
+	1    11600 7500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB4648
+P 11350 8100
+F 0 "D?" V 11350 8022 50  0000 R CNN
+F 1 "D_Schottky" V 11395 8179 50  0001 L CNN
+F 2 "" H 11350 8100 50  0001 C CNN
+F 3 "~" H 11350 8100 50  0001 C CNN
+	1    11350 8100
+	0    1    1    0   
+$EndComp
+Connection ~ 11350 7950
+$Comp
+L Device:D_Schottky D?
+U 1 1 60BB4641
+P 11350 7800
+F 0 "D?" V 11350 7722 50  0000 R CNN
+F 1 "D_Schottky" V 11395 7879 50  0001 L CNN
+F 2 "" H 11350 7800 50  0001 C CNN
+F 3 "~" H 11350 7800 50  0001 C CNN
+	1    11350 7800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11600 8250 12400 8250
+Wire Wire Line
+	11350 8250 11600 8250
+Connection ~ 11600 8250
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB463A
+P 11600 8150
+F 0 "SC?" H 11708 8246 50  0000 L CNN
+F 1 "Solar_Cell" H 11708 8155 50  0000 L CNN
+F 2 "" V 11600 8210 50  0001 C CNN
+F 3 "~" V 11600 8210 50  0001 C CNN
+	1    11600 8150
+	1    0    0    -1  
+$EndComp
+Connection ~ 11600 7950
+Connection ~ 11600 7650
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60BB4633
+P 11600 7850
+F 0 "SC?" H 11708 7946 50  0000 L CNN
+F 1 "Solar_Cell" H 11708 7855 50  0000 L CNN
+F 2 "" V 11600 7910 50  0001 C CNN
+F 3 "~" V 11600 7910 50  0001 C CNN
+	1    11600 7850
+	1    0    0    -1  
+$EndComp
+Text Notes 7650 7250 0    67   ~ 0
+V_PACK = 4.8V\nI_OUT = 1.5A
+Wire Notes Line
+	9600 7300 9600 9300
+Text Notes 6200 8850 0    67   ~ 13
+Y-_3
+Text Notes 6200 7850 0    67   ~ 13
+Y+_3
+Wire Notes Line
+	6500 7300 6500 9300
+Wire Notes Line
+	6500 9300 9600 9300
+Wire Notes Line
+	9600 8300 6500 8300
+Wire Notes Line
+	6500 7300 9600 7300
+Wire Wire Line
+	9650 8150 9650 7350
+Wire Wire Line
+	9900 8150 9650 8150
+Wire Wire Line
+	9650 8250 9900 8250
+Connection ~ 9650 8250
+Wire Wire Line
+	9650 9250 9650 8250
+Wire Wire Line
+	8800 8650 9050 8650
+Wire Wire Line
+	8800 8950 9050 8950
+Wire Wire Line
+	9050 8350 9900 8350
+Connection ~ 9050 8350
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82EED
+P 9050 8500
+F 0 "D?" H 9050 8376 50  0000 C CNN
+F 1 "D_Schottky" V 9095 8579 50  0001 L CNN
+F 2 "" H 9050 8500 50  0001 C CNN
+F 3 "~" H 9050 8500 50  0001 C CNN
+	1    9050 8500
+	0    1    1    0   
+$EndComp
+Connection ~ 8800 9250
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82EE6
+P 8800 9100
+F 0 "D?" V 8800 9022 50  0000 R CNN
+F 1 "D_Schottky" V 8845 9179 50  0001 L CNN
+F 2 "" H 8800 9100 50  0001 C CNN
+F 3 "~" H 8800 9100 50  0001 C CNN
+	1    8800 9100
+	0    1    1    0   
+$EndComp
+Connection ~ 8800 8950
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82EDF
+P 8800 8800
+F 0 "D?" V 8800 8722 50  0000 R CNN
+F 1 "D_Schottky" V 8845 8879 50  0001 L CNN
+F 2 "" H 8800 8800 50  0001 C CNN
+F 3 "~" H 8800 8800 50  0001 C CNN
+	1    8800 8800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9050 9250 9650 9250
+Wire Wire Line
+	8800 9250 9050 9250
+Connection ~ 9050 9250
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82ED8
+P 9050 9150
+F 0 "SC?" H 9158 9246 50  0000 L CNN
+F 1 "Solar_Cell" H 9158 9155 50  0000 L CNN
+F 2 "" V 9050 9210 50  0001 C CNN
+F 3 "~" V 9050 9210 50  0001 C CNN
+	1    9050 9150
+	1    0    0    -1  
+$EndComp
+Connection ~ 9050 8950
+Connection ~ 9050 8650
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82ED1
+P 9050 8850
+F 0 "SC?" H 9158 8946 50  0000 L CNN
+F 1 "Solar_Cell" H 9158 8855 50  0000 L CNN
+F 2 "" V 9050 8910 50  0001 C CNN
+F 3 "~" V 9050 8910 50  0001 C CNN
+	1    9050 8850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 8650 8000 8650
+Wire Wire Line
+	7750 8950 8000 8950
+Wire Wire Line
+	6950 8350 8000 8350
+Wire Wire Line
+	9050 8350 8000 8350
+Connection ~ 8000 8350
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82EC4
+P 8000 8500
+F 0 "D?" H 8000 8376 50  0000 C CNN
+F 1 "D_Schottky" V 8045 8579 50  0001 L CNN
+F 2 "" H 8000 8500 50  0001 C CNN
+F 3 "~" H 8000 8500 50  0001 C CNN
+	1    8000 8500
+	0    1    1    0   
+$EndComp
+Connection ~ 7750 9250
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82EBD
+P 7750 9100
+F 0 "D?" V 7750 9022 50  0000 R CNN
+F 1 "D_Schottky" V 7795 9179 50  0001 L CNN
+F 2 "" H 7750 9100 50  0001 C CNN
+F 3 "~" H 7750 9100 50  0001 C CNN
+	1    7750 9100
+	0    1    1    0   
+$EndComp
+Connection ~ 7750 8950
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82EB6
+P 7750 8800
+F 0 "D?" V 7750 8722 50  0000 R CNN
+F 1 "D_Schottky" V 7795 8879 50  0001 L CNN
+F 2 "" H 7750 8800 50  0001 C CNN
+F 3 "~" H 7750 8800 50  0001 C CNN
+	1    7750 8800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8000 9250 8800 9250
+Wire Wire Line
+	7750 9250 8000 9250
+Connection ~ 8000 9250
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82EAF
+P 8000 9150
+F 0 "SC?" H 8108 9246 50  0000 L CNN
+F 1 "Solar_Cell" H 8108 9155 50  0000 L CNN
+F 2 "" V 8000 9210 50  0001 C CNN
+F 3 "~" V 8000 9210 50  0001 C CNN
+	1    8000 9150
+	1    0    0    -1  
+$EndComp
+Connection ~ 8000 8950
+Connection ~ 8000 8650
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82EA8
+P 8000 8850
+F 0 "SC?" H 8108 8946 50  0000 L CNN
+F 1 "Solar_Cell" H 8108 8855 50  0000 L CNN
+F 2 "" V 8000 8910 50  0001 C CNN
+F 3 "~" V 8000 8910 50  0001 C CNN
+	1    8000 8850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 8650 6950 8650
+Wire Wire Line
+	6700 8950 6950 8950
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82E9B
+P 6950 8500
+F 0 "D?" H 6950 8376 50  0000 C CNN
+F 1 "D_Schottky" V 6995 8579 50  0001 L CNN
+F 2 "" H 6950 8500 50  0001 C CNN
+F 3 "~" H 6950 8500 50  0001 C CNN
+	1    6950 8500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82E94
+P 6700 9100
+F 0 "D?" V 6700 9022 50  0000 R CNN
+F 1 "D_Schottky" V 6745 9179 50  0001 L CNN
+F 2 "" H 6700 9100 50  0001 C CNN
+F 3 "~" H 6700 9100 50  0001 C CNN
+	1    6700 9100
+	0    1    1    0   
+$EndComp
+Connection ~ 6700 8950
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82E8D
+P 6700 8800
+F 0 "D?" V 6700 8722 50  0000 R CNN
+F 1 "D_Schottky" V 6745 8879 50  0001 L CNN
+F 2 "" H 6700 8800 50  0001 C CNN
+F 3 "~" H 6700 8800 50  0001 C CNN
+	1    6700 8800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6950 9250 7750 9250
+Wire Wire Line
+	6700 9250 6950 9250
+Connection ~ 6950 9250
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82E86
+P 6950 9150
+F 0 "SC?" H 7058 9246 50  0000 L CNN
+F 1 "Solar_Cell" H 7058 9155 50  0000 L CNN
+F 2 "" V 6950 9210 50  0001 C CNN
+F 3 "~" V 6950 9210 50  0001 C CNN
+	1    6950 9150
+	1    0    0    -1  
+$EndComp
+Connection ~ 6950 8950
+Connection ~ 6950 8650
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82E7F
+P 6950 8850
+F 0 "SC?" H 7058 8946 50  0000 L CNN
+F 1 "Solar_Cell" H 7058 8855 50  0000 L CNN
+F 2 "" V 6950 8910 50  0001 C CNN
+F 3 "~" V 6950 8910 50  0001 C CNN
+	1    6950 8850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 7650 9050 7650
+Wire Wire Line
+	8800 7950 9050 7950
+Wire Wire Line
+	9650 7350 9050 7350
+Connection ~ 9050 7350
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82E72
+P 9050 7500
+F 0 "D?" H 9050 7376 50  0000 C CNN
+F 1 "D_Schottky" V 9095 7579 50  0001 L CNN
+F 2 "" H 9050 7500 50  0001 C CNN
+F 3 "~" H 9050 7500 50  0001 C CNN
+	1    9050 7500
+	0    1    1    0   
+$EndComp
+Connection ~ 8800 8250
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82E6B
+P 8800 8100
+F 0 "D?" V 8800 8022 50  0000 R CNN
+F 1 "D_Schottky" V 8845 8179 50  0001 L CNN
+F 2 "" H 8800 8100 50  0001 C CNN
+F 3 "~" H 8800 8100 50  0001 C CNN
+	1    8800 8100
+	0    1    1    0   
+$EndComp
+Connection ~ 8800 7950
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82E64
+P 8800 7800
+F 0 "D?" V 8800 7722 50  0000 R CNN
+F 1 "D_Schottky" V 8845 7879 50  0001 L CNN
+F 2 "" H 8800 7800 50  0001 C CNN
+F 3 "~" H 8800 7800 50  0001 C CNN
+	1    8800 7800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9050 8250 9650 8250
+Wire Wire Line
+	8800 8250 9050 8250
+Connection ~ 9050 8250
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82E5D
+P 9050 8150
+F 0 "SC?" H 9158 8246 50  0000 L CNN
+F 1 "Solar_Cell" H 9158 8155 50  0000 L CNN
+F 2 "" V 9050 8210 50  0001 C CNN
+F 3 "~" V 9050 8210 50  0001 C CNN
+	1    9050 8150
+	1    0    0    -1  
+$EndComp
+Connection ~ 9050 7950
+Connection ~ 9050 7650
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82E56
+P 9050 7850
+F 0 "SC?" H 9158 7946 50  0000 L CNN
+F 1 "Solar_Cell" H 9158 7855 50  0000 L CNN
+F 2 "" V 9050 7910 50  0001 C CNN
+F 3 "~" V 9050 7910 50  0001 C CNN
+	1    9050 7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 7650 8000 7650
+Wire Wire Line
+	7750 7950 8000 7950
+Wire Wire Line
+	8000 7350 9050 7350
+Wire Wire Line
+	6950 7350 8000 7350
+Connection ~ 8000 7350
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82E49
+P 8000 7500
+F 0 "D?" H 8000 7376 50  0000 C CNN
+F 1 "D_Schottky" V 8045 7579 50  0001 L CNN
+F 2 "" H 8000 7500 50  0001 C CNN
+F 3 "~" H 8000 7500 50  0001 C CNN
+	1    8000 7500
+	0    1    1    0   
+$EndComp
+Connection ~ 7750 8250
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82E42
+P 7750 8100
+F 0 "D?" V 7750 8022 50  0000 R CNN
+F 1 "D_Schottky" V 7795 8179 50  0001 L CNN
+F 2 "" H 7750 8100 50  0001 C CNN
+F 3 "~" H 7750 8100 50  0001 C CNN
+	1    7750 8100
+	0    1    1    0   
+$EndComp
+Connection ~ 7750 7950
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82E3B
+P 7750 7800
+F 0 "D?" V 7750 7722 50  0000 R CNN
+F 1 "D_Schottky" V 7795 7879 50  0001 L CNN
+F 2 "" H 7750 7800 50  0001 C CNN
+F 3 "~" H 7750 7800 50  0001 C CNN
+	1    7750 7800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8000 8250 8800 8250
+Wire Wire Line
+	7750 8250 8000 8250
+Connection ~ 8000 8250
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82E34
+P 8000 8150
+F 0 "SC?" H 8108 8246 50  0000 L CNN
+F 1 "Solar_Cell" H 8108 8155 50  0000 L CNN
+F 2 "" V 8000 8210 50  0001 C CNN
+F 3 "~" V 8000 8210 50  0001 C CNN
+	1    8000 8150
+	1    0    0    -1  
+$EndComp
+Connection ~ 8000 7950
+Connection ~ 8000 7650
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82E2D
+P 8000 7850
+F 0 "SC?" H 8108 7946 50  0000 L CNN
+F 1 "Solar_Cell" H 8108 7855 50  0000 L CNN
+F 2 "" V 8000 7910 50  0001 C CNN
+F 3 "~" V 8000 7910 50  0001 C CNN
+	1    8000 7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 7650 6950 7650
+Wire Wire Line
+	6700 7950 6950 7950
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 60B82E20
+P 10100 8250
+F 0 "J?" H 10127 8276 50  0000 L CNN
+F 1 "PV_Array_Y_3" H 10127 8185 50  0000 L CNN
+F 2 "" H 10100 8250 50  0001 C CNN
+F 3 "~" H 10100 8250 50  0001 C CNN
+	1    10100 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82E19
+P 6950 7500
+F 0 "D?" H 6950 7376 50  0000 C CNN
+F 1 "D_Schottky" V 6995 7579 50  0001 L CNN
+F 2 "" H 6950 7500 50  0001 C CNN
+F 3 "~" H 6950 7500 50  0001 C CNN
+	1    6950 7500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82E12
+P 6700 8100
+F 0 "D?" V 6700 8022 50  0000 R CNN
+F 1 "D_Schottky" V 6745 8179 50  0001 L CNN
+F 2 "" H 6700 8100 50  0001 C CNN
+F 3 "~" H 6700 8100 50  0001 C CNN
+	1    6700 8100
+	0    1    1    0   
+$EndComp
+Connection ~ 6700 7950
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B82E0B
+P 6700 7800
+F 0 "D?" V 6700 7722 50  0000 R CNN
+F 1 "D_Schottky" V 6745 7879 50  0001 L CNN
+F 2 "" H 6700 7800 50  0001 C CNN
+F 3 "~" H 6700 7800 50  0001 C CNN
+	1    6700 7800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6950 8250 7750 8250
+Wire Wire Line
+	6700 8250 6950 8250
+Connection ~ 6950 8250
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82E04
+P 6950 8150
+F 0 "SC?" H 7058 8246 50  0000 L CNN
+F 1 "Solar_Cell" H 7058 8155 50  0000 L CNN
+F 2 "" V 6950 8210 50  0001 C CNN
+F 3 "~" V 6950 8210 50  0001 C CNN
+	1    6950 8150
+	1    0    0    -1  
+$EndComp
+Connection ~ 6950 7950
+Connection ~ 6950 7650
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B82DFD
+P 6950 7850
+F 0 "SC?" H 7058 7946 50  0000 L CNN
+F 1 "Solar_Cell" H 7058 7855 50  0000 L CNN
+F 2 "" V 6950 7910 50  0001 C CNN
+F 3 "~" V 6950 7910 50  0001 C CNN
+	1    6950 7850
+	1    0    0    -1  
+$EndComp
+Text Notes 2700 7250 0    67   ~ 0
+V_PACK = 4.8V\nI_OUT = 1.5A
+Wire Notes Line
+	4650 7300 4650 9300
+Text Notes 1250 8850 0    67   ~ 13
+X-_3
+Text Notes 1250 7850 0    67   ~ 13
+X+_3
+Wire Notes Line
+	1550 7300 1550 9300
+Wire Notes Line
+	1550 9300 4650 9300
+Wire Notes Line
+	4650 8300 1550 8300
+Wire Notes Line
+	1550 7300 4650 7300
+Wire Wire Line
+	4700 8150 4700 7350
+Wire Wire Line
+	4950 8150 4700 8150
+Wire Wire Line
+	4700 8250 4950 8250
+Connection ~ 4700 8250
+Wire Wire Line
+	4700 9250 4700 8250
+Wire Wire Line
+	3850 8650 4100 8650
+Wire Wire Line
+	3850 8950 4100 8950
+Wire Wire Line
+	4100 8350 4950 8350
+Connection ~ 4100 8350
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B6AE70
+P 4100 8500
+F 0 "D?" H 4100 8376 50  0000 C CNN
+F 1 "D_Schottky" V 4145 8579 50  0001 L CNN
+F 2 "" H 4100 8500 50  0001 C CNN
+F 3 "~" H 4100 8500 50  0001 C CNN
+	1    4100 8500
+	0    1    1    0   
+$EndComp
+Connection ~ 3850 9250
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B6AE69
+P 3850 9100
+F 0 "D?" V 3850 9022 50  0000 R CNN
+F 1 "D_Schottky" V 3895 9179 50  0001 L CNN
+F 2 "" H 3850 9100 50  0001 C CNN
+F 3 "~" H 3850 9100 50  0001 C CNN
+	1    3850 9100
+	0    1    1    0   
+$EndComp
+Connection ~ 3850 8950
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B6AE62
+P 3850 8800
+F 0 "D?" V 3850 8722 50  0000 R CNN
+F 1 "D_Schottky" V 3895 8879 50  0001 L CNN
+F 2 "" H 3850 8800 50  0001 C CNN
+F 3 "~" H 3850 8800 50  0001 C CNN
+	1    3850 8800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 9250 4700 9250
+Wire Wire Line
+	3850 9250 4100 9250
+Connection ~ 4100 9250
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B6AE5B
+P 4100 9150
+F 0 "SC?" H 4208 9246 50  0000 L CNN
+F 1 "Solar_Cell" H 4208 9155 50  0000 L CNN
+F 2 "" V 4100 9210 50  0001 C CNN
+F 3 "~" V 4100 9210 50  0001 C CNN
+	1    4100 9150
+	1    0    0    -1  
+$EndComp
+Connection ~ 4100 8950
+Connection ~ 4100 8650
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B6AE54
+P 4100 8850
+F 0 "SC?" H 4208 8946 50  0000 L CNN
+F 1 "Solar_Cell" H 4208 8855 50  0000 L CNN
+F 2 "" V 4100 8910 50  0001 C CNN
+F 3 "~" V 4100 8910 50  0001 C CNN
+	1    4100 8850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 8650 3050 8650
+Wire Wire Line
+	2800 8950 3050 8950
+Wire Wire Line
+	2000 8350 3050 8350
+Wire Wire Line
+	4100 8350 3050 8350
+Connection ~ 3050 8350
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B6AE47
+P 3050 8500
+F 0 "D?" H 3050 8376 50  0000 C CNN
+F 1 "D_Schottky" V 3095 8579 50  0001 L CNN
+F 2 "" H 3050 8500 50  0001 C CNN
+F 3 "~" H 3050 8500 50  0001 C CNN
+	1    3050 8500
+	0    1    1    0   
+$EndComp
+Connection ~ 2800 9250
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B6AE40
+P 2800 9100
+F 0 "D?" V 2800 9022 50  0000 R CNN
+F 1 "D_Schottky" V 2845 9179 50  0001 L CNN
+F 2 "" H 2800 9100 50  0001 C CNN
+F 3 "~" H 2800 9100 50  0001 C CNN
+	1    2800 9100
+	0    1    1    0   
+$EndComp
+Connection ~ 2800 8950
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B6AE39
+P 2800 8800
+F 0 "D?" V 2800 8722 50  0000 R CNN
+F 1 "D_Schottky" V 2845 8879 50  0001 L CNN
+F 2 "" H 2800 8800 50  0001 C CNN
+F 3 "~" H 2800 8800 50  0001 C CNN
+	1    2800 8800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3050 9250 3850 9250
+Wire Wire Line
+	2800 9250 3050 9250
+Connection ~ 3050 9250
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B6AE32
+P 3050 9150
+F 0 "SC?" H 3158 9246 50  0000 L CNN
+F 1 "Solar_Cell" H 3158 9155 50  0000 L CNN
+F 2 "" V 3050 9210 50  0001 C CNN
+F 3 "~" V 3050 9210 50  0001 C CNN
+	1    3050 9150
+	1    0    0    -1  
+$EndComp
+Connection ~ 3050 8950
+Connection ~ 3050 8650
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B6AE2B
+P 3050 8850
+F 0 "SC?" H 3158 8946 50  0000 L CNN
+F 1 "Solar_Cell" H 3158 8855 50  0000 L CNN
+F 2 "" V 3050 8910 50  0001 C CNN
+F 3 "~" V 3050 8910 50  0001 C CNN
+	1    3050 8850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 8650 2000 8650
+Wire Wire Line
+	1750 8950 2000 8950
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B6AE1E
+P 2000 8500
+F 0 "D?" H 2000 8376 50  0000 C CNN
+F 1 "D_Schottky" V 2045 8579 50  0001 L CNN
+F 2 "" H 2000 8500 50  0001 C CNN
+F 3 "~" H 2000 8500 50  0001 C CNN
+	1    2000 8500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B6AE17
+P 1750 9100
+F 0 "D?" V 1750 9022 50  0000 R CNN
+F 1 "D_Schottky" V 1795 9179 50  0001 L CNN
+F 2 "" H 1750 9100 50  0001 C CNN
+F 3 "~" H 1750 9100 50  0001 C CNN
+	1    1750 9100
+	0    1    1    0   
+$EndComp
+Connection ~ 1750 8950
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B6AE10
+P 1750 8800
+F 0 "D?" V 1750 8722 50  0000 R CNN
+F 1 "D_Schottky" V 1795 8879 50  0001 L CNN
+F 2 "" H 1750 8800 50  0001 C CNN
+F 3 "~" H 1750 8800 50  0001 C CNN
+	1    1750 8800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 9250 2800 9250
+Wire Wire Line
+	1750 9250 2000 9250
+Connection ~ 2000 9250
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B6AE09
+P 2000 9150
+F 0 "SC?" H 2108 9246 50  0000 L CNN
+F 1 "Solar_Cell" H 2108 9155 50  0000 L CNN
+F 2 "" V 2000 9210 50  0001 C CNN
+F 3 "~" V 2000 9210 50  0001 C CNN
+	1    2000 9150
+	1    0    0    -1  
+$EndComp
+Connection ~ 2000 8950
+Connection ~ 2000 8650
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B6AE02
+P 2000 8850
+F 0 "SC?" H 2108 8946 50  0000 L CNN
+F 1 "Solar_Cell" H 2108 8855 50  0000 L CNN
+F 2 "" V 2000 8910 50  0001 C CNN
+F 3 "~" V 2000 8910 50  0001 C CNN
+	1    2000 8850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 7650 4100 7650
+Wire Wire Line
+	3850 7950 4100 7950
+Wire Wire Line
+	4700 7350 4100 7350
+Connection ~ 4100 7350
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B6ADF5
+P 4100 7500
+F 0 "D?" H 4100 7376 50  0000 C CNN
+F 1 "D_Schottky" V 4145 7579 50  0001 L CNN
+F 2 "" H 4100 7500 50  0001 C CNN
+F 3 "~" H 4100 7500 50  0001 C CNN
+	1    4100 7500
+	0    1    1    0   
+$EndComp
+Connection ~ 3850 8250
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B6ADEE
+P 3850 8100
+F 0 "D?" V 3850 8022 50  0000 R CNN
+F 1 "D_Schottky" V 3895 8179 50  0001 L CNN
+F 2 "" H 3850 8100 50  0001 C CNN
+F 3 "~" H 3850 8100 50  0001 C CNN
+	1    3850 8100
+	0    1    1    0   
+$EndComp
+Connection ~ 3850 7950
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B6ADE7
+P 3850 7800
+F 0 "D?" V 3850 7722 50  0000 R CNN
+F 1 "D_Schottky" V 3895 7879 50  0001 L CNN
+F 2 "" H 3850 7800 50  0001 C CNN
+F 3 "~" H 3850 7800 50  0001 C CNN
+	1    3850 7800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 8250 4700 8250
+Wire Wire Line
+	3850 8250 4100 8250
+Connection ~ 4100 8250
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B6ADE0
+P 4100 8150
+F 0 "SC?" H 4208 8246 50  0000 L CNN
+F 1 "Solar_Cell" H 4208 8155 50  0000 L CNN
+F 2 "" V 4100 8210 50  0001 C CNN
+F 3 "~" V 4100 8210 50  0001 C CNN
+	1    4100 8150
+	1    0    0    -1  
+$EndComp
+Connection ~ 4100 7950
+Connection ~ 4100 7650
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B6ADD9
+P 4100 7850
+F 0 "SC?" H 4208 7946 50  0000 L CNN
+F 1 "Solar_Cell" H 4208 7855 50  0000 L CNN
+F 2 "" V 4100 7910 50  0001 C CNN
+F 3 "~" V 4100 7910 50  0001 C CNN
+	1    4100 7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 7650 3050 7650
+Wire Wire Line
+	2800 7950 3050 7950
+Wire Wire Line
+	3050 7350 4100 7350
+Wire Wire Line
+	2000 7350 3050 7350
+Connection ~ 3050 7350
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B6ADCC
+P 3050 7500
+F 0 "D?" H 3050 7376 50  0000 C CNN
+F 1 "D_Schottky" V 3095 7579 50  0001 L CNN
+F 2 "" H 3050 7500 50  0001 C CNN
+F 3 "~" H 3050 7500 50  0001 C CNN
+	1    3050 7500
+	0    1    1    0   
+$EndComp
+Connection ~ 2800 8250
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B6ADC5
+P 2800 8100
+F 0 "D?" V 2800 8022 50  0000 R CNN
+F 1 "D_Schottky" V 2845 8179 50  0001 L CNN
+F 2 "" H 2800 8100 50  0001 C CNN
+F 3 "~" H 2800 8100 50  0001 C CNN
+	1    2800 8100
+	0    1    1    0   
+$EndComp
+Connection ~ 2800 7950
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B6ADBE
+P 2800 7800
+F 0 "D?" V 2800 7722 50  0000 R CNN
+F 1 "D_Schottky" V 2845 7879 50  0001 L CNN
+F 2 "" H 2800 7800 50  0001 C CNN
+F 3 "~" H 2800 7800 50  0001 C CNN
+	1    2800 7800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3050 8250 3850 8250
+Wire Wire Line
+	2800 8250 3050 8250
+Connection ~ 3050 8250
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B6ADB7
+P 3050 8150
+F 0 "SC?" H 3158 8246 50  0000 L CNN
+F 1 "Solar_Cell" H 3158 8155 50  0000 L CNN
+F 2 "" V 3050 8210 50  0001 C CNN
+F 3 "~" V 3050 8210 50  0001 C CNN
+	1    3050 8150
+	1    0    0    -1  
+$EndComp
+Connection ~ 3050 7950
+Connection ~ 3050 7650
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B6ADB0
+P 3050 7850
+F 0 "SC?" H 3158 7946 50  0000 L CNN
+F 1 "Solar_Cell" H 3158 7855 50  0000 L CNN
+F 2 "" V 3050 7910 50  0001 C CNN
+F 3 "~" V 3050 7910 50  0001 C CNN
+	1    3050 7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 7650 2000 7650
+Wire Wire Line
+	1750 7950 2000 7950
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 60B6ADA3
+P 5150 8250
+F 0 "J?" H 5177 8276 50  0000 L CNN
+F 1 "PV_Array_X_3" H 5177 8185 50  0000 L CNN
+F 2 "" H 5150 8250 50  0001 C CNN
+F 3 "~" H 5150 8250 50  0001 C CNN
+	1    5150 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B6AD9C
+P 2000 7500
+F 0 "D?" H 2000 7376 50  0000 C CNN
+F 1 "D_Schottky" V 2045 7579 50  0001 L CNN
+F 2 "" H 2000 7500 50  0001 C CNN
+F 3 "~" H 2000 7500 50  0001 C CNN
+	1    2000 7500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B6AD95
+P 1750 8100
+F 0 "D?" V 1750 8022 50  0000 R CNN
+F 1 "D_Schottky" V 1795 8179 50  0001 L CNN
+F 2 "" H 1750 8100 50  0001 C CNN
+F 3 "~" H 1750 8100 50  0001 C CNN
+	1    1750 8100
+	0    1    1    0   
+$EndComp
+Connection ~ 1750 7950
+$Comp
+L Device:D_Schottky D?
+U 1 1 60B6AD8E
+P 1750 7800
+F 0 "D?" V 1750 7722 50  0000 R CNN
+F 1 "D_Schottky" V 1795 7879 50  0001 L CNN
+F 2 "" H 1750 7800 50  0001 C CNN
+F 3 "~" H 1750 7800 50  0001 C CNN
+	1    1750 7800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 8250 2800 8250
+Wire Wire Line
+	1750 8250 2000 8250
+Connection ~ 2000 8250
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B6AD87
+P 2000 8150
+F 0 "SC?" H 2108 8246 50  0000 L CNN
+F 1 "Solar_Cell" H 2108 8155 50  0000 L CNN
+F 2 "" V 2000 8210 50  0001 C CNN
+F 3 "~" V 2000 8210 50  0001 C CNN
+	1    2000 8150
+	1    0    0    -1  
+$EndComp
+Connection ~ 2000 7950
+Connection ~ 2000 7650
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 60B6AD80
+P 2000 7850
+F 0 "SC?" H 2108 7946 50  0000 L CNN
+F 1 "Solar_Cell" H 2108 7855 50  0000 L CNN
+F 2 "" V 2000 7910 50  0001 C CNN
+F 3 "~" V 2000 7910 50  0001 C CNN
+	1    2000 7850
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

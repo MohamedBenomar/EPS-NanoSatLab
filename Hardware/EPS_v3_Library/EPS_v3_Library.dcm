@@ -1,0 +1,43 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LTC3128
+D 3A Monolithic Buck-Boost Supercapacitor Charger and Balancer with Accurate Input Current Limit
+$ENDCMP
+#
+$CMP LTC4013EUFD-PBF
+D 60V Synchronous Buck Multi-Chemistry Battery Charger
+$ENDCMP
+#
+$CMP MAX20800TPB+
+D MPP Tracking DC-DC ConverterMPP Tracking DC-DC Converter
+$ENDCMP
+#
+$CMP MCP1320T-29LE_OT
+D Supervisory Circuits Active low P-P
+$ENDCMP
+#
+$CMP PC104
+D PC104 Embedded Computer Standards Connector
+$ENDCMP
+#
+$CMP SPV1040T
+D High efficiency solar battery charger with embedded MPPTHigh efficiency solar battery charger with embedded MPPT
+$ENDCMP
+#
+$CMP STM32L412C8T6
+D Ultra-low-power Arm® Cortex®-M4 32-bit MCU+FPU, 100DMIPS, up to 128KB Flash, 40KB SRAM, analog, ext. SMPS
+$ENDCMP
+#
+$CMP TPS2121RUXR
+D 2.8-V to 22-V Priority Power MUX with Seamless Switchover
+$ENDCMP
+#
+$CMP TPS61288RQQR
+D 18V, 15A synch boost converter
+$ENDCMP
+#
+$CMP TPS630242YFFR
+D High Efficiency 1.5A Single Inductor Buck-Boost Converter (3.3V)
+$ENDCMP
+#
+#End Doc Library

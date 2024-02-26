@@ -1,0 +1,72 @@
+Comment,Designator,Footprint,LCSC Part #
+100 nF Unpolarized capacitor,"C201,C317,C313,C309,C306,C307,C302,C314,C301,C308,C305",C_0603_1608Metric,CC0603KRX7R9BB104
+47 nF Unpolarized capacitor,"C316,C315",C_0603_1608Metric,CL10B473KB8NNNC
+2.2 uF Unpolarized capacitor,"C318,C311,C310",C_0603_1608Metric,CL10A225KO8NNNC
+62 pF Unpolarized capacitor,"C320,C319",C_0402_1005Metric,- - -
+39 nF Unpolarized capacitor,C328,C_0402_1005Metric,- - -
+82 pF Unpolarized capacitor,C329,C_0603_1608Metric,0603CG820J500NT
+22 uF Unpolarized capacitor,"C330,C331,C332,C321,C323,C326",C_0805_2012Metric,CL21A226MAQNNNE
+10 uF Unpolarized capacitor,"C333,C325,C312,C322,C304,C327,C324,C303,C403,C405,C404,C401,C509,C502,C503,C505,C506,C508",C_0805_2012Metric,CL21A106KAYNNNE
+47 uF Unpolarized capacitor,C334,C_1206_3216Metric,CL31A476MPHNNNE
+470 pF Unpolarized capacitor,C402,C_0402_1005Metric,0402B471K500NT
+0.1 uF Unpolarized capacitor,C501,C_0603_1608Metric,CC0603KRX7R9BB104
+0.01 uF Unpolarized capacitor,C504,C_0402_1005Metric,CL05B103KB5NNNC
+0.22 uF Unpolarized capacitor,C507,C_0603_1608Metric,CL10B224KA8NNNC
+100 uF Unpolarized capacitor,"C601,C602,C603,C610,C611,C612,C621,C620,C619",C_1210_3225Metric,- - -
+1 uF Unpolarized capacitor,"C604,C605,C606,C613,C614,C615,C622,C623,C624",C_0402_1005Metric,CL05A105KA5NQNC
+150 uF Unpolarized capacitor,"C607,C608,C609,C616,C617,C618,C625,C626,C627",C_1210_3225Metric,- - -
+1A Schottky diode,D501,DO-214BA-2,- - -
+Vf=0.3V and If=3A Schottky diode,"D601,D604,D602,D605,D603,D606,D607,D610,D608,D611,D609,D612,D613,D616,D614,D617,D615,D618",DO-214AB-2,- - -
+PC104 PC104 Embedded Computer Standards Connector,J110,PC104,- - -
+"502382-0370 Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)","J112,J111,J101,J102,J103,J104,J105,J106,J107,J108,J109",MOLEX_502382-0370,- - -
+"SWD Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",J201,PinHeader_1x04_P2.54mm_Vertical,- - -
+3.2 uH Inductor,L301,IND_FP3-3R3-R,- - -
+6 uH Inductor,L302,PM628S-100,- - -
+2.7 uH Inductor,L303,IND_LQH5BPN2R7NT0L,- - -
+1 uH Inductor,L304,L_0603_1608Metric,- - -
+3.3 uH Inductor,L401,L_0805_2012Metric,- - -
+2.1 uH Inductor,L501,NR10050T2R1N,- - -
+47 uH Inductor,"L601,L602,L603,L604,L605,L606,L607,L608,L609",NRS5020T4R7MMGJ,- - -
+"INFET N-MOSFET transistor, gate/source/drain",Q501,DMN1019USN-7(TSOT-26-6),- - -
+"T_NMOS N-MOSFET transistor, gate/source/drain",Q502,DMN1019USN-7(TSOT-26-6),- - -
+"B_NMOS N-MOSFET transistor, gate/source/drain",Q503,DMN1019USN-7(TSOT-26-6),- - -
+"100 kΩ Resistor, US symbol","R201,R202,R203,R204",R_0402_1005Metric,0402WGF1003TCE
+"33 Ω Resistor, US symbol","R222,R223",R_0402_1005Metric,0402WGF330JTCE
+"0 Ω Resistor, US symbol","R226,R215,R217,R218,R216,R210,R221,R214,R209,R207,R208,R212,R213,R224,R225,R219,R206,R220",R_0402_1005Metric,0402WGF0000TCE
+"10 kΩ Resistor, US symbol","R227,R205,R211,R319,R320,R311,R312,R328,R329",R_0603_1608Metric,0603WAF1002T5E
+"12 kΩ Resistor, US symbol","R305,R307",R_0402_1005Metric,0402WGF1202TCE
+"40.2 kΩ Resistor, US symbol",R306,R_0603_1608Metric,0603WFA4022T5E
+"7.5 kΩ Resistor, US symbol",R308,R_0805_2012Metric,0805W8F7501T5E
+"5.1 kΩ Resistor, US symbol","R317,R309,R326",R_0805_2012Metric,0805W8F5101T5E
+"15 kΩ Resistor, US symbol","R318,R310,R327",R_0805_2012Metric,0805W8F1502T5E
+"18 kΩ Resistor, US symbol","R325,R314,R331,R313",R_0603_1608Metric,0603WAF1802T5E
+"0 Ω Resistor, US symbol","R330,R322,R338,R321,R303,R315,R301,R323,R324,R304,R316,R302,R401,R407,R404,R501,R510,R601,R602,R603,R619,R620,R621,R638,R639,R637",R_0603_1608Metric,0603WAF0000T5E
+"19.6 kΩ Resistor, US symbol",R332,R_0603_1608Metric,- - -
+"20.5 kΩ Resistor, US symbol",R333,R_0603_1608Metric,- - -
+"357 kΩ Resistor, US symbol",R334,R_0603_1608Metric,- - -
+"34 kΩ Resistor, US symbol",R339,R_0603_1608Metric,- - -
+"931 kΩ Resistor, US symbol","R340,R336",R_0603_1608Metric,- - -
+"48.7 kΩ Resistor, US symbol","R341,R337,R335",R_0603_1608Metric,- - -
+"3.57 kΩ Resistor, US symbol",R402,R_0603_1608Metric,- - -
+"142 kΩ Resistor, US symbol",R403,R_0603_1608Metric,- - -
+"2.21 MΩ Resistor, US symbol",R405,R_0603_1608Metric,- - -
+"301 kΩ Resistor, US symbol",R406,R_0603_1608Metric,- - -
+"1.5 MΩ Resistor, US symbol",R502,R_0603_1608Metric,0603WAF1504T5E
+"1 MΩ Resistor, US symbol","R503,R507,R508",R_0603_1608Metric,0603WAF1004T5E
+"86.6 kΩ Resistor, US symbol",R504,R_0603_1608Metric,- - -
+"75 kΩ Resistor, US symbol",R505,R_0603_1608Metric,0603WAF7502T5E
+"3.36 kΩ Resistor, US symbol",R506,R_0603_1608Metric,- - -
+"22 mΩ Resistor, US symbol",R509,R_0815_2038Metric,- - -
+"1 kΩ Resistor, US symbol","R604,R605,R606,R607,R608,R609,R622,R623,R624,R625,R626,R627,R640,R641,R642,R643,R644,R645",R_0402_1005Metric,0402WGF1001TCE
+"33.2 mΩ Resistor, US symbol","R610,R611,R612,R628,R629,R630,R646,R647,R648",R_0805_2012Metric,- - -
+"2 MΩ Resistor, US symbol","R613,R615,R617,R631,R633,R635,R649,R651,R653",R_0603_1608Metric,0603WAF2004T5E
+"680 kΩ Resistor, US symbol","R614,R616,R618,R632,R634,R636,R650,R652,R654",R_0402_1005Metric,0402WGF6803TCE
+TestPoint test point,"TP303,TP301,TP304,TP302,TP401,TP402,TP502,TP501,TP601",TESTPOINT_5013,- - -
+"STM32L412C8T6 Ultra-low-power Arm® Cortex®-M4 32-bit MCU+FPU, 100DMIPS, up to 128KB Flash, 40KB SRAM, analog, ext. SMPS",U201,STM32L412C8T6,- - -
+MCP1320T-29LE_OT Supervisory Circuits Active low P-P,U202,MCP1320T-29LE&slash_OT,- - -
+TPS2121RUXR 2.8-V to 22-V Priority Power MUX with Seamless Switchover,"U303,U302,U306,U301",TPS2121RUXR,- - -
+"TPS61288RQQR 18V, 15A synch boost converter","U307,U305,U304",TPS61288RQQR,- - -
+TPS630242YFFR High Efficiency 1.5A Single Inductor Buck-Boost Converter (3.3V),U308,TPS630242YFFR,- - -
+LTC3128 3A Monolithic Buck-Boost Supercapacitor Charger and Balancer with Accurate Input Current Limit,U401,LTC3128EFE-PBF,- - -
+LTC4013EUFD-PBF 60V Synchronous Buck Multi-Chemistry Battery Charger,U501,LTC4013EUFD-PBF,- - -
+"SPV1040T High efficiency solar battery charger with embedded MPPTHigh efficiency solar battery charger with embedded MPPT","U601,U602,U603,U604,U605,U606,U607,U608,U609",SPV1040T,- - -
